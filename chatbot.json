@@ -1,0 +1,1727 @@
+{
+  "settings": {
+    "minimumMatchScore": 15,
+    "fallbackAnswer": "I'm not sure I understood that. Try asking me something like:\n• What farmers markets are available?\n• What seasonal produce is available?\n• How can I find nearby farmers?\n• What produce is available in summer?\n• How does FreshFind work?",
+    "loadingMessage": "FreshFind AI is getting ready...",
+    "errorMessage": "Unable to load chatbot data right now. Please check your connection and refresh."
+  },
+  "quickQuestions": [
+    "What farmers markets are available?",
+    "What seasonal produce is available?",
+    "How can I find nearby farmers?",
+    "How does FreshFind work?",
+    "What produce is available in summer?",
+    "How can I use my location to find nearby markets?"
+  ],
+  "chatbot": [
+    {
+      "id": "chat001",
+      "question": "How does FreshFind work?",
+      "variations": [
+        "how does freshfind work",
+        "what is freshfind",
+        "how does this website work",
+        "what does freshfind do",
+        "tell me about freshfind",
+        "how does the platform work",
+        "how to use freshfind",
+        "how freshfind works"
+      ],
+      "keywords": [
+        "freshfind",
+        "work",
+        "website",
+        "how",
+        "platform",
+        "guide",
+        "use"
+      ],
+      "answer": "FreshFind helps you discover local farmers markets, explore seasonal produce, find nearby farmers, and view real-time operating hours across Karachi. You can filter by area, explore interactive maps, and bookmark your favorite markets!",
+      "category": "general",
+      "relatedMarketIds": [],
+      "relatedProduceIds": [],
+      "actionBtnText": "Explore Markets →",
+      "actionSection": "markets"
+    },
+    {
+      "id": "chat002",
+      "question": "What is FreshFind?",
+      "variations": [
+        "what is freshfind",
+        "tell me about freshfind",
+        "what does freshfind do",
+        "what does this website do",
+        "who is freshfind",
+        "about freshfind",
+        "what is fresh find"
+      ],
+      "keywords": [
+        "freshfind",
+        "about",
+        "mission",
+        "platform",
+        "purpose",
+        "website",
+        "do",
+        "who"
+      ],
+      "answer": "FreshFind is a local food discovery platform connecting Karachi residents with local farmers markets, neighborhood growers, and fresh seasonal harvests. Our goal is to make local, fresh food easily accessible to everyone.",
+      "category": "general",
+      "relatedMarketIds": [],
+      "relatedProduceIds": [],
+      "actionBtnText": "About FreshFind →",
+      "actionSection": "about"
+    },
+    {
+      "id": "chat003",
+      "question": "What can I do on FreshFind?",
+      "variations": [
+        "what can i do on freshfind",
+        "what can i do here",
+        "what features does freshfind have",
+        "freshfind features",
+        "what does freshfind offer",
+        "what can i use freshfind for",
+        "what can users do"
+      ],
+      "keywords": [
+        "features",
+        "do",
+        "offer",
+        "can",
+        "freshfind",
+        "here",
+        "use"
+      ],
+      "answer": "On FreshFind, you can browse local farmers markets, check real-time open status and hours, discover seasonal fruits and vegetables, find nearby farmers using GPS location, and bookmark your favorite markets with personal notes.",
+      "category": "general",
+      "relatedMarketIds": [],
+      "relatedProduceIds": [],
+      "actionBtnText": "Explore Markets →",
+      "actionSection": "markets"
+    },
+    {
+      "id": "chat004",
+      "question": "What is the purpose of FreshFind?",
+      "variations": [
+        "what is the purpose of freshfind",
+        "why was freshfind created",
+        "what is the goal of freshfind",
+        "freshfind mission",
+        "why use freshfind",
+        "purpose of freshfind",
+        "freshfind purpose"
+      ],
+      "keywords": [
+        "purpose",
+        "goal",
+        "mission",
+        "why",
+        "created",
+        "freshfind",
+        "aim"
+      ],
+      "answer": "The purpose of FreshFind is to support local agricultural communities, reduce supply chain distance, promote healthier seasonal eating, and make it seamless for consumers to connect directly with regional growers.",
+      "category": "general",
+      "relatedMarketIds": [],
+      "relatedProduceIds": []
+    },
+    {
+      "id": "chat005",
+      "question": "How can FreshFind help me?",
+      "variations": [
+        "how can freshfind help me",
+        "how does this help me",
+        "benefits of freshfind",
+        "why should i use freshfind",
+        "how does freshfind help",
+        "what are the benefits"
+      ],
+      "keywords": [
+        "help",
+        "benefit",
+        "benefits",
+        "advantage",
+        "freshfind",
+        "use",
+        "why"
+      ],
+      "answer": "FreshFind helps you locate the freshest farm produce at the best prices, discover which crops are naturally in season, check when neighborhood markets are open today, and calculate the shortest distance to your nearest market.",
+      "category": "general",
+      "relatedMarketIds": [],
+      "relatedProduceIds": [],
+      "actionBtnText": "Explore Markets →",
+      "actionSection": "markets"
+    },
+    {
+      "id": "chat006",
+      "question": "What farmers markets are available?",
+      "variations": [
+        "what farmers markets are available",
+        "which farmers markets are available",
+        "show me farmers markets",
+        "what markets are available",
+        "where can i find farmers markets",
+        "which markets can i visit",
+        "list of markets",
+        "all markets",
+        "farmers markets",
+        "farmer markets",
+        "farmer market",
+        "markets list"
+      ],
+      "keywords": [
+        "farmers",
+        "farmer",
+        "market",
+        "markets",
+        "available",
+        "find",
+        "list",
+        "directory"
+      ],
+      "answer": "You can explore 12 local farmers markets across Karachi in our Markets section, including Clifton, DHA Phase VIII, Gulshan-e-Iqbal, North Nazimabad, PECHS, Bahadurabad, and Malir. You can filter by area, day, and produce tags.",
+      "category": "markets",
+      "relatedMarketIds": [
+        "market001",
+        "market002",
+        "market003",
+        "market004",
+        "market005"
+      ],
+      "relatedProduceIds": [],
+      "actionBtnText": "View Markets →",
+      "actionSection": "markets"
+    },
+    {
+      "id": "chat007",
+      "question": "Where can I find farmers markets?",
+      "variations": [
+        "where can i find farmers markets",
+        "where are farmers markets located",
+        "where are the markets",
+        "market locations",
+        "find markets",
+        "where to find markets",
+        "where are markets located",
+        "where are farmers markets"
+      ],
+      "keywords": [
+        "where",
+        "find",
+        "markets",
+        "farmers",
+        "location",
+        "locations",
+        "areas",
+        "located"
+      ],
+      "answer": "Markets are located across Karachi including Clifton Beach Road, DHA Phase 8, University Road Gulshan, North Nazimabad Block H, and PECHS Block 2. Check the Markets section or interactive Map for exact locations.",
+      "category": "markets",
+      "relatedMarketIds": [
+        "market001",
+        "market002",
+        "market003"
+      ],
+      "relatedProduceIds": [],
+      "actionBtnText": "Open Map →",
+      "actionSection": "location"
+    },
+    {
+      "id": "chat008",
+      "question": "How can I find a market?",
+      "variations": [
+        "how can i find a market",
+        "how do i find a market",
+        "how to look for a market",
+        "how to find markets",
+        "find a market",
+        "how can i browse markets"
+      ],
+      "keywords": [
+        "how",
+        "find",
+        "market",
+        "search",
+        "browse",
+        "discover",
+        "look"
+      ],
+      "answer": "You can find markets by typing an area or produce item into the search bar at the top, browsing the interactive Markets grid, or clicking 'Use My Location' in the Map section to find markets closest to you.",
+      "category": "markets",
+      "relatedMarketIds": [],
+      "relatedProduceIds": [],
+      "actionBtnText": "Browse Markets →",
+      "actionSection": "markets"
+    },
+    {
+      "id": "chat009",
+      "question": "Which markets are near me?",
+      "variations": [
+        "which markets are near me",
+        "markets near me",
+        "nearest market",
+        "closest market",
+        "find markets near me",
+        "what markets are nearby",
+        "markets close to me",
+        "closest farmers market",
+        "market near me"
+      ],
+      "keywords": [
+        "near",
+        "nearby",
+        "nearest",
+        "closest",
+        "location",
+        "proximity",
+        "markets"
+      ],
+      "answer": "Go to the Market Location section and click 'Use My Location'. FreshFind will use your browser GPS to compute exact distances and show you the closest farmers markets in kilometers!",
+      "category": "markets",
+      "relatedMarketIds": [
+        "market001",
+        "market002",
+        "market003"
+      ],
+      "relatedProduceIds": [],
+      "actionBtnText": "Find Near Me →",
+      "actionSection": "location"
+    },
+    {
+      "id": "chat010",
+      "question": "What markets are open today?",
+      "variations": [
+        "what markets are open today",
+        "which markets are open today",
+        "markets open today",
+        "open today",
+        "is any market open today",
+        "what is open today",
+        "are markets open today"
+      ],
+      "keywords": [
+        "open",
+        "today",
+        "schedule",
+        "operating",
+        "hours",
+        "status",
+        "active",
+        "markets"
+      ],
+      "answer": "Each market card features an automatic status badge indicating whether it is open today based on its schedule. Clifton and Bahadurabad run on Saturday, DHA and PECHS on Sunday, and Gulshan and Malir on Friday.",
+      "category": "markets",
+      "relatedMarketIds": [
+        "market001",
+        "market002",
+        "market003",
+        "market005"
+      ],
+      "relatedProduceIds": [],
+      "actionBtnText": "View Markets →",
+      "actionSection": "markets"
+    },
+    {
+      "id": "chat011",
+      "question": "Which markets are open now?",
+      "variations": [
+        "which markets are open now",
+        "what markets are open now",
+        "markets open now",
+        "is any market open now",
+        "open right now",
+        "who is open now",
+        "open now"
+      ],
+      "keywords": [
+        "open",
+        "now",
+        "currently",
+        "status",
+        "operating",
+        "right now",
+        "active"
+      ],
+      "answer": "Markets currently operating in real-time display a glowing green 'OPEN' badge on their cards. If a market is outside its operating hours, it will display 'CLOSED'.",
+      "category": "markets",
+      "relatedMarketIds": [
+        "market001",
+        "market003"
+      ],
+      "relatedProduceIds": [],
+      "actionBtnText": "Check Open Markets →",
+      "actionSection": "markets"
+    },
+    {
+      "id": "chat012",
+      "question": "What are the market opening hours?",
+      "variations": [
+        "what are the market opening hours",
+        "market opening hours",
+        "what time do markets open",
+        "market timings",
+        "opening hours",
+        "what time do they open",
+        "when do markets open",
+        "market schedule",
+        "what time does market close",
+        "market hours"
+      ],
+      "keywords": [
+        "hours",
+        "timings",
+        "opening",
+        "closing",
+        "time",
+        "schedule",
+        "when",
+        "open"
+      ],
+      "answer": "Most morning markets open between 7:00 AM and 9:00 AM and close between 1:00 PM and 3:00 PM. For instance, Clifton is open Saturdays 8:00 AM - 2:00 PM, DHA is open Sundays 9:00 AM - 3:00 PM, and Gulshan operates Fridays 7:00 AM - 1:00 PM.",
+      "category": "markets",
+      "relatedMarketIds": [
+        "market001",
+        "market002",
+        "market003"
+      ],
+      "relatedProduceIds": []
+    },
+    {
+      "id": "chat013",
+      "question": "What days are markets open?",
+      "variations": [
+        "what days are markets open",
+        "which days are markets open",
+        "market days",
+        "days of operation",
+        "when are markets open",
+        "operating days",
+        "what days do markets run"
+      ],
+      "keywords": [
+        "days",
+        "day",
+        "schedule",
+        "open",
+        "friday",
+        "saturday",
+        "sunday",
+        "operating"
+      ],
+      "answer": "Karachi farmers markets primarily run on weekends and Friday mornings:\n• Friday: Gulshan-e-Iqbal, Malir\n• Saturday: Clifton, North Nazimabad, Bahadurabad\n• Sunday: DHA Phase VIII, PECHS, Karachi Farmer Market",
+      "category": "markets",
+      "relatedMarketIds": [
+        "market001",
+        "market002",
+        "market003"
+      ],
+      "relatedProduceIds": []
+    },
+    {
+      "id": "chat014",
+      "question": "Where is a particular market?",
+      "variations": [
+        "where is a particular market",
+        "where are the markets located",
+        "where is each market",
+        "market addresses",
+        "find market address",
+        "where is clifton market",
+        "where is dha market",
+        "market address"
+      ],
+      "keywords": [
+        "address",
+        "addresses",
+        "where",
+        "location",
+        "directions",
+        "clifton",
+        "dha",
+        "gulshan",
+        "particular"
+      ],
+      "answer": "Every market card shows its specific neighborhood area and street address. Clifton is on Block 4 Clifton Beach Road, DHA is on Zulfiqar Street Phase 8, and Gulshan is on University Road Block 6. Click 'View Details' for exact map coordinates.",
+      "category": "markets",
+      "relatedMarketIds": [
+        "market001",
+        "market002",
+        "market003"
+      ],
+      "relatedProduceIds": [],
+      "actionBtnText": "Open Map →",
+      "actionSection": "location"
+    },
+    {
+      "id": "chat015",
+      "question": "How do I view market details?",
+      "variations": [
+        "how do i view market details",
+        "view market details",
+        "how to see market details",
+        "more info on market",
+        "market detail modal",
+        "how to get details for a market"
+      ],
+      "keywords": [
+        "view",
+        "details",
+        "modal",
+        "market",
+        "info",
+        "information",
+        "see"
+      ],
+      "answer": "Click the 'View Details' button on any market card. A comprehensive popup modal will appear displaying full operating hours, available produce, vendor details, location coordinates, and private notes.",
+      "category": "markets",
+      "relatedMarketIds": [
+        "market001"
+      ],
+      "relatedProduceIds": [],
+      "actionBtnText": "View Markets →",
+      "actionSection": "markets"
+    },
+    {
+      "id": "chat016",
+      "question": "How can I find nearby farmers?",
+      "variations": [
+        "how can i find nearby farmers",
+        "where can i find farmers",
+        "find farmers near me",
+        "farmers near me",
+        "show nearby farmers",
+        "are there farmers near me",
+        "find local farmers",
+        "meet local farmers",
+        "where are the farmers",
+        "local farmers"
+      ],
+      "keywords": [
+        "farmers",
+        "farmer",
+        "nearby",
+        "near",
+        "find",
+        "location",
+        "growers",
+        "producers"
+      ],
+      "answer": "You can explore local farmers and growers through the Farmers section. If location access is enabled, FreshFind can also use your browser location to match you with nearby growers and markets.",
+      "category": "farmers",
+      "relatedMarketIds": [],
+      "relatedProduceIds": [],
+      "actionBtnText": "Meet Farmers →",
+      "actionSection": "team"
+    },
+    {
+      "id": "chat017",
+      "question": "What produce is available?",
+      "variations": [
+        "what produce is available",
+        "what produce do you have",
+        "show me produce",
+        "list of produce",
+        "all produce",
+        "what items are available",
+        "what can i buy",
+        "available produce"
+      ],
+      "keywords": [
+        "produce",
+        "available",
+        "items",
+        "food",
+        "crops",
+        "harvest",
+        "sell",
+        "buy"
+      ],
+      "answer": "FreshFind lists 30 varieties of fresh produce across categories: Fruits, Vegetables, Herbs, Dairy, Honey, and Artisan Baked Goods. Browse the Produce section to see images, seasonal availability, and stocking markets.",
+      "category": "produce",
+      "relatedMarketIds": [],
+      "relatedProduceIds": [
+        "produce001",
+        "produce002",
+        "produce003",
+        "produce004",
+        "produce005"
+      ],
+      "actionBtnText": "Explore Produce →",
+      "actionSection": "produce"
+    },
+    {
+      "id": "chat018",
+      "question": "What seasonal produce is available?",
+      "variations": [
+        "what seasonal produce is available",
+        "what produce is in season",
+        "which produce is seasonal",
+        "what is available this season",
+        "show seasonal produce",
+        "current seasonal produce",
+        "produce in season",
+        "seasonal fruits and vegetables"
+      ],
+      "keywords": [
+        "seasonal",
+        "season",
+        "produce",
+        "available",
+        "harvest",
+        "in season",
+        "fruits",
+        "vegetables"
+      ],
+      "answer": "You can explore seasonal fruits, vegetables, herbs, and other local products in the Produce section. Filter by season to view what is currently at its natural peak flavor and nutrition.",
+      "category": "produce",
+      "relatedMarketIds": [],
+      "relatedProduceIds": [
+        "produce001",
+        "produce002",
+        "produce003",
+        "produce007",
+        "produce025"
+      ],
+      "actionBtnText": "View Seasonal Produce →",
+      "actionSection": "produce"
+    },
+    {
+      "id": "chat019",
+      "question": "What fruits are available?",
+      "variations": [
+        "what fruits are available",
+        "show me fruits",
+        "which fruits can i buy",
+        "available fruits",
+        "fresh fruits",
+        "list of fruits",
+        "what fruit do you have"
+      ],
+      "keywords": [
+        "fruits",
+        "fruit",
+        "berries",
+        "apples",
+        "strawberries",
+        "peaches",
+        "watermelon",
+        "available"
+      ],
+      "answer": "Available fruits include fresh Strawberries, Blueberries, Yellow Peaches, Crisp Apples, Raspberries, and refreshing Watermelon. Click on any fruit to see which markets have it in stock!",
+      "category": "produce",
+      "relatedMarketIds": [
+        "market001",
+        "market002",
+        "market005"
+      ],
+      "relatedProduceIds": [
+        "produce002",
+        "produce005",
+        "produce007",
+        "produce020",
+        "produce025"
+      ],
+      "actionBtnText": "Browse Fruits →",
+      "actionSection": "produce"
+    },
+    {
+      "id": "chat020",
+      "question": "What vegetables are available?",
+      "variations": [
+        "what vegetables are available",
+        "show me vegetables",
+        "which vegetables can i buy",
+        "available vegetables",
+        "fresh vegetables",
+        "list of vegetables",
+        "what veggies do you have"
+      ],
+      "keywords": [
+        "vegetables",
+        "vegetable",
+        "veggies",
+        "tomatoes",
+        "carrots",
+        "spinach",
+        "peppers",
+        "greens"
+      ],
+      "answer": "Available vegetables include Vine Tomatoes, Organic Carrots, Leafy Greens, Bell Peppers, Dark Spinach, Sweet Potatoes, and Butternut Squash.",
+      "category": "produce",
+      "relatedMarketIds": [
+        "market001",
+        "market003",
+        "market004"
+      ],
+      "relatedProduceIds": [
+        "produce001",
+        "produce003",
+        "produce004",
+        "produce006",
+        "produce008",
+        "produce029"
+      ],
+      "actionBtnText": "Browse Vegetables →",
+      "actionSection": "produce"
+    },
+    {
+      "id": "chat021",
+      "question": "What herbs are available?",
+      "variations": [
+        "what herbs are available",
+        "show me herbs",
+        "culinary herbs",
+        "fresh herbs",
+        "which herbs can i buy",
+        "herbs for cooking",
+        "available herbs"
+      ],
+      "keywords": [
+        "herbs",
+        "herb",
+        "basil",
+        "rosemary",
+        "mint",
+        "culinary",
+        "seasoning"
+      ],
+      "answer": "Fresh herbs including Sweet Basil and Garden Rosemary are available at Clifton Farmers Market, PECHS Fresh Fair, and Riverside Green Fair.",
+      "category": "produce",
+      "relatedMarketIds": [
+        "market001",
+        "market005",
+        "market012"
+      ],
+      "relatedProduceIds": [
+        "produce014",
+        "produce015"
+      ]
+    },
+    {
+      "id": "chat022",
+      "question": "Where can I find apples?",
+      "variations": [
+        "where can i find apples",
+        "where can i buy apples",
+        "which market has apples",
+        "where are apples available",
+        "who sells apples",
+        "apples",
+        "crisp apples",
+        "where to buy apples",
+        "can i buy apples"
+      ],
+      "keywords": [
+        "apples",
+        "apple",
+        "honeycrisp",
+        "find",
+        "buy",
+        "market",
+        "crisp"
+      ],
+      "answer": "You can find fresh Crisp Apples at Maple Grove Market! They are harvested in Autumn and available from September through November.",
+      "category": "produce",
+      "relatedMarketIds": [
+        "market009"
+      ],
+      "relatedProduceIds": [
+        "produce025"
+      ]
+    },
+    {
+      "id": "chat023",
+      "question": "Where can I find vegetables?",
+      "variations": [
+        "where can i find vegetables",
+        "where can i find fresh vegetables",
+        "where to buy fresh vegetables",
+        "which market sells vegetables",
+        "find fresh vegetables",
+        "where can i get veggies",
+        "where are vegetables sold"
+      ],
+      "keywords": [
+        "vegetables",
+        "veggies",
+        "find",
+        "buy",
+        "markets",
+        "where",
+        "fresh"
+      ],
+      "answer": "You can find fresh vegetables at Clifton Farmers Market, Gulshan-e-Iqbal, North Nazimabad, and PECHS. Check the Produce section to see specific vegetables and their markets.",
+      "category": "produce",
+      "relatedMarketIds": [
+        "market001",
+        "market003",
+        "market004",
+        "market005"
+      ],
+      "relatedProduceIds": [
+        "produce001",
+        "produce003",
+        "produce004"
+      ],
+      "actionBtnText": "View Produce →",
+      "actionSection": "produce"
+    },
+    {
+      "id": "chat024",
+      "question": "Which markets sell a particular produce?",
+      "variations": [
+        "which markets sell a particular produce",
+        "how do i know which market sells what",
+        "can i search produce by market",
+        "which market has what produce",
+        "how to see which market sells produce"
+      ],
+      "keywords": [
+        "sell",
+        "produce",
+        "which",
+        "particular",
+        "specific",
+        "markets",
+        "find"
+      ],
+      "answer": "Click on any item in the Produce section to open its detail view. The modal displays every market stocking that produce item, and clicking a market opens its schedule and location details.",
+      "category": "produce",
+      "relatedMarketIds": [],
+      "relatedProduceIds": [],
+      "actionBtnText": "Explore Produce →",
+      "actionSection": "produce"
+    },
+    {
+      "id": "chat025",
+      "question": "What produce is available in summer?",
+      "variations": [
+        "what produce is available in summer",
+        "what fruits are available in summer",
+        "what vegetables are available in summer",
+        "summer produce",
+        "what is available during summer",
+        "summer fruits",
+        "summer vegetables",
+        "produce in summer"
+      ],
+      "keywords": [
+        "summer",
+        "produce",
+        "fruit",
+        "vegetables",
+        "watermelon",
+        "tomatoes",
+        "peaches",
+        "blueberries"
+      ],
+      "answer": "Summer produce includes sweet Watermelon, Vine Tomatoes, Yellow Peaches, Blueberries, Bell Peppers, and Clover Honeycomb. Explore the Produce section to see all summer items and available markets.",
+      "category": "seasonal",
+      "relatedMarketIds": [
+        "market001",
+        "market003",
+        "market005"
+      ],
+      "relatedProduceIds": [
+        "produce001",
+        "produce005",
+        "produce006",
+        "produce007",
+        "produce019",
+        "produce020"
+      ],
+      "actionBtnText": "Explore Summer Produce →",
+      "actionSection": "produce"
+    },
+    {
+      "id": "chat026",
+      "question": "What produce is available in winter?",
+      "variations": [
+        "what produce is available in winter",
+        "what fruits are available in winter",
+        "what vegetables are available in winter",
+        "winter produce",
+        "what is available during winter",
+        "winter harvest",
+        "produce in winter"
+      ],
+      "keywords": [
+        "winter",
+        "produce",
+        "vegetables",
+        "spinach",
+        "squash",
+        "butter",
+        "season",
+        "oranges"
+      ],
+      "answer": "Winter produce highlights include Dark Winter Spinach, Farmhouse Churned Butter, Sweet Butternut Squash, and fresh Valencia Oranges.",
+      "category": "seasonal",
+      "relatedMarketIds": [
+        "market002",
+        "market006"
+      ],
+      "relatedProduceIds": [
+        "produce008",
+        "produce011",
+        "produce029",
+        "produce030"
+      ],
+      "actionBtnText": "View Winter Produce →",
+      "actionSection": "produce"
+    },
+    {
+      "id": "chat027",
+      "question": "What produce is available in spring?",
+      "variations": [
+        "what produce is available in spring",
+        "spring produce",
+        "spring harvest",
+        "produce in spring",
+        "spring fruits",
+        "spring vegetables"
+      ],
+      "keywords": [
+        "spring",
+        "produce",
+        "strawberries",
+        "greens",
+        "carrots",
+        "harvest",
+        "rosemary"
+      ],
+      "answer": "Spring brings sweet Strawberries, Crisp Leafy Greens, Baby Carrots, and Fresh Rosemary. They are harvested in March through June.",
+      "category": "seasonal",
+      "relatedMarketIds": [
+        "market001",
+        "market002",
+        "market005"
+      ],
+      "relatedProduceIds": [
+        "produce002",
+        "produce003",
+        "produce004",
+        "produce015"
+      ]
+    },
+    {
+      "id": "chat028",
+      "question": "What produce is available in autumn?",
+      "variations": [
+        "what produce is available in autumn",
+        "autumn produce",
+        "fall produce",
+        "what produce is available in fall",
+        "produce in autumn",
+        "autumn harvest"
+      ],
+      "keywords": [
+        "autumn",
+        "fall",
+        "produce",
+        "apples",
+        "honey",
+        "harvest",
+        "grains"
+      ],
+      "answer": "Autumn harvests include Crisp Honeycrisp Apples, Sweet Potatoes, Organic Grains, and Raw Wildflower Honey.",
+      "category": "seasonal",
+      "relatedMarketIds": [
+        "market003",
+        "market007",
+        "market008"
+      ],
+      "relatedProduceIds": [
+        "produce009",
+        "produce017",
+        "produce018",
+        "produce025"
+      ]
+    },
+    {
+      "id": "chat029",
+      "question": "How do I search for a market?",
+      "variations": [
+        "how do i search for a market",
+        "how to search for a market",
+        "how do i search",
+        "how does search work",
+        "search markets",
+        "can i search for markets",
+        "how to use search"
+      ],
+      "keywords": [
+        "search",
+        "searching",
+        "find",
+        "lookup",
+        "market",
+        "bar",
+        "query"
+      ],
+      "answer": "Type any market name, neighborhood (like 'Clifton' or 'DHA'), or produce item into the search box at the top of the page. Matching results update dynamically as you type.",
+      "category": "search",
+      "relatedMarketIds": [],
+      "relatedProduceIds": [],
+      "actionBtnText": "Go to Search →",
+      "actionSection": "home"
+    },
+    {
+      "id": "chat030",
+      "question": "How do I filter markets?",
+      "variations": [
+        "how do i filter markets",
+        "how to filter markets",
+        "filter markets",
+        "filtering markets",
+        "can i filter",
+        "filter options"
+      ],
+      "keywords": [
+        "filter",
+        "filtering",
+        "filters",
+        "markets",
+        "category",
+        "area",
+        "day"
+      ],
+      "answer": "You can filter markets by day of the week, neighborhood area, or tags like Organic, Dairy, and Produce by typing in the search bar or clicking category filters.",
+      "category": "search",
+      "relatedMarketIds": [],
+      "relatedProduceIds": [],
+      "actionBtnText": "Explore Markets →",
+      "actionSection": "markets"
+    },
+    {
+      "id": "chat031",
+      "question": "Can I filter by area?",
+      "variations": [
+        "can i filter by area",
+        "filter by area",
+        "how to filter by area",
+        "filter by neighborhood",
+        "search by area",
+        "filter by location"
+      ],
+      "keywords": [
+        "filter",
+        "area",
+        "neighborhood",
+        "location",
+        "clifton",
+        "dha",
+        "gulshan"
+      ],
+      "answer": "Yes! Type any neighborhood name like 'Clifton', 'DHA', 'PECHS', 'Malir', or 'Bahadurabad' into the search bar to immediately filter markets located in that area.",
+      "category": "search",
+      "relatedMarketIds": [],
+      "relatedProduceIds": [],
+      "actionBtnText": "View Markets →",
+      "actionSection": "markets"
+    },
+    {
+      "id": "chat032",
+      "question": "Can I filter by day?",
+      "variations": [
+        "can i filter by day",
+        "filter by day",
+        "how to filter by day",
+        "filter by saturday or sunday",
+        "search by day",
+        "filter by operating day"
+      ],
+      "keywords": [
+        "filter",
+        "day",
+        "days",
+        "weekend",
+        "saturday",
+        "sunday",
+        "friday"
+      ],
+      "answer": "Yes! Type 'Friday', 'Saturday', or 'Sunday' into the search bar to see markets operating on that specific day.",
+      "category": "search",
+      "relatedMarketIds": [],
+      "relatedProduceIds": []
+    },
+    {
+      "id": "chat033",
+      "question": "Can I filter by produce?",
+      "variations": [
+        "can i filter by produce",
+        "filter by produce",
+        "how to filter by produce",
+        "search by produce type",
+        "filter produce items"
+      ],
+      "keywords": [
+        "filter",
+        "produce",
+        "category",
+        "fruits",
+        "vegetables",
+        "herbs",
+        "dairy"
+      ],
+      "answer": "Yes! In the Produce section, you can click category filter pills (Fruits, Vegetables, Herbs, Dairy, Honey, Baked Goods). In the search bar, typing any produce name will show markets that carry it.",
+      "category": "search",
+      "relatedMarketIds": [],
+      "relatedProduceIds": [],
+      "actionBtnText": "Browse Produce →",
+      "actionSection": "produce"
+    },
+    {
+      "id": "chat034",
+      "question": "How do I find markets near me?",
+      "variations": [
+        "how do i find markets near me",
+        "how to find markets near me",
+        "find markets near me",
+        "how do i use location",
+        "how can i use my location",
+        "use my location",
+        "how to locate markets near me"
+      ],
+      "keywords": [
+        "location",
+        "near",
+        "gps",
+        "nearby",
+        "distance",
+        "geolocation",
+        "find"
+      ],
+      "answer": "Go to the Market Location section and click 'Use My Location'. FreshFind will request your device's GPS coordinates and sort all markets by distance from closest to furthest.",
+      "category": "search",
+      "relatedMarketIds": [],
+      "relatedProduceIds": [],
+      "actionBtnText": "Open Map →",
+      "actionSection": "location"
+    },
+    {
+      "id": "chat035",
+      "question": "How do I bookmark a market?",
+      "variations": [
+        "how do i bookmark a market",
+        "how to bookmark a market",
+        "how do i save a market",
+        "how to save a market",
+        "bookmark a market",
+        "save a market",
+        "how to favorite a market",
+        "favorite a market"
+      ],
+      "keywords": [
+        "bookmark",
+        "save",
+        "favorite",
+        "star",
+        "market",
+        "how"
+      ],
+      "answer": "Click the star icon (☆) on any market card. The market will instantly be saved to your Bookmarks list in your browser's local storage so you can easily access it anytime.",
+      "category": "bookmarks",
+      "relatedMarketIds": [],
+      "relatedProduceIds": [],
+      "actionBtnText": "Browse Markets →",
+      "actionSection": "markets"
+    },
+    {
+      "id": "chat036",
+      "question": "How do I save a market?",
+      "variations": [
+        "how do i save a market",
+        "how to save market",
+        "save market",
+        "saving markets",
+        "add market to favorites"
+      ],
+      "keywords": [
+        "save",
+        "saving",
+        "market",
+        "favorite",
+        "star",
+        "bookmark"
+      ],
+      "answer": "Click the star button on any market card. When the star turns solid green, that market is saved in your local favorites list.",
+      "category": "bookmarks",
+      "relatedMarketIds": [],
+      "relatedProduceIds": []
+    },
+    {
+      "id": "chat037",
+      "question": "Where are my bookmarks?",
+      "variations": [
+        "where are my bookmarks",
+        "how to see bookmarks",
+        "view my bookmarks",
+        "show saved markets",
+        "where are saved markets",
+        "my favorites",
+        "open bookmarks"
+      ],
+      "keywords": [
+        "where",
+        "bookmarks",
+        "saved",
+        "favorites",
+        "list",
+        "view",
+        "find"
+      ],
+      "answer": "Click the 'Bookmarks' button with the star icon in the header navigation. This opens your Bookmarks modal where you can view all saved markets, add notes, and export your list.",
+      "category": "bookmarks",
+      "relatedMarketIds": [],
+      "relatedProduceIds": []
+    },
+    {
+      "id": "chat038",
+      "question": "How do I remove a bookmark?",
+      "variations": [
+        "how do i remove a bookmark",
+        "remove a bookmark",
+        "how to unsave a market",
+        "delete bookmark",
+        "clear bookmark",
+        "how to delete saved market"
+      ],
+      "keywords": [
+        "remove",
+        "delete",
+        "unsave",
+        "unstar",
+        "bookmark",
+        "clear"
+      ],
+      "answer": "To remove a bookmark, click the filled star icon on the market card again, or open the Bookmarks modal and click 'Remove' next to that market.",
+      "category": "bookmarks",
+      "relatedMarketIds": [],
+      "relatedProduceIds": []
+    },
+    {
+      "id": "chat039",
+      "question": "Can I save produce?",
+      "variations": [
+        "can i save produce",
+        "how do i save produce",
+        "bookmark produce",
+        "save produce items",
+        "can i favorite produce",
+        "how to save produce items"
+      ],
+      "keywords": [
+        "save",
+        "produce",
+        "bookmark",
+        "favorite",
+        "crops",
+        "items"
+      ],
+      "answer": "You can bookmark the markets that supply your favorite produce items! Click on any produce card to find out which markets carry it, then bookmark those markets for quick access.",
+      "category": "bookmarks",
+      "relatedMarketIds": [],
+      "relatedProduceIds": [],
+      "actionBtnText": "Explore Produce →",
+      "actionSection": "produce"
+    },
+    {
+      "id": "chat040",
+      "question": "Can I add notes to bookmarks?",
+      "variations": [
+        "can i add notes to bookmarks",
+        "add notes to bookmark",
+        "how do i add notes",
+        "market notes",
+        "private notes",
+        "how to write notes on market",
+        "can i write notes"
+      ],
+      "keywords": [
+        "notes",
+        "note",
+        "memo",
+        "comments",
+        "bookmarks",
+        "write",
+        "save"
+      ],
+      "answer": "Yes! Open any market detail view or your Bookmarks modal to write private notes (e.g., 'Best stall for honey', 'Arrive before 9 AM'). Notes are saved privately in your browser.",
+      "category": "bookmarks",
+      "relatedMarketIds": [],
+      "relatedProduceIds": []
+    },
+    {
+      "id": "chat041",
+      "question": "Can I export my bookmarks?",
+      "variations": [
+        "can i export my bookmarks",
+        "export bookmarks",
+        "download bookmarks",
+        "backup bookmarks",
+        "how do i export saved markets",
+        "save bookmarks as file"
+      ],
+      "keywords": [
+        "export",
+        "download",
+        "backup",
+        "save",
+        "json",
+        "bookmarks"
+      ],
+      "answer": "Yes! Open the Bookmarks modal and click 'Export Bookmarks' to download your bookmarked markets and custom shopping notes as a JSON file.",
+      "category": "bookmarks",
+      "relatedMarketIds": [],
+      "relatedProduceIds": []
+    },
+    {
+      "id": "chat042",
+      "question": "How can I contact FreshFind?",
+      "variations": [
+        "how can i contact freshfind",
+        "how to contact freshfind",
+        "contact freshfind",
+        "reach out to freshfind",
+        "contact support",
+        "how do i contact you",
+        "contact info"
+      ],
+      "keywords": [
+        "contact",
+        "reach",
+        "email",
+        "phone",
+        "support",
+        "help",
+        "message"
+      ],
+      "answer": "You can reach FreshFind through the Contact section at the bottom of the page, by email at hello@freshfind.com, or by phone at +92 300 1234567.",
+      "category": "contact",
+      "relatedMarketIds": [],
+      "relatedProduceIds": [],
+      "actionBtnText": "Contact Us →",
+      "actionSection": "contact"
+    },
+    {
+      "id": "chat043",
+      "question": "What is the FreshFind email?",
+      "variations": [
+        "what is the freshfind email",
+        "freshfind email",
+        "email address",
+        "what is your email",
+        "send email",
+        "email for freshfind"
+      ],
+      "keywords": [
+        "email",
+        "address",
+        "mail",
+        "contact",
+        "freshfind"
+      ],
+      "answer": "The FreshFind team email address is hello@freshfind.com. Feel free to email us with questions, suggestions, or vendor inquiries.",
+      "category": "contact",
+      "relatedMarketIds": [],
+      "relatedProduceIds": [],
+      "actionBtnText": "Contact Us →",
+      "actionSection": "contact"
+    },
+    {
+      "id": "chat044",
+      "question": "Where is FreshFind located?",
+      "variations": [
+        "where is freshfind located",
+        "where are you located",
+        "freshfind office",
+        "freshfind location",
+        "freshfind headquarters",
+        "what city is freshfind in"
+      ],
+      "keywords": [
+        "located",
+        "location",
+        "office",
+        "headquarters",
+        "city",
+        "karachi"
+      ],
+      "answer": "FreshFind is based in Karachi, Pakistan, serving local communities with curated guides to farmers markets across the city.",
+      "category": "contact",
+      "relatedMarketIds": [],
+      "relatedProduceIds": []
+    },
+    {
+      "id": "chat045",
+      "question": "How can I get help?",
+      "variations": [
+        "how can i get help",
+        "i need help",
+        "support",
+        "help me",
+        "customer service",
+        "where can i get help"
+      ],
+      "keywords": [
+        "help",
+        "support",
+        "assistance",
+        "guide",
+        "problem",
+        "issue"
+      ],
+      "answer": "I can help answer questions right here! For common questions about markets and features, check our FAQs section or send a message via the Contact form.",
+      "category": "contact",
+      "relatedMarketIds": [],
+      "relatedProduceIds": [],
+      "actionBtnText": "View FAQs →",
+      "actionSection": "faqs"
+    },
+    {
+      "id": "chat046",
+      "question": "What is seasonal produce?",
+      "variations": [
+        "what is seasonal produce",
+        "what does seasonal produce mean",
+        "explain seasonal produce",
+        "why buy seasonal produce",
+        "definition of seasonal produce"
+      ],
+      "keywords": [
+        "seasonal",
+        "produce",
+        "mean",
+        "meaning",
+        "definition",
+        "why"
+      ],
+      "answer": "Seasonal produce consists of fruits and vegetables harvested during their natural growing periods. Seasonal eating offers better flavor, higher nutritional value, and lower environmental cost.",
+      "category": "other",
+      "relatedMarketIds": [],
+      "relatedProduceIds": [],
+      "actionBtnText": "Explore Seasonal →",
+      "actionSection": "produce"
+    },
+    {
+      "id": "chat047",
+      "question": "What does open now mean?",
+      "variations": [
+        "what does open now mean",
+        "open now badge",
+        "how does open now work",
+        "open now meaning",
+        "what does open mean"
+      ],
+      "keywords": [
+        "open",
+        "now",
+        "badge",
+        "meaning",
+        "mean",
+        "status"
+      ],
+      "answer": "The 'Open Now' badge indicates that the market is currently active based on today's day of the week and operating hours. A 'Closed' badge indicates the market is outside its scheduled time.",
+      "category": "other",
+      "relatedMarketIds": [],
+      "relatedProduceIds": []
+    },
+    {
+      "id": "chat048",
+      "question": "Can I share a market?",
+      "variations": [
+        "can i share a market",
+        "how do i share a market",
+        "share market with friend",
+        "share link",
+        "how to share market"
+      ],
+      "keywords": [
+        "share",
+        "sharing",
+        "link",
+        "send",
+        "friend",
+        "social"
+      ],
+      "answer": "Yes! Open any market details modal to copy a direct shareable link or share via messaging apps with your friends and family.",
+      "category": "other",
+      "relatedMarketIds": [],
+      "relatedProduceIds": []
+    },
+    {
+      "id": "chat049",
+      "question": "Can I view a market on a map?",
+      "variations": [
+        "can i view a market on a map",
+        "view market on a map",
+        "show market on map",
+        "interactive map",
+        "google maps",
+        "see markets on map"
+      ],
+      "keywords": [
+        "map",
+        "maps",
+        "interactive",
+        "view",
+        "location",
+        "pin",
+        "coordinates"
+      ],
+      "answer": "Yes! Head to our Market Location section to view all 12 market pins on an interactive map. You can also click 'Open in Google Maps' on any card for live directions.",
+      "category": "other",
+      "relatedMarketIds": [],
+      "relatedProduceIds": [],
+      "actionBtnText": "Open Map →",
+      "actionSection": "location"
+    },
+    {
+      "id": "chat050",
+      "question": "Hello / Greeting",
+      "variations": [
+        "hello",
+        "hi",
+        "hey",
+        "good morning",
+        "good afternoon",
+        "greetings",
+        "hey there"
+      ],
+      "keywords": [
+        "hello",
+        "hi",
+        "hey",
+        "greeting",
+        "morning",
+        "afternoon"
+      ],
+      "answer": "Hello! 👋 Welcome to FreshFind AI. I can help you discover local farmers markets, seasonal produce, and nearby farmers. How can I help you today?",
+      "category": "general",
+      "relatedMarketIds": [],
+      "relatedProduceIds": [],
+      "actionBtnText": "Explore Markets →",
+      "actionSection": "markets"
+    },
+    {
+      "id": "chat051",
+      "question": "Thank you",
+      "variations": [
+        "thank you",
+        "thanks",
+        "thank you so much",
+        "appreciate it",
+        "thanks a lot",
+        "thank u"
+      ],
+      "keywords": [
+        "thank",
+        "thanks",
+        "appreciate",
+        "helpful",
+        "great"
+      ],
+      "answer": "You're very welcome! 😊🌱 Happy market shopping! Feel free to ask if you need anything else.",
+      "category": "general",
+      "relatedMarketIds": [],
+      "relatedProduceIds": []
+    },
+    {
+      "id": "chat052",
+      "question": "Can I find fresh dairy products?",
+      "variations": [
+        "can i find fresh dairy products",
+        "dairy products",
+        "where can i buy milk",
+        "can i buy cheese",
+        "fresh dairy",
+        "farm dairy",
+        "butter and cheese"
+      ],
+      "keywords": [
+        "dairy",
+        "milk",
+        "cheese",
+        "butter",
+        "farmhouse",
+        "fresh"
+      ],
+      "answer": "Yes! DHA Phase VIII, Bahadurabad, and Sunset Valley offer farmstead butter, fresh milk, and goat cheese.",
+      "category": "produce",
+      "relatedMarketIds": [
+        "market002",
+        "market006",
+        "market011"
+      ],
+      "relatedProduceIds": [
+        "produce011",
+        "produce012",
+        "produce016"
+      ]
+    },
+    {
+      "id": "chat053",
+      "question": "Can I buy raw local honey?",
+      "variations": [
+        "can i buy raw local honey",
+        "raw honey",
+        "where can i buy honey",
+        "local honey",
+        "honeycomb",
+        "who sells honey"
+      ],
+      "keywords": [
+        "honey",
+        "raw",
+        "honeycomb",
+        "clover",
+        "wildflower",
+        "apiary"
+      ],
+      "answer": "Yes! Raw wildflower honey and fresh clover honeycomb are available at Karachi Farmer Market and Maple Grove Market.",
+      "category": "produce",
+      "relatedMarketIds": [
+        "market008",
+        "market009"
+      ],
+      "relatedProduceIds": [
+        "produce018",
+        "produce019"
+      ]
+    },
+    {
+      "id": "chat054",
+      "question": "Can I buy farm fresh eggs?",
+      "variations": [
+        "can i buy farm fresh eggs",
+        "fresh eggs",
+        "where can i buy eggs",
+        "organic eggs",
+        "pasture raised eggs",
+        "duck eggs"
+      ],
+      "keywords": [
+        "eggs",
+        "egg",
+        "pasture",
+        "duck",
+        "chicken",
+        "farm"
+      ],
+      "answer": "Pasture-raised brown chicken eggs and free-range duck eggs are available at Riverside Green Fair and local farm stalls.",
+      "category": "produce",
+      "relatedMarketIds": [
+        "market012"
+      ],
+      "relatedProduceIds": [
+        "produce023",
+        "produce024"
+      ]
+    },
+    {
+      "id": "chat055",
+      "question": "Is there fresh artisan bread?",
+      "variations": [
+        "is there fresh artisan bread",
+        "artisan bread",
+        "where can i buy sourdough bread",
+        "bakery items",
+        "baked goods",
+        "fresh bread"
+      ],
+      "keywords": [
+        "bread",
+        "sourdough",
+        "brioche",
+        "baked",
+        "bakery",
+        "buns"
+      ],
+      "answer": "Yes! Artisan bakers at Sunset Valley Seaside Hub bring fresh country sourdough loaves and sweet cinnamon brioche swirls.",
+      "category": "produce",
+      "relatedMarketIds": [
+        "market011"
+      ],
+      "relatedProduceIds": [
+        "produce021",
+        "produce022"
+      ]
+    },
+    {
+      "id": "chat056",
+      "question": "What payment methods are accepted?",
+      "variations": [
+        "what payment methods are accepted",
+        "how can i pay",
+        "do vendors take cards",
+        "can i pay with card",
+        "cash or card",
+        "payment options"
+      ],
+      "keywords": [
+        "payment",
+        "pay",
+        "cash",
+        "card",
+        "credit",
+        "debit",
+        "methods"
+      ],
+      "answer": "Most vendors accept cash and debit/credit cards, and many support mobile bank transfers. Bringing small cash denominations is always recommended!",
+      "category": "general",
+      "relatedMarketIds": [],
+      "relatedProduceIds": []
+    },
+    {
+      "id": "chat057",
+      "question": "What markets are open on Saturday?",
+      "variations": [
+        "what markets are open on saturday",
+        "saturday markets",
+        "which markets open on saturday",
+        "saturday"
+      ],
+      "keywords": [
+        "saturday",
+        "weekend",
+        "open",
+        "markets"
+      ],
+      "answer": "Clifton Farmers Market, North Nazimabad Community Market, and Bahadurabad Produce Market operate on Saturdays!",
+      "category": "markets",
+      "relatedMarketIds": [
+        "market001",
+        "market004",
+        "market006"
+      ],
+      "relatedProduceIds": []
+    },
+    {
+      "id": "chat058",
+      "question": "What markets are open on Sunday?",
+      "variations": [
+        "what markets are open on sunday",
+        "sunday markets",
+        "which markets open on sunday",
+        "sunday"
+      ],
+      "keywords": [
+        "sunday",
+        "weekend",
+        "open",
+        "markets"
+      ],
+      "answer": "DHA Phase VIII Market, PECHS Fresh Fair, Karachi Farmer Market, and Sunset Valley Seaside Hub operate on Sundays!",
+      "category": "markets",
+      "relatedMarketIds": [
+        "market002",
+        "market005",
+        "market008",
+        "market011"
+      ],
+      "relatedProduceIds": []
+    }
+  ]
+}

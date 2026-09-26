@@ -1,0 +1,116 @@
+{
+  "team": [
+    {
+      "id": "farmer001",
+      "name": "John Miller",
+      "farm": "Green Valley Farm",
+      "role": "Organic Farmer",
+      "bio": "Passionate vegetable and herb grower supplying fresh greens to local community markets.",
+      "image": "https://i.pravatar.cc/150?img=11",
+      "tags": [
+        "Vegetables",
+        "Herbs"
+      ],
+      "social": {
+        "linkedin": "#",
+        "twitter": "#"
+      }
+    },
+    {
+      "id": "farmer002",
+      "name": "Sarah Johnson",
+      "farm": "Maple Grove Farm",
+      "role": "Berry Specialist",
+      "bio": "Specializes in heritage berries, sweet strawberries, and orchard stone fruits.",
+      "image": "https://i.pravatar.cc/150?img=47",
+      "tags": [
+        "Fruits",
+        "Berries"
+      ],
+      "social": {
+        "linkedin": "#",
+        "twitter": "#"
+      }
+    },
+    {
+      "id": "farmer003",
+      "name": "David Brown",
+      "farm": "Sunrise Farm",
+      "role": "Dairy & Poultry Farmer",
+      "bio": "Focuses on pasture-based poultry, farm fresh eggs, and cultured farmhouse dairy.",
+      "image": "https://i.pravatar.cc/150?img=12",
+      "tags": [
+        "Dairy",
+        "Eggs"
+      ],
+      "social": {
+        "linkedin": "#",
+        "twitter": "#"
+      }
+    },
+    {
+      "id": "farmer004",
+      "name": "Emily Davis",
+      "farm": "Oakridge Farm",
+      "role": "Grain & Crops Cultivator",
+      "bio": "Dedicated to organic grain cultivation, sustainable soil stewardship, and heirloom produce.",
+      "image": "https://i.pravatar.cc/150?img=32",
+      "tags": [
+        "Organic",
+        "Grains"
+      ],
+      "social": {
+        "linkedin": "#",
+        "twitter": "#"
+      }
+    },
+    {
+      "id": "farmer005",
+      "name": "Nivesh Naresh",
+      "farm": "Country Roots Farm",
+      "role": "Root Crops Grower",
+      "bio": "Grows sweet potatoes, crisp carrots, and hearty root crops through regenerative agriculture.",
+      "image": "https://i.pravatar.cc/150?img=68",
+      "tags": [
+        "Potatoes",
+        "Carrots"
+      ],
+      "social": {
+        "linkedin": "#",
+        "twitter": "#"
+      }
+    },
+    {
+      "id": "farmer006",
+      "name": "Isabelle Moore",
+      "farm": "Wild Flower Farms",
+      "role": "Apiarist & Botanist",
+      "bio": "Nurtures local apiaries producing raw wildflower honey and field-cut floral bouquets.",
+      "image": "https://i.pravatar.cc/150?img=44",
+      "tags": [
+        "Honey",
+        "Flowers"
+      ],
+      "social": {
+        "linkedin": "#",
+        "twitter": "#"
+      }
+    },
+    {
+      "id": "team001",
+      "name": "Alex Morgan",
+      "farm": "FreshFind Platform",
+      "role": "Project Lead",
+      "bio": "Responsible for project direction and community platform development.",
+      "image": "assets/images/team/alex.jpg",
+      "tags": [
+        "Development",
+        "Community"
+      ],
+      "social": {
+        "linkedin": "#",
+        "twitter": "#"
+      }
+    }
+  ]
+}

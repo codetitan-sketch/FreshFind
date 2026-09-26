@@ -1,0 +1,16 @@
+{
+  "site": {
+    "name": "FreshFind",
+    "tagline": "LOCAL MARKETS • FRESH FOOD",
+    "description": "Discover local markets, seasonal produce and the farmers who bring fresh food to your community.",
+    "email": "hello@freshfind.com",
+    "phone": "+92 300 1234567",
+    "address": "Karachi, Pakistan",
+    "social": {
+      "facebook": "#",
+      "instagram": "#",
+      "twitter": "#"
+    },
+    "visitorCounterStart": 1248
+  }
+}

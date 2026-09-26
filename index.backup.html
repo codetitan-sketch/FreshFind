@@ -1,0 +1,3946 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FreshFind – Local Markets. Fresh Food.</title>
+
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+
+<!-- =====================================================
+     NAVBAR
+===================================================== -->
+
+<header class="navbar">
+
+    <a href="#home" class="logo">
+
+        <div class="logo-icon">
+            🌿
+        </div>
+
+        <div class="logo-text">
+            <strong>FRESHFIND</strong>
+            <span>LOCAL MARKETS • FRESH FOOD</span>
+        </div>
+
+    </a>
+
+
+    <nav class="navigation">
+
+        <a href="#home" class="active">Home</a>
+
+        <a href="#markets">Markets</a>
+
+        <a href="#produce">Produce</a>
+
+        <a href="#farmers">Farmers</a>
+
+        <a href="#about">About</a>
+
+        <a href="#contact">Contact</a>
+
+    </nav>
+
+
+    <div class="nav-right">
+
+        <!-- Search -->
+        <button
+            class="icon-btn"
+            id="navSearchBtn"
+            title="Search"
+            type="button"
+        >
+            ⌕
+        </button>
+
+
+        <!-- Dark Mode -->
+        <button
+            class="icon-btn"
+            id="themeToggle"
+            title="Toggle theme"
+            type="button"
+        >
+            ☾
+        </button>
+
+
+        <a href="#markets" class="get-started">
+            Explore
+            <span>→</span>
+        </a>
+
+    </div>
+
+
+    <!-- Mobile Menu -->
+    <button
+        class="menu-btn"
+        id="menuBtn"
+        type="button"
+        aria-label="Open menu"
+    >
+        ☰
+    </button>
+
+</header>
+
+
+<!-- =====================================================
+     MAIN
+===================================================== -->
+
+<main>
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section class="hero" id="home">
+
+    <div class="hero-background"></div>
+
+    <div class="hero-overlay"></div>
+
+
+    <div class="hero-content">
+
+        <div class="hero-badge">
+            <span></span>
+            FRESH • LOCAL • COMMUNITY
+        </div>
+
+
+        <h1>
+            Find fresh food
+            <span>near you.</span>
+        </h1>
+
+
+        <p class="description">
+            Discover local farmers markets, fresh seasonal produce,
+            and the people who grow your food.
+        </p>
+
+
+        <!-- SEARCH AREA -->
+
+        <div class="search-results-box">
+
+            <form class="search-box" id="searchForm">
+
+                <div class="search-icon">
+                    ⌕
+                </div>
+
+
+                <input
+                    id="location-search"
+                    type="text"
+                    placeholder="Search markets, produce or farmers..."
+                    autocomplete="off"
+                    aria-label="Search markets, produce or farmers"
+                >
+
+
+                <button type="submit">
+                    Search
+                    <span>→</span>
+                </button>
+
+            </form>
+
+
+            <!-- Search Suggestions -->
+
+            <div
+                id="searchSuggestions"
+                class="search-suggestions"
+            ></div>
+
+        </div>
+
+
+        <!-- Search Result -->
+
+        <div
+            id="location-result"
+            class="location-result"
+        ></div>
+
+
+        <!-- QUICK FEATURES -->
+
+        <div class="quick-features">
+
+            <div class="feature">
+
+                <div class="feature-icon">
+                    🥬
+                </div>
+
+                <div class="feature-text">
+                    <strong>Fresh Produce</strong>
+                    <span>Locally grown</span>
+                </div>
+
+            </div>
+
+
+            <div class="feature">
+
+                <div class="feature-icon">
+                    📍
+                </div>
+
+                <div class="feature-text">
+                    <strong>Nearby Markets</strong>
+                    <span>Find local sellers</span>
+                </div>
+
+            </div>
+
+
+            <div class="feature">
+
+                <div class="feature-icon">
+                    👨‍🌾
+                </div>
+
+                <div class="feature-text">
+                    <strong>Local Farmers</strong>
+                    <span>Meet the growers</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="scroll-indicator">
+        <span></span>
+        Scroll to explore
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     MARKETS + PRODUCE
+===================================================== -->
+
+<section class="market-page">
+
+
+<!-- =====================================================
+     MARKETS
+===================================================== -->
+
+<section
+    class="section-block"
+    id="markets"
+>
+
+    <div class="section-heading">
+
+        <div class="heading-left">
+
+            <div class="leaf-icon">
+                🌿
+            </div>
+
+            <div>
+
+                <h2>
+                    Nearby Farmers Markets
+                </h2>
+
+                <p>
+                    Discover fresh local markets around your community.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <label
+            for="markets-toggle"
+            class="view-all"
+        >
+            <span class="view-label">
+                View All →
+            </span>
+
+            <span class="hide-label">
+                Show Less ↑
+            </span>
+        </label>
+
+    </div>
+
+
+    <input
+        type="checkbox"
+        id="markets-toggle"
+        class="toggle-input"
+    >
+
+
+    <div class="market-grid">
+
+
+        <!-- MARKET 1 -->
+
+        <article
+            class="market-card"
+            data-market-index="0"
+            data-search="Clifton"
+        >
+
+            <div class="market-image">
+
+                <img
+                    src="./images/01_Clifton.png"
+                    alt="Clifton"
+                >
+
+                <span class="status open">
+                    Open
+                </span>
+
+            </div>
+
+
+            <div class="card-body">
+
+                <h3>
+                    Clifton
+                </h3>
+
+                <p class="info">
+                    📍 Clifton
+                </p>
+
+                <p class="info">
+                    🕐 Saturday • 8:00 AM – 2:00 PM
+                </p>
+
+                <div class="farmer-info">
+                    <span>👨‍🌾</span>
+                    Local Farmers
+                </div>
+
+
+                <div class="tags">
+                    <span>Vegetables</span>
+                    <span>Fruits</span>
+                    <span>Herbs</span>
+                </div>
+
+
+                <button
+                    class="details-btn"
+                    type="button"
+                    data-market-index="0"
+                >
+                    View Details
+                </button>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- MARKET 2 -->
+
+        <article
+            class="market-card"
+            data-market-index="1"
+            data-search="dha phase viii"
+        >
+
+            <div class="market-image">
+
+                <img
+                    src="./images/02_DHA_Phase_VIII.png"
+                    alt="DHA Phase VIII"
+                >
+
+                <span class="status closed">
+                    Closed
+                </span>
+
+            </div>
+
+
+            <div class="card-body">
+
+                <h3>
+                    DHA Phase VIII
+                </h3>
+
+                <p class="info">
+                    📍 DHA Phase VIII
+                </p>
+
+                <p class="info">
+                    🕐 Sunday • 9:00 AM – 3:00 PM
+                </p>
+
+                <div class="farmer-info">
+                    <span>👨‍🌾</span>
+                    Local Farmers
+                </div>
+
+
+                <div class="tags">
+                    <span>Fruits</span>
+                    <span>Dairy</span>
+                    <span>Organic</span>
+                </div>
+
+
+                <button
+                    class="details-btn"
+                    type="button"
+                    data-market-index="1"
+                >
+                    View Details
+                </button>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- MARKET 3 -->
+
+        <article
+            class="market-card"
+            data-market-index="2"
+            data-search="Gulshan-e-Iqbal"
+        >
+
+            <div class="market-image">
+
+                <img
+                    src="./images/03_Gulshan_e_Iqbal.png"
+                    alt="Gulshan-e-Iqbal"
+                >
+
+                <span class="status open">
+                    Open
+                </span>
+
+            </div>
+
+
+            <div class="card-body">
+
+                <h3>
+                    Gulshan-e-Iqbal
+                </h3>
+
+                <p class="info">
+                    📍 Gulshan-e-Iqbal
+                </p>
+
+                <p class="info">
+                    🕐 Friday • 7:00 AM – 1:00 PM
+                </p>
+
+                <div class="farmer-info">
+                    <span>👨‍🌾</span>
+                    Local Farmers
+                </div>
+
+
+                <div class="tags">
+                    <span>Vegetables</span>
+                    <span>Berries</span>
+                    <span>Grains</span>
+                </div>
+
+
+                <button
+                    class="details-btn"
+                    type="button"
+                    data-market-index="2"
+                >
+                    View Details
+                </button>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- MARKET 4 -->
+
+        <article
+            class="market-card"
+            data-market-index="3"
+            data-search="North Nazimabad"
+        >
+
+            <div class="market-image">
+
+                <img
+                    src="./images/04_North_Nazimabad.png"
+                    alt="North Nazimabad"
+                >
+
+                <span class="status closed">
+                    Closed
+                </span>
+
+            </div>
+
+
+            <div class="card-body">
+
+                <h3>
+                    North Nazimabad
+                </h3>
+
+                <p class="info">
+                    📍 North Nazimabad
+                </p>
+
+                <p class="info">
+                    🕐 Saturday • 8:00 AM – 2:00 PM
+                </p>
+
+                <div class="farmer-info">
+                    <span>👨‍🌾</span>
+                    Local Farmers
+                </div>
+
+
+                <div class="tags">
+                    <span>Fruits</span>
+                    <span>Vegetables</span>
+                    <span>Flowers</span>
+                </div>
+
+
+                <button
+                    class="details-btn"
+                    type="button"
+                    data-market-index="3"
+                >
+                    View Details
+                </button>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- MARKET 5 -->
+
+        <article
+            class="market-card extra-market"
+            data-market-index="4"
+            data-search="PECHS"
+        >
+
+            <div class="market-image">
+
+                <img
+                    src="./images/05_PECHS.png"
+                    alt="PECHS"
+                >
+
+                <span class="status open">
+                    Open
+                </span>
+
+            </div>
+
+
+            <div class="card-body">
+
+                <h3>
+                    PECHS
+                </h3>
+
+                <p class="info">
+                    📍 PECHS
+                </p>
+
+                <p class="info">
+                    🕐 Sunday • 8:00 AM – 2:00 PM
+                </p>
+
+                <div class="farmer-info">
+                    <span>👨‍🌾</span>
+                    Organic Farmers
+                </div>
+
+
+                <div class="tags">
+                    <span>Organic</span>
+                    <span>Herbs</span>
+                    <span>Fruits</span>
+                </div>
+
+
+                <button
+                    class="details-btn"
+                    type="button"
+                    data-market-index="4"
+                >
+                    View Details
+                </button>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- MARKET 6 -->
+
+        <article
+            class="market-card extra-market"
+            data-market-index="5"
+            data-search="Bahadurabad"
+        >
+
+            <div class="market-image">
+
+                <img
+                    src="./images/06_Bahadurabad.png"
+                    alt="Bahadurabad"
+                >
+
+                <span class="status closed">
+                    Closed
+                </span>
+
+            </div>
+
+
+            <div class="card-body">
+
+                <h3>
+                    Bahadurabad
+                </h3>
+
+                <p class="info">
+                    📍 Bahadurabad
+                </p>
+
+                <p class="info">
+                    🕐 Saturday • 9:00 AM – 3:00 PM
+                </p>
+
+                <div class="farmer-info">
+                    <span>👨‍🌾</span>
+                    Local Farmers
+                </div>
+
+
+                <div class="tags">
+                    <span>Vegetables</span>
+                    <span>Dairy</span>
+                    <span>Local</span>
+                </div>
+
+
+                <button
+                    class="details-btn"
+                    type="button"
+                    data-market-index="5"
+                >
+                    View Details
+                </button>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- MARKET 7 -->
+
+        <article
+            class="market-card extra-market"
+            data-market-index="6"
+            data-search="Malir"
+        >
+
+            <div class="market-image">
+
+                <img
+                    src="./images/07_Malir.png"
+                    alt="Malir"
+                >
+
+                <span class="status open">
+                    Open
+                </span>
+
+            </div>
+
+
+            <div class="card-body">
+
+                <h3>
+                    Malir
+                </h3>
+
+                <p class="info">
+                    📍 Malir
+                </p>
+
+                <p class="info">
+                    🕐 Friday • 7:00 AM – 1:00 PM
+                </p>
+
+                <div class="farmer-info">
+                    <span>👨‍🌾</span>
+                    Local Farmers
+                </div>
+
+
+                <div class="tags">
+                    <span>Berries</span>
+                    <span>Grains</span>
+                    <span>Fresh</span>
+                </div>
+
+
+                <button
+                    class="details-btn"
+                    type="button"
+                    data-market-index="6"
+                >
+                    View Details
+                </button>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- MARKET 8 -->
+
+        <article
+            class="market-card extra-market"
+            data-market-index="7"
+            data-search="Karachi Farmer Market"
+        >
+
+            <div class="market-image">
+
+                <img
+                    src="./images/02_Karachi_Farmers_Market.png"
+                    alt="Karachi Farmer Market"
+                >
+
+                <span class="status closed">
+                    Closed
+                </span>
+
+            </div>
+
+
+            <div class="card-body">
+
+                <h3>
+                    Karachi Farmer Market
+                </h3>
+
+                <p class="info">
+                    📍 Karachi Farmer Market
+                </p>
+
+                <p class="info">
+                    🕐 Sunday • 8:00 AM – 3:00 PM
+                </p>
+
+                <div class="farmer-info">
+                    <span>👨‍🌾</span>
+                    Local Farmers
+                </div>
+
+
+                <div class="tags">
+                    <span>Flowers</span>
+                    <span>Fruits</span>
+                    <span>Honey</span>
+                </div>
+
+
+                <button
+                    class="details-btn"
+                    type="button"
+                    data-market-index="7"
+                >
+                    View Details
+                </button>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     SEASONAL PRODUCE
+===================================================== -->
+
+<section
+    class="section-block produce-section"
+    id="produce"
+>
+
+    <div class="section-heading">
+
+        <div class="heading-left">
+
+            <div class="leaf-icon">
+                🥕
+            </div>
+
+            <div>
+
+                <h2>
+                    Seasonal Produce
+                </h2>
+
+                <p>
+                    Fresh produce that is currently in season.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <label
+            for="produce-toggle"
+            class="view-all"
+        >
+
+            <span class="view-label">
+                View All →
+            </span>
+
+            <span class="hide-label">
+                Show Less ↑
+            </span>
+
+        </label>
+
+    </div>
+
+
+    <input
+        type="checkbox"
+        id="produce-toggle"
+        class="toggle-input"
+    >
+
+
+    <div class="produce-grid">
+
+
+        <!-- 1 -->
+
+        <article
+            class="produce-card"
+            data-search="tomato tomatoes vegetable vegetables fresh produce"
+        >
+
+            <img
+                src="data:image/jpeg;base64,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"
+                alt="Tomatoes"
+            >
+
+            <div class="produce-info">
+
+                <div class="produce-icon">
+                    🍅
+                </div>
+
+                <div>
+
+                    <h3>
+                        Tomatoes
+                    </h3>
+
+                    <p>
+                        Fresh and locally grown
+                    </p>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- 2 -->
+
+        <article
+            class="produce-card"
+            data-search="strawberry strawberries fruit fruits berries fresh produce"
+        >
+
+            <img
+                src="data:image/jpeg;base64,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"
+                alt="Strawberries"
+            >
+
+            <div class="produce-info">
+
+                <div class="produce-icon">
+                    🍓
+                </div>
+
+                <div>
+
+                    <h3>
+                        Strawberries
+                    </h3>
+
+                    <p>
+                        Sweet seasonal berries
+                    </p>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- 3 -->
+
+        <article
+            class="produce-card"
+            data-search="leafy greens lettuce spinach vegetables fresh produce"
+        >
+
+            <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWCzkLQZrrbhsVOLlhbYfaPwg-BdLgL0Cd1MOJViHyDA&s=10"
+                alt="Leafy Greens"
+            >
+
+            <div class="produce-info">
+
+                <div class="produce-icon">
+                    🥬
+                </div>
+
+                <div>
+
+                    <h3>
+                        Leafy Greens
+                    </h3>
+
+                    <p>
+                        Crisp and healthy greens
+                    </p>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- 4 -->
+
+        <article
+            class="produce-card"
+            data-search="carrot carrots vegetable vegetables fresh produce"
+        >
+
+            <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbw9obIArEdSclJQlk31UBS4yeigUVX381-RXT23pRwA&s=10"
+                alt="Carrots"
+            >
+
+            <div class="produce-info">
+
+                <div class="produce-icon">
+                    🥕
+                </div>
+
+                <div>
+
+                    <h3>
+                        Carrots
+                    </h3>
+
+                    <p>
+                        Naturally sweet and fresh
+                    </p>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- 5 -->
+
+        <article
+            class="produce-card"
+            data-search="blueberry blueberries berries fruit fruits fresh produce"
+        >
+
+            <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfT_2zOixKBNb2wFfxfNal6HHawKr7iqC5EeCnpKNkvg&s=10"
+                alt="Blueberries"
+            >
+
+            <div class="produce-info">
+
+                <div class="produce-icon">
+                    🫐
+                </div>
+
+                <div>
+
+                    <h3>
+                        Blueberries
+                    </h3>
+
+                    <p>
+                        Fresh seasonal berries
+                    </p>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- 6 -->
+
+        <article
+            class="produce-card extra-produce"
+            data-search="bell pepper bell peppers peppers vegetable vegetables fresh produce"
+        >
+
+            <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwPo971JNBz47fqifDbXMiTxQcPRkw8eQLBIM3Nar6xw&s=10"
+                alt="Bell Peppers"
+            >
+
+            <div class="produce-info">
+
+                <div class="produce-icon">
+                    🫑
+                </div>
+
+                <div>
+
+                    <h3>
+                        Bell Peppers
+                    </h3>
+
+                    <p>
+                        Crisp colorful peppers
+                    </p>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- 7 -->
+
+        <article
+            class="produce-card extra-produce"
+            data-search="raspberry raspberries berries fruit fruits fresh produce"
+        >
+
+            <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuak26RyGPm9B2GvgpEozOak4mBIRXqzI-R4VOh98nwg&s=10"
+                alt="Raspberries"
+            >
+
+            <div class="produce-info">
+
+                <div class="produce-icon">
+                    🍓
+                </div>
+
+                <div>
+
+                    <h3>
+                        Raspberries
+                    </h3>
+
+                    <p>
+                        Fresh local berries
+                    </p>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- 8 -->
+
+        <article
+            class="produce-card extra-produce"
+            data-search="spinach leafy greens vegetable vegetables fresh produce"
+        >
+
+            <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLTLsGGBA2YLJCEMIiqFYpyGK0HKRjuPYtIkTjN60npA&s=10"
+                alt="Spinach"
+            >
+
+            <div class="produce-info">
+
+                <div class="produce-icon">
+                    🥬
+                </div>
+
+                <div>
+
+                    <h3>
+                        Spinach
+                    </h3>
+
+                    <p>
+                        Fresh leafy vegetables
+                    </p>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- 9 -->
+
+        <article
+            class="produce-card extra-produce"
+            data-search="sweet potato sweet potatoes potatoes vegetable vegetables fresh produce"
+        >
+
+            <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-9prR97kVPi0ikVl4pcHjHkTroBHSgeM-KDO7NPwEEQ&s=10"
+                alt="Sweet Potatoes"
+            >
+
+            <div class="produce-info">
+
+                <div class="produce-icon">
+                    🍠
+                </div>
+
+                <div>
+
+                    <h3>
+                        Sweet Potatoes
+                    </h3>
+
+                    <p>
+                        Naturally rich and fresh
+                    </p>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- 10 -->
+
+        <article
+            class="produce-card extra-produce"
+            data-search="blackberry blackberries berries fruit fruits fresh produce"
+        >
+
+            <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0bD5r-o1iB9RRYgiYS9TFR_9rTa-wIC2AIvad0Q9LKA&s=10"
+                alt="Blackberries"
+            >
+
+            <div class="produce-info">
+
+                <div class="produce-icon">
+                    🫐
+                </div>
+
+                <div>
+
+                    <h3>
+                        Blackberries
+                    </h3>
+
+                    <p>
+                        Juicy seasonal berries
+                    </p>
+
+                </div>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+</section>
+
+
+
+<!-- =====================================================
+     FARMERS
+===================================================== -->
+
+<section
+    class="farmers-section"
+    id="farmers"
+>
+
+    <div class="section-header">
+
+        <div class="title-row">
+
+            <div class="people-icon">
+                👨‍🌾
+            </div>
+
+            <div class="heading-area">
+
+                <h2>
+                    Meet Local Farmers
+                </h2>
+
+                <p>
+                    Connect with people who grow your food.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <button
+            class="view-all"
+            id="farmerToggle"
+            type="button"
+        >
+
+            <span class="view-all-text">
+                View All →
+            </span>
+
+            <span class="show-less">
+                Show Less ↑
+            </span>
+
+        </button>
+
+    </div>
+
+
+
+    <div class="farmers-container">
+
+
+        <!-- Farmer 1 -->
+
+        <article
+            class="farmer-card"
+            data-search="john miller green valley farm vegetables herbs farmer"
+        >
+
+            <img
+                src="https://i.pravatar.cc/150?img=11"
+                alt="John Miller"
+            >
+
+            <div class="farmer-info">
+
+                <h3>
+                    John Miller
+                </h3>
+
+                <p>
+                    Green Valley Farm
+                </p>
+
+                <div class="tags">
+                    <span>Vegetables</span>
+                    <span>Herbs</span>
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- Farmer 2 -->
+
+        <article
+            class="farmer-card"
+            data-search="sarah johnson maple grove farm fruits berries farmer"
+        >
+
+            <img
+                src="https://i.pravatar.cc/150?img=47"
+                alt="Sarah Johnson"
+            >
+
+            <div class="farmer-info">
+
+                <h3>
+                    Sarah Johnson
+                </h3>
+
+                <p>
+                    Maple Grove Farm
+                </p>
+
+                <div class="tags">
+                    <span>Fruits</span>
+                    <span>Berries</span>
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- Farmer 3 -->
+
+        <article
+            class="farmer-card"
+            data-search="david brown sunrise farm dairy eggs farmer"
+        >
+
+            <img
+                src="https://i.pravatar.cc/150?img=12"
+                alt="David Brown"
+            >
+
+            <div class="farmer-info">
+
+                <h3>
+                    David Brown
+                </h3>
+
+                <p>
+                    Sunrise Farm
+                </p>
+
+                <div class="tags">
+                    <span>Dairy</span>
+                    <span>Eggs</span>
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- Farmer 4 -->
+
+        <article
+            class="farmer-card"
+            data-search="emily davis oakridge farm organic grains farmer"
+        >
+
+            <img
+                src="https://i.pravatar.cc/150?img=32"
+                alt="Emily Davis"
+            >
+
+            <div class="farmer-info">
+
+                <h3>
+                    Emily Davis
+                </h3>
+
+                <p>
+                    Oakridge Farm
+                </p>
+
+                <div class="tags">
+                    <span>Organic</span>
+                    <span>Grains</span>
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- Farmer 5 -->
+
+        <article
+            class="farmer-card extra-farmer"
+            data-search="nivesh naresh country roots farm potatoes carrots farmer"
+        >
+
+            <img
+                src="https://i.pravatar.cc/150?img=68"
+                alt="Nivesh Naresh"
+            >
+
+            <div class="farmer-info">
+
+                <h3>
+                    Nivesh Naresh
+                </h3>
+
+                <p>
+                    Country Roots Farm
+                </p>
+
+                <div class="tags">
+                    <span>Potatoes</span>
+                    <span>Carrots</span>
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- Farmer 6 -->
+
+        <article
+            class="farmer-card extra-farmer"
+            data-search="isabelle moore wild flower farms honey flowers farmer"
+        >
+
+            <img
+                src="https://i.pravatar.cc/150?img=44"
+                alt="Isabelle Moore"
+            >
+
+            <div class="farmer-info">
+
+                <h3>
+                    Isabelle Moore
+                </h3>
+
+                <p>
+                    Wild Flower Farms
+                </p>
+
+                <div class="tags">
+                    <span>Honey</span>
+                    <span>Flowers</span>
+                </div>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     MAP
+===================================================== -->
+
+<section
+    class="map-section"
+    id="location"
+>
+
+    <div class="map-header">
+
+        <div class="map-title">
+
+            <div class="map-title-icon">
+                📍
+            </div>
+
+            <div>
+
+                <h2>
+                    Find Markets on the Map
+                </h2>
+
+                <p>
+                    Explore farmers markets and their locations.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <button
+            class="location-map-btn"
+            id="myLocationBtn"
+            type="button"
+        >
+            📍 Use My Location
+        </button>
+
+    </div>
+
+
+    <div class="map-wrapper">
+
+        <div class="map-box">
+
+            <iframe
+                id="mapFrame"
+                src="https://www.google.com/maps?q=vegetable+markets+Karachi&output=embed"
+                allowfullscreen
+                loading="lazy"
+                referrerpolicy="strict-origin-when-cross-origin">
+            </iframe>
+
+        </div>
+
+    </div>
+
+
+    <div
+        class="map-status"
+        id="mapStatus"
+    >
+        Showing market locations in Karachi.
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     ABOUT
+===================================================== -->
+
+<section
+    class="about-section"
+    id="about"
+>
+
+    <h2>
+        About FreshFind
+    </h2>
+
+    <p>
+        FreshFind helps people discover local farmers markets,
+        seasonal produce and local farmers in one simple place.
+        Explore nearby markets, find fresh products and support
+        the people who grow and provide food to the community.
+    </p>
+
+</section>
+
+
+
+<!-- =====================================================
+     FOOD BANNER
+===================================================== -->
+
+<section class="food-banner">
+
+    <div class="banner-content">
+
+        <h1>
+            Fresh food. Local people. Better communities.
+        </h1>
+
+        <p>
+            Discover seasonal produce and connect with
+            local farmers in your area.
+        </p>
+
+        <a
+            href="#markets"
+            class="learn-btn"
+        >
+            Explore Markets
+        </a>
+
+    </div>
+
+</section>
+
+</main>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer
+    class="fresh-footer"
+    id="contact"
+>
+
+    <div class="footer-container">
+
+
+        <!-- BRAND -->
+
+        <div>
+
+            <a
+                href="#home"
+                class="footer-logo"
+            >
+
+                <div class="leaf-logo">
+                    🌿
+                </div>
+
+                <div>
+
+                    <h2>
+                        FreshFind
+                    </h2>
+
+                    <span>
+                        LOCAL MARKETS • FRESH FOOD
+                    </span>
+
+                </div>
+
+            </a>
+
+
+            <p class="brand-text">
+                Discover local markets, seasonal produce and
+                the farmers who bring fresh food to your community.
+            </p>
+
+
+            <div class="social-icons">
+
+                <a href="#" aria-label="Facebook">
+                    f
+                </a>
+
+                <a href="#" aria-label="Instagram">
+                    ◎
+                </a>
+
+                <a href="#" aria-label="Twitter">
+                    𝕏
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- QUICK LINKS -->
+
+        <div class="footer-column">
+
+            <h3>
+                Quick Links
+            </h3>
+
+            <a href="#home">
+                Home
+            </a>
+
+            <a href="#markets">
+                Markets
+            </a>
+
+            <a href="#produce">
+                Produce
+            </a>
+
+            <a href="#farmers">
+                Farmers
+            </a>
+
+            <a href="#about">
+                About
+            </a>
+
+            <a href="#contact">
+                Contact
+            </a>
+
+        </div>
+
+
+
+        <!-- CONTACT -->
+
+        <div class="footer-column">
+
+            <h3>
+                Contact
+            </h3>
+
+            <a href="mailto:hello@freshfind.com">
+                ✉ hello@freshfind.com
+            </a>
+
+            <a href="tel:+923001234567">
+                ☎ +92 300 1234567
+            </a>
+
+            <a href="#location">
+                📍 Find us on the map
+            </a>
+
+        </div>
+
+
+
+        <!-- NEWSLETTER -->
+
+        <div class="footer-newsletter">
+
+            <h3>
+                Stay Fresh
+            </h3>
+
+            <p>
+                Subscribe for fresh market updates,
+                seasonal produce and local food news.
+            </p>
+
+
+            <form
+                class="newsletter-form"
+                id="newsletterForm"
+            >
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Your email address"
+                    required
+                >
+
+                <button type="submit">
+                    Subscribe
+                </button>
+
+            </form>
+
+
+            <p
+                class="subscribe-message"
+                id="subscribeMessage"
+            ></p>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- FOOTER BOTTOM -->
+
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 FreshFind. All rights reserved.
+        </p>
+
+
+        <div class="footer-policies">
+
+            <a
+                href="javascript:void(0)"
+                onclick="openPolicy('privacy')"
+            >
+                Privacy Policy
+            </a>
+
+            <a
+                href="javascript:void(0)"
+                onclick="openPolicy('terms')"
+            >
+                Terms & Conditions
+            </a>
+
+            <a
+                href="javascript:void(0)"
+                onclick="openPolicy('cookies')"
+            >
+                Cookie Policy
+            </a>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+<!-- =====================================================
+     POLICY MODAL
+===================================================== -->
+
+<div
+    class="policy-modal"
+    id="policyModal"
+>
+
+    <div class="policy-box">
+
+        <button
+            class="close-policy"
+            onclick="closePolicy()"
+            type="button"
+        >
+            ×
+        </button>
+
+
+        <h2 id="policyTitle">
+            Privacy Policy
+        </h2>
+
+
+        <p id="policyText">
+            Your privacy is important to us.
+            FreshFind only uses information necessary
+            to provide and improve the website experience.
+        </p>
+
+    </div>
+
+</div>
+
+
+
+
+
+<!-- =====================================================
+     FRESHFIND JAVASCRIPT
+===================================================== -->
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+
+
+    /* =====================================================
+       NAVIGATION
+    ===================================================== */
+
+    const navLinks = document.querySelectorAll(
+        ".navigation a"
+    );
+
+    navLinks.forEach(function (link) {
+
+        link.addEventListener("click", function () {
+
+            navLinks.forEach(function (item) {
+                item.classList.remove("active");
+            });
+
+            link.classList.add("active");
+
+            const mobileNavigation =
+                document.querySelector(".navigation");
+
+            mobileNavigation.classList.remove(
+                "mobile-open"
+            );
+
+        });
+
+    });
+
+
+
+    /* =====================================================
+       MOBILE MENU
+    ===================================================== */
+
+    const menuBtn =
+        document.getElementById("menuBtn");
+
+    const navigation =
+        document.querySelector(".navigation");
+
+
+    menuBtn.addEventListener("click", function () {
+
+        navigation.classList.toggle(
+            "mobile-open"
+        );
+
+    });
+
+
+
+    /* =====================================================
+       SEARCH ICON
+    ===================================================== */
+
+    const navSearchBtn =
+        document.getElementById("navSearchBtn");
+
+    const searchInput =
+        document.getElementById("location-search");
+
+
+    if (navSearchBtn) {
+
+        navSearchBtn.addEventListener(
+            "click",
+            function () {
+
+                document
+                    .getElementById("home")
+                    .scrollIntoView({
+                        behavior: "smooth"
+                    });
+
+                setTimeout(function () {
+
+                    searchInput.focus();
+
+                }, 500);
+
+            }
+        );
+
+    }
+
+
+
+    /* =====================================================
+       DARK MODE
+    ===================================================== */
+
+    const themeToggle =
+        document.getElementById("themeToggle");
+
+
+    themeToggle.addEventListener(
+        "click",
+        function () {
+
+            document.body.classList.toggle(
+                "dark-mode"
+            );
+
+
+            if (
+                document.body.classList.contains(
+                    "dark-mode"
+                )
+            ) {
+
+                themeToggle.textContent = "☀";
+
+            } else {
+
+                themeToggle.textContent = "☾";
+
+            }
+
+        }
+    );
+
+
+
+    /* =====================================================
+       FARMER VIEW ALL
+    ===================================================== */
+
+    const farmerToggle =
+        document.getElementById("farmerToggle");
+
+    const farmersSection =
+        document.querySelector(".farmers-section");
+
+
+    farmerToggle.addEventListener(
+        "click",
+        function () {
+
+            farmersSection.classList.toggle(
+                "show-all"
+            );
+
+        }
+    );
+
+
+
+    /* =====================================================
+       MARKET MAP DATA
+       Approximate Karachi locations
+    ===================================================== */
+
+    const marketLocations = [
+
+        {
+            name: "Riverside Farmers Market",
+            location: "Clifton",
+            lat: 24.8138,
+            lng: 67.0300
+        },
+
+        {
+            name: "DHA Phase VIII",
+            location: "DHA Phase VIII",
+            lat: 24.7965,
+            lng: 67.0715
+        },
+
+        {
+            name: "Sunset Valley Market",
+            location: "Gulshan-e-Iqbal",
+            lat: 24.9207,
+            lng: 67.0928
+        },
+
+        {
+            name: "Oakridge Farmers Market",
+            location: "North Nazimabad",
+            lat: 24.9512,
+            lng: 67.0348
+        },
+
+        {
+            name: "Greenfield Organic Market",
+            location: "PECHS",
+            lat: 24.8654,
+            lng: 67.0758
+        },
+
+        {
+            name: "Willow Creek Market",
+            location: "Bahadurabad",
+            lat: 24.8815,
+            lng: 67.0644
+        },
+
+        {
+            name: "Harvest Lane Market",
+            location: "Malir",
+            lat: 24.8939,
+            lng: 67.1942
+        },
+
+        {
+            name: "Meadow View Market",
+            location: "Karachi",
+            lat: 24.8607,
+            lng: 67.0011
+        }
+
+    ];
+
+
+    /* =====================================================
+       GOOGLE MAP IFRAME
+       Search locations are shown directly on the map
+    ===================================================== */
+
+    const mapFrame = document.getElementById("mapFrame");
+    const mapStatus = document.getElementById("mapStatus");
+
+
+    function showLocationOnMap(location) {
+
+        const cleanLocation = String(location || "").trim();
+
+        if (!cleanLocation) {
+            return;
+        }
+
+        mapFrame.src =
+            "https://www.google.com/maps?q=" +
+            encodeURIComponent(cleanLocation) +
+            "&output=embed";
+
+        mapStatus.textContent =
+            "Showing map for: " + cleanLocation;
+
+        document
+            .getElementById("location")
+            .scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+            });
+    }
+
+
+    /* =====================================================
+       DISTANCE CALCULATION
+       Used for current-location market suggestions
+    ===================================================== */
+
+    function calculateDistance(lat1, lng1, lat2, lng2) {
+
+        const earthRadius = 6371;
+
+        const dLat =
+            (lat2 - lat1) * Math.PI / 180;
+
+        const dLng =
+            (lng2 - lng1) * Math.PI / 180;
+
+        const a =
+            Math.sin(dLat / 2) *
+            Math.sin(dLat / 2) +
+            Math.cos(lat1 * Math.PI / 180) *
+            Math.cos(lat2 * Math.PI / 180) *
+            Math.sin(dLng / 2) *
+            Math.sin(dLng / 2);
+
+        const c =
+            2 * Math.atan2(
+                Math.sqrt(a),
+                Math.sqrt(1 - a)
+            );
+
+        return earthRadius * c;
+    }
+
+
+    /* =====================================================
+       MARKET FOCUS
+       ===================================================== */
+
+    window.focusMarket = function (index) {
+
+        const market =
+            marketLocations[index];
+
+        if (!market) {
+            return;
+        }
+
+        showLocationOnMap(
+            market.name + ", " +
+            market.location + ", Karachi"
+        );
+
+        mapStatus.textContent =
+            "Showing: " +
+            market.name +
+            " — " +
+            market.location;
+    };
+
+
+    /* =====================================================
+       USE MY LOCATION
+       Finds the user's current location and suggests
+       the nearest market.
+    ===================================================== */
+
+    const myLocationBtn =
+        document.getElementById("myLocationBtn");
+
+
+    myLocationBtn.addEventListener(
+        "click",
+        function () {
+
+            if (!navigator.geolocation) {
+
+                alert(
+                    "Geolocation is not supported by your browser."
+                );
+
+                return;
+            }
+
+
+            myLocationBtn.textContent =
+                "📍 Finding Location...";
+
+
+            navigator.geolocation.getCurrentPosition(
+
+                function (position) {
+
+                    const lat =
+                        position.coords.latitude;
+
+                    const lng =
+                        position.coords.longitude;
+
+
+                    /* Show current coordinates on Google Maps */
+
+                    mapFrame.src =
+                        "https://www.google.com/maps?q=" +
+                        encodeURIComponent(
+                            lat + "," + lng
+                        ) +
+                        "&z=14&output=embed";
+
+
+                    /* Find nearest market */
+
+                    let nearestMarket = null;
+                    let nearestDistance = Infinity;
+
+
+                    marketLocations.forEach(
+                        function (market, index) {
+
+                            const distance =
+                                calculateDistance(
+                                    lat,
+                                    lng,
+                                    market.lat,
+                                    market.lng
+                                );
+
+                            if (
+                                distance <
+                                nearestDistance
+                            ) {
+
+                                nearestDistance =
+                                    distance;
+
+                                nearestMarket = {
+                                    ...market,
+                                    index: index
+                                };
+
+                            }
+
+                        }
+                    );
+
+
+                    if (nearestMarket) {
+
+                        locationResult.innerHTML =
+                            `📍 <strong>Nearest market suggestion:</strong>
+                            <strong>${escapeHTML(nearestMarket.name)}</strong> —
+                            ${escapeHTML(nearestMarket.location)}
+                            (${nearestDistance.toFixed(1)} km away).
+                            <button type="button" class="details-btn"
+                                onclick="focusMarket(${nearestMarket.index})">
+                                View Market
+                            </button>`;
+
+                        locationResult.classList.add(
+                            "show"
+                        );
+
+
+                        mapStatus.textContent =
+                            "Your current location is shown. " +
+                            "Nearest market: " +
+                            nearestMarket.name +
+                            " (" +
+                            nearestDistance.toFixed(1) +
+                            " km away).";
+
+                    } else {
+
+                        mapStatus.textContent =
+                            "Your current location is shown on the map.";
+
+                    }
+
+
+                    myLocationBtn.textContent =
+                        "📍 My Location Found";
+
+
+                    document
+                        .getElementById("location")
+                        .scrollIntoView({
+                            behavior: "smooth",
+                            block: "start"
+                        });
+
+                },
+
+                function () {
+
+                    alert(
+                        "Unable to get your location. Please allow location permission in your browser."
+                    );
+
+
+                    myLocationBtn.textContent =
+                        "📍 Use My Location";
+
+                },
+
+                {
+                    enableHighAccuracy: true,
+                    timeout: 10000,
+                    maximumAge: 60000
+                }
+
+            );
+
+        }
+    );
+
+
+    /* =====================================================
+       DETAILS BUTTONS
+    ===================================================== */
+
+    const detailsButtons =
+        document.querySelectorAll(
+            ".details-btn"
+        );
+
+
+    detailsButtons.forEach(
+        function (button) {
+
+            button.addEventListener(
+                "click",
+                function () {
+
+                    const index =
+                        Number(
+                            button.dataset.marketIndex
+                        );
+
+                    focusMarket(index);
+
+                }
+            );
+
+        }
+    );
+
+
+
+    /* =====================================================
+       SEARCH SYSTEM
+    ===================================================== */
+
+    const searchForm =
+        document.getElementById(
+            "searchForm"
+        );
+
+    const locationResult =
+        document.getElementById(
+            "location-result"
+        );
+
+    const suggestions =
+        document.getElementById(
+            "searchSuggestions"
+        );
+
+
+    const allSearchCards =
+        document.querySelectorAll(
+            ".market-card, .produce-card, .farmer-card"
+        );
+
+
+
+    /* =====================================================
+       SEARCH CARD TYPE
+    ===================================================== */
+
+    function getCardType(card) {
+
+        if (
+            card.classList.contains(
+                "market-card"
+            )
+        ) {
+
+            return "Market";
+
+        }
+
+
+        if (
+            card.classList.contains(
+                "produce-card"
+            )
+        ) {
+
+            return "Produce";
+
+        }
+
+
+        if (
+            card.classList.contains(
+                "farmer-card"
+            )
+        ) {
+
+            return "Farmer";
+
+        }
+
+
+        return "Result";
+
+    }
+
+
+
+    /* =====================================================
+       GET SEARCH TEXT
+    ===================================================== */
+
+    function getSearchText(card) {
+
+        return (
+            card.innerText +
+            " " +
+            (
+                card.dataset.search || ""
+            )
+        )
+        .toLowerCase();
+
+    }
+
+
+
+    /* =====================================================
+       CLEAR SEARCH
+    ===================================================== */
+
+    function clearSearchResults() {
+
+        allSearchCards.forEach(
+            function (card) {
+
+                card.classList.remove(
+                    "search-hidden"
+                );
+
+                card.classList.remove(
+                    "search-highlight"
+                );
+
+                card.classList.remove(
+                    "search-force-show"
+                );
+
+            }
+        );
+
+
+        locationResult.classList.remove(
+            "show"
+        );
+
+        suggestions.classList.remove(
+            "show"
+        );
+
+        suggestions.innerHTML = "";
+
+    }
+
+
+
+    /* =====================================================
+       SHOW SUGGESTIONS WHILE TYPING
+    ===================================================== */
+
+    searchInput.addEventListener(
+        "input",
+        function () {
+
+            const query =
+                searchInput.value
+                    .trim()
+                    .toLowerCase();
+
+
+            suggestions.innerHTML = "";
+
+
+            if (!query) {
+
+                suggestions.classList.remove(
+                    "show"
+                );
+
+                clearSearchResults();
+
+                return;
+
+            }
+
+
+            const matches = [];
+
+
+            allSearchCards.forEach(
+                function (card) {
+
+                    const text =
+                        getSearchText(card);
+
+
+                    if (
+                        text.includes(query)
+                    ) {
+
+                        matches.push(card);
+
+                    }
+
+                }
+            );
+
+
+            matches
+                .slice(0, 7)
+                .forEach(
+                    function (card) {
+
+                        const title =
+                            card.querySelector(
+                                "h3"
+                            );
+
+
+                        const button =
+                            document.createElement(
+                                "button"
+                            );
+
+
+                        button.type = "button";
+
+                        button.className =
+                            "search-suggestion";
+
+
+                        button.innerHTML =
+                            `
+                            <strong>
+                                ${title
+                                    ? title.textContent
+                                    : "Search Result"}
+                            </strong>
+
+                            <span>
+                                ${getCardType(card)}
+                            </span>
+                            `;
+
+
+                        button.addEventListener(
+                            "click",
+                            function () {
+
+                                searchInput.value =
+                                    title
+                                        ? title.textContent
+                                        : query;
+
+                                performSearch(
+                                    searchInput.value
+                                );
+
+                                suggestions.classList.remove(
+                                    "show"
+                                );
+
+                            }
+                        );
+
+
+                        suggestions.appendChild(
+                            button
+                        );
+
+                    }
+                );
+
+
+            if (matches.length > 0) {
+
+                suggestions.classList.add(
+                    "show"
+                );
+
+            } else {
+
+                suggestions.classList.remove(
+                    "show"
+                );
+
+            }
+
+        }
+    );
+
+
+
+    /* =====================================================
+       PERFORM SEARCH
+    ===================================================== */
+
+    function performSearch(query) {
+
+        query =
+            query
+                .trim()
+                .toLowerCase();
+
+
+        if (!query) {
+
+            clearSearchResults();
+
+            return;
+
+        }
+
+
+        let matches = [];
+
+
+        allSearchCards.forEach(
+            function (card) {
+
+                const text =
+                    getSearchText(card);
+
+
+                if (
+                    text.includes(query)
+                ) {
+
+                    matches.push(card);
+
+                    card.classList.remove(
+                        "search-hidden"
+                    );
+
+                    card.classList.add(
+                        "search-highlight"
+                    );
+
+                    card.classList.add(
+                        "search-force-show"
+                    );
+
+                } else {
+
+                    card.classList.add(
+                        "search-hidden"
+                    );
+
+                    card.classList.remove(
+                        "search-highlight"
+                    );
+
+                }
+
+            }
+        );
+
+
+
+        /* =================================================
+           CATEGORY SEARCH
+        ================================================= */
+
+        if (
+            query === "market" ||
+            query === "markets" ||
+            query.includes("farmer market")
+        ) {
+
+            matches = [];
+
+            document
+                .querySelectorAll(
+                    ".market-card"
+                )
+                .forEach(
+                    function (card) {
+
+                        matches.push(card);
+
+                        card.classList.remove(
+                            "search-hidden"
+                        );
+
+                        card.classList.add(
+                            "search-highlight"
+                        );
+
+                        card.classList.add(
+                            "search-force-show"
+                        );
+
+                    }
+                );
+
+        }
+
+
+
+        if (
+            query === "produce" ||
+            query === "product" ||
+            query === "products"
+        ) {
+
+            matches = [];
+
+            document
+                .querySelectorAll(
+                    ".produce-card"
+                )
+                .forEach(
+                    function (card) {
+
+                        matches.push(card);
+
+                        card.classList.remove(
+                            "search-hidden"
+                        );
+
+                        card.classList.add(
+                            "search-highlight"
+                        );
+
+                        card.classList.add(
+                            "search-force-show"
+                        );
+
+                    }
+                );
+
+        }
+
+
+
+        if (
+            query === "farmer" ||
+            query === "farmers"
+        ) {
+
+            matches = [];
+
+            document
+                .querySelectorAll(
+                    ".farmer-card"
+                )
+                .forEach(
+                    function (card) {
+
+                        matches.push(card);
+
+                        card.classList.remove(
+                            "search-hidden"
+                        );
+
+                        card.classList.add(
+                            "search-highlight"
+                        );
+
+                        card.classList.add(
+                            "search-force-show"
+                        );
+
+                    }
+                );
+
+        }
+
+
+
+        /* =================================================
+           SHOW SEARCHED LOCATION ON GOOGLE MAP
+        ================================================= */
+
+        showLocationOnMap(query);
+
+
+        /* =================================================
+           RESULT MESSAGE
+        ================================================= */
+
+        if (matches.length === 0) {
+
+            locationResult.innerHTML =
+                "No results found for <strong>" +
+                escapeHTML(query) +
+                "</strong>.";
+
+            locationResult.classList.add(
+                "show"
+            );
+
+
+            return;
+
+        }
+
+
+
+        locationResult.innerHTML =
+            "Found <strong>" +
+            matches.length +
+            "</strong> result" +
+            (
+                matches.length > 1
+                    ? "s"
+                    : ""
+            ) +
+            " for <strong>" +
+            escapeHTML(query) +
+            "</strong>.";
+
+        locationResult.classList.add(
+            "show"
+        );
+
+
+
+        /* =================================================
+           SCROLL TO FIRST RESULT
+        ================================================= */
+
+        const first =
+            matches[0];
+
+
+        setTimeout(
+            function () {
+
+                first.scrollIntoView({
+                    behavior: "smooth",
+                    block: "center"
+                });
+
+            },
+            150
+        );
+
+
+
+        /* =================================================
+           IF MARKET → OPEN MAP
+        ================================================= */
+
+        if (
+            first.classList.contains(
+                "market-card"
+            )
+        ) {
+
+            const index =
+                Number(
+                    first.dataset.marketIndex
+                );
+
+
+            setTimeout(
+                function () {
+
+                    focusMarket(index);
+
+                },
+                700
+            );
+
+        }
+
+    }
+
+
+
+    /* =====================================================
+       SEARCH FORM
+    ===================================================== */
+
+    searchForm.addEventListener(
+        "submit",
+        function (event) {
+
+            event.preventDefault();
+
+            performSearch(
+                searchInput.value
+            );
+
+            suggestions.classList.remove(
+                "show"
+            );
+
+        }
+    );
+
+
+
+    /* =====================================================
+       CLOSE SUGGESTIONS
+    ===================================================== */
+
+    document.addEventListener(
+        "click",
+        function (event) {
+
+            if (
+                !event.target.closest(
+                    ".search-results-box"
+                )
+            ) {
+
+                suggestions.classList.remove(
+                    "show"
+                );
+
+            }
+
+        }
+    );
+
+
+
+    /* =====================================================
+       HTML ESCAPE
+    ===================================================== */
+
+    function escapeHTML(text) {
+
+        const div =
+            document.createElement(
+                "div"
+            );
+
+        div.textContent = text;
+
+        return div.innerHTML;
+
+    }
+
+
+
+    /* =====================================================
+       NEWSLETTER
+    ===================================================== */
+
+    const newsletterForm =
+        document.getElementById(
+            "newsletterForm"
+        );
+
+    const subscribeMessage =
+        document.getElementById(
+            "subscribeMessage"
+        );
+
+
+    newsletterForm.addEventListener(
+        "submit",
+        function (event) {
+
+            event.preventDefault();
+
+
+            const email =
+                document.getElementById(
+                    "email"
+                ).value;
+
+
+            if (!email) {
+                return;
+            }
+
+
+            subscribeMessage.textContent =
+                "✓ Thanks! You are subscribed.";
+
+
+            newsletterForm.reset();
+
+        }
+    );
+
+
+
+    /* =====================================================
+       POLICY MODAL
+    ===================================================== */
+
+    window.openPolicy =
+        function (type) {
+
+            const modal =
+                document.getElementById(
+                    "policyModal"
+                );
+
+            const title =
+                document.getElementById(
+                    "policyTitle"
+                );
+
+            const text =
+                document.getElementById(
+                    "policyText"
+                );
+
+
+            if (type === "privacy") {
+
+                title.textContent =
+                    "Privacy Policy";
+
+                text.textContent =
+                    "FreshFind respects your privacy. Information provided through the website is used only to improve your experience and provide requested services.";
+
+            }
+
+
+            else if (type === "terms") {
+
+                title.textContent =
+                    "Terms & Conditions";
+
+                text.textContent =
+                    "By using FreshFind, you agree to use the website responsibly and understand that market information may change over time.";
+
+            }
+
+
+            else if (type === "cookies") {
+
+                title.textContent =
+                    "Cookie Policy";
+
+                text.textContent =
+                    "FreshFind may use basic browser storage and cookies to improve website functionality and remember preferences.";
+
+            }
+
+
+            modal.classList.add(
+                "show"
+            );
+
+        };
+
+
+
+    window.closePolicy =
+        function () {
+
+            document
+                .getElementById(
+                    "policyModal"
+                )
+                .classList.remove(
+                    "show"
+                );
+
+        };
+
+
+
+    /* =====================================================
+       CLOSE MODAL BY CLICKING OUTSIDE
+    ===================================================== */
+
+    document
+        .getElementById(
+            "policyModal"
+        )
+        .addEventListener(
+            "click",
+            function (event) {
+
+                if (
+                    event.target === this
+                ) {
+
+                    closePolicy();
+
+                }
+
+            }
+        );
+
+
+
+    /* =====================================================
+       ESCAPE KEY
+    ===================================================== */
+
+    document.addEventListener(
+        "keydown",
+        function (event) {
+
+            if (
+                event.key === "Escape"
+            ) {
+
+                closePolicy();
+
+                suggestions.classList.remove(
+                    "show"
+                );
+
+            }
+
+        }
+    );
+
+
+});
+
+</script>
+
+</body>
+</html>
+<!-- =====================================================
+     FRESHFIND AI CHATBOT
+===================================================== -->
+
+<div class="chatbot-wrapper">
+
+    <!-- Floating Button -->
+    <button class="chatbot-toggle" id="chatbotToggle" aria-label="Open FreshFind AI">
+        💬
+    </button>
+
+    <!-- Chatbot Window -->
+    <div class="chatbot-box" id="chatbotBox">
+
+        <!-- Header -->
+        <div class="chatbot-header">
+
+            <div class="chatbot-title">
+                <div class="chatbot-avatar">🌱</div>
+
+                <div>
+                    <h3>FreshFind AI</h3>
+                    <span>
+                        <i></i> Online
+                    </span>
+                </div>
+            </div>
+
+            <div class="chatbot-actions">
+                <button id="clearChat" title="Clear chat">↻</button>
+                <button id="closeChat" title="Close">×</button>
+            </div>
+
+        </div>
+
+
+        <!-- Chat Messages -->
+        <div class="chatbot-messages" id="chatMessages">
+
+            <!-- Welcome Message -->
+            <div class="bot-message">
+                <div class="message-avatar">🌱</div>
+
+                <div class="message-content">
+                    <p>
+                        Hi! 👋 I'm <strong>FreshFind AI</strong>.
+                    </p>
+
+                    <p>
+                        I can help you find local farmers markets,
+                        seasonal produce and nearby farmers.
+                    </p>
+
+                    <span class="message-time">Just now</span>
+                </div>
+            </div>
+
+            <!-- Built-in Questions -->
+            <div class="quick-question-title">
+                You can ask me:
+            </div>
+
+            <div class="quick-questions">
+
+                <button class="quick-question"
+                        data-question="What farmers markets are available?">
+                    🛒 Farmers markets
+                </button>
+
+                <button class="quick-question"
+                        data-question="What seasonal produce is available?">
+                    🥕 Seasonal produce
+                </button>
+
+                <button class="quick-question"
+                        data-question="How can I find nearby farmers?">
+                    👨‍🌾 Nearby farmers
+                </button>
+
+                <button class="quick-question"
+                        data-question="How does FreshFind work?">
+                    ℹ️ How FreshFind works
+                </button>
+
+                <button class="quick-question"
+                        data-question="What produce is available in summer?">
+                    ☀️ Summer produce
+                </button>
+
+                <button class="quick-question"
+                        data-question="How can I use my location?">
+                    📍 Use my location
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- Typing Indicator -->
+        <div class="chatbot-typing" id="chatTyping">
+
+            <div class="typing-avatar">🌱</div>
+
+            <div class="typing-dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+        </div>
+
+
+        <!-- Input Area -->
+        <div class="chatbot-input-area">
+
+            <input
+                type="text"
+                id="chatInput"
+                placeholder="Ask FreshFind AI..."
+                autocomplete="off"
+            >
+
+            <button id="sendChat" aria-label="Send message">
+                ➤
+            </button>
+
+        </div>
+
+        <div class="chatbot-footer">
+            FreshFind • Local Markets. Fresh Food.
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =====================================================
+     CHATBOT JAVASCRIPT
+===================================================== -->
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const chatbotToggle = document.getElementById("chatbotToggle");
+    const chatbotBox = document.getElementById("chatbotBox");
+    const closeChat = document.getElementById("closeChat");
+    const clearChat = document.getElementById("clearChat");
+
+    const chatInput = document.getElementById("chatInput");
+    const sendChat = document.getElementById("sendChat");
+
+    const chatMessages = document.getElementById("chatMessages");
+    const chatTyping = document.getElementById("chatTyping");
+
+    const quickQuestions =
+        document.querySelectorAll(".quick-question");
+
+
+    /* =====================================================
+       OPEN CHATBOT
+    ===================================================== */
+
+    chatbotToggle.addEventListener("click", function () {
+
+        chatbotBox.classList.toggle("active");
+
+        if (chatbotBox.classList.contains("active")) {
+            setTimeout(() => {
+                chatInput.focus();
+            }, 200);
+        }
+
+    });
+
+
+    /* =====================================================
+       CLOSE CHATBOT
+    ===================================================== */
+
+    closeChat.addEventListener("click", function () {
+        chatbotBox.classList.remove("active");
+    });
+
+
+    /* =====================================================
+       CLEAR CHAT
+    ===================================================== */
+
+    clearChat.addEventListener("click", function () {
+
+        chatMessages.innerHTML = `
+
+            <div class="bot-message">
+
+                <div class="message-avatar">🌱</div>
+
+                <div class="message-content">
+
+                    <p>
+                        Hi! 👋 I'm <strong>FreshFind AI</strong>.
+                    </p>
+
+                    <p>
+                        How can I help you today?
+                    </p>
+
+                    <span class="message-time">
+                        Just now
+                    </span>
+
+                </div>
+
+            </div>
+
+            <div class="quick-question-title">
+                You can ask me:
+            </div>
+
+            <div class="quick-questions">
+
+                <button class="quick-question"
+                        data-question="What farmers markets are available?">
+                    🛒 Farmers markets
+                </button>
+
+                <button class="quick-question"
+                        data-question="What seasonal produce is available?">
+                    🥕 Seasonal produce
+                </button>
+
+                <button class="quick-question"
+                        data-question="How can I find nearby farmers?">
+                    👨‍🌾 Nearby farmers
+                </button>
+
+                <button class="quick-question"
+                        data-question="How does FreshFind work?">
+                    ℹ️ How FreshFind works
+                </button>
+
+            </div>
+        `;
+
+        attachQuickQuestionEvents();
+
+    });
+
+
+    /* =====================================================
+       SEND MESSAGE
+    ===================================================== */
+
+    function sendMessage() {
+
+        const message = chatInput.value.trim();
+
+        if (message === "") {
+            return;
+        }
+
+        addUserMessage(message);
+
+        chatInput.value = "";
+
+        showTyping();
+
+        setTimeout(function () {
+
+            hideTyping();
+
+            const response = getBotResponse(message);
+
+            addBotMessage(response);
+
+        }, 700);
+
+    }
+
+
+    /* =====================================================
+       SEND BUTTON
+    ===================================================== */
+
+    sendChat.addEventListener("click", function () {
+        sendMessage();
+    });
+
+
+    /* =====================================================
+       ENTER KEY
+    ===================================================== */
+
+    chatInput.addEventListener("keydown", function (event) {
+
+        if (event.key === "Enter") {
+            event.preventDefault();
+            sendMessage();
+        }
+
+    });
+
+
+    /* =====================================================
+       USER MESSAGE
+    ===================================================== */
+
+    function addUserMessage(message) {
+
+        const messageDiv = document.createElement("div");
+
+        messageDiv.className = "user-message";
+
+        messageDiv.innerHTML = `
+
+            <div class="message-content">
+
+                <p>${escapeHTML(message)}</p>
+
+                <span class="message-time">
+                    Just now
+                </span>
+
+            </div>
+
+        `;
+
+        chatMessages.appendChild(messageDiv);
+
+        scrollChat();
+
+    }
+
+
+    /* =====================================================
+       BOT MESSAGE
+    ===================================================== */
+
+    function addBotMessage(message) {
+
+        const messageDiv = document.createElement("div");
+
+        messageDiv.className = "bot-message";
+
+        messageDiv.innerHTML = `
+
+            <div class="message-avatar">
+                🌱
+            </div>
+
+            <div class="message-content">
+
+                <p>${message}</p>
+
+                <span class="message-time">
+                    Just now
+                </span>
+
+            </div>
+
+        `;
+
+        chatMessages.appendChild(messageDiv);
+
+        scrollChat();
+
+    }
+
+
+    /* =====================================================
+       TYPING
+    ===================================================== */
+
+    function showTyping() {
+        chatTyping.classList.add("active");
+        scrollChat();
+    }
+
+    function hideTyping() {
+        chatTyping.classList.remove("active");
+    }
+
+
+    /* =====================================================
+       SCROLL CHAT
+    ===================================================== */
+
+    function scrollChat() {
+
+        chatMessages.scrollTop =
+            chatMessages.scrollHeight;
+
+    }
+
+
+    /* =====================================================
+       BOT RESPONSE SYSTEM
+    ===================================================== */
+
+    function getBotResponse(message) {
+
+        const text = message.toLowerCase();
+
+
+        /* GREETING */
+
+        if (
+            text.includes("hello") ||
+            text.includes("hi") ||
+            text.includes("hey")
+        ) {
+
+            return `
+                <p>
+                    Hello! 👋 Welcome to <strong>FreshFind</strong>.
+                </p>
+
+                <p>
+                    I can help you explore farmers markets,
+                    seasonal produce and local farmers.
+                </p>
+            `;
+
+        }
+
+
+        /* MARKETS */
+
+        if (
+            text.includes("market") ||
+            text.includes("markets")
+        ) {
+
+            return `
+                <p>
+                    🛒 <strong>Farmers Markets</strong>
+                </p>
+
+                <p>
+                    FreshFind helps you discover local farmers
+                    markets where you can find fresh and locally
+                    produced food.
+                </p>
+
+                <p>
+                    You can visit the
+                    <strong>Markets</strong> section above
+                    to explore available markets.
+                </p>
+
+                <button
+                    class="bot-action-btn"
+                    onclick="goToSection('markets')">
+                    View Markets →
+                </button>
+            `;
+
+        }
+
+
+        /* PRODUCE */
+
+        if (
+            text.includes("produce") ||
+            text.includes("vegetable") ||
+            text.includes("fruit")
+        ) {
+
+            return `
+                <p>
+                    🥕 <strong>Seasonal Produce</strong>
+                </p>
+
+                <p>
+                    FreshFind displays seasonal fruits and
+                    vegetables so you can discover what is
+                    naturally available during different seasons.
+                </p>
+
+                <button
+                    class="bot-action-btn"
+                    onclick="goToSection('produce')">
+                    Explore Produce →
+                </button>
+            `;
+
+        }
+
+
+        /* FARMERS */
+
+        if (
+            text.includes("farmer") ||
+            text.includes("grower")
+        ) {
+
+            return `
+                <p>
+                    👨‍🌾 <strong>Local Farmers</strong>
+                </p>
+
+                <p>
+                    You can explore local farmers and growers
+                    through the <strong>Farmers</strong> section.
+                </p>
+
+                <button
+                    class="bot-action-btn"
+                    onclick="goToSection('farmers')">
+                    Find Farmers →
+                </button>
+            `;
+
+        }
+
+
+        /* LOCATION */
+
+        if (
+            text.includes("location") ||
+            text.includes("nearby") ||
+            text.includes("near me")
+        ) {
+
+            return `
+                <p>
+                    📍 <strong>Find Nearby Markets</strong>
+                </p>
+
+                <p>
+                    You can use the
+                    <strong>Use My Location</strong>
+                    button on the map to find markets near you.
+                </p>
+
+                <button
+                    class="bot-action-btn"
+                    onclick="goToSection('location')">
+                    Open Map →
+                </button>
+            `;
+
+        }
+
+
+        /* SUMMER */
+
+        if (
+            text.includes("summer")
+        ) {
+
+            return `
+                <p>
+                    ☀️ <strong>Summer Produce</strong>
+                </p>
+
+                <p>
+                    Common summer produce includes:
+                </p>
+
+                <ul>
+                    <li>🍉 Watermelon</li>
+                    <li>🥭 Mango</li>
+                    <li>🍅 Tomato</li>
+                    <li>🥒 Cucumber</li>
+                    <li>🌽 Corn</li>
+                    <li>🍑 Peaches</li>
+                </ul>
+
+                <p>
+                    Availability can vary by location and season.
+                </p>
+            `;
+
+        }
+
+
+        /* HOW FRESHFIND WORKS */
+
+        if (
+            text.includes("how freshfind") ||
+            text.includes("how does freshfind") ||
+            text.includes("how it works")
+        ) {
+
+            return `
+                <p>
+                    🌱 <strong>How FreshFind Works</strong>
+                </p>
+
+                <p>
+                    FreshFind connects people with local food
+                    sources.
+                </p>
+
+                <p>
+                    You can:
+                </p>
+
+                <ul>
+                    <li>🛒 Discover farmers markets</li>
+                    <li>🥕 Explore seasonal produce</li>
+                    <li>👨‍🌾 Find local farmers</li>
+                    <li>📍 Explore nearby locations</li>
+                </ul>
+
+                <button
+                    class="bot-action-btn"
+                    onclick="goToSection('about')">
+                    Learn More →
+                </button>
+            `;
+
+        }
+
+
+        /* ABOUT */
+
+        if (
+            text.includes("about") ||
+            text.includes("freshfind")
+        ) {
+
+            return `
+                <p>
+                    🌱 <strong>FreshFind</strong> is a local
+                    food discovery platform.
+                </p>
+
+                <p>
+                    Our goal is to make it easier for people
+                    to discover farmers markets, local growers
+                    and seasonal produce.
+                </p>
+
+                <button
+                    class="bot-action-btn"
+                    onclick="goToSection('about')">
+                    About FreshFind →
+                </button>
+            `;
+
+        }
+
+
+        /* CONTACT */
+
+        if (
+            text.includes("contact") ||
+            text.includes("email") ||
+            text.includes("phone")
+        ) {
+
+            return `
+                <p>
+                    📞 You can find our contact information
+                    in the <strong>Contact</strong> section
+                    at the bottom of the website.
+                </p>
+
+                <button
+                    class="bot-action-btn"
+                    onclick="goToSection('contact')">
+                    Contact Us →
+                </button>
+            `;
+
+        }
+
+
+        /* THANK YOU */
+
+        if (
+            text.includes("thank")
+        ) {
+
+            return `
+                <p>
+                    You're welcome! 😊🌱
+                </p>
+
+                <p>
+                    I'm always here if you need help finding
+                    markets, farmers or fresh produce.
+                </p>
+            `;
+
+        }
+
+
+        /* DEFAULT */
+
+        return `
+            <p>
+                🌱 I'm not sure I understood that.
+            </p>
+
+            <p>
+                Try asking me something like:
+            </p>
+
+            <ul>
+                <li>What farmers markets are available?</li>
+                <li>What seasonal produce is available?</li>
+                <li>How can I find nearby farmers?</li>
+                <li>What produce is available in summer?</li>
+                <li>How does FreshFind work?</li>
+            </ul>
+        `;
+
+    }
+
+
+    /* =====================================================
+       QUICK QUESTIONS
+    ===================================================== */
+
+    function attachQuickQuestionEvents() {
+
+        document
+            .querySelectorAll(".quick-question")
+            .forEach(function (button) {
+
+                button.addEventListener("click", function () {
+
+                    const question =
+                        this.getAttribute("data-question");
+
+                    chatInput.value = question;
+
+                    sendMessage();
+
+                });
+
+            });
+
+    }
+
+    attachQuickQuestionEvents();
+
+
+    /* =====================================================
+       SAFE HTML
+    ===================================================== */
+
+    function escapeHTML(text) {
+
+        const div = document.createElement("div");
+
+        div.textContent = text;
+
+        return div.innerHTML;
+
+    }
+
+});
+
+
+/* =====================================================
+   NAVIGATION FROM CHATBOT
+===================================================== */
+
+function goToSection(sectionId) {
+
+    const section =
+        document.getElementById(sectionId);
+
+    if (section) {
+
+        section.scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+        });
+
+    }
+
+}
+
+</script>

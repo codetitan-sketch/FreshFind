@@ -1,0 +1,3042 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FreshFind – Local Markets. Fresh Food.</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- =====================================================
+     NAVBAR
+===================================================== -->
+
+<header class="navbar" id="topNavbar">
+
+    <a href="#home" class="logo">
+
+        <div class="logo-icon">
+            🌿
+        </div>
+
+        <div class="logo-text">
+            <strong>FRESHFIND</strong>
+            <span>LOCAL MARKETS • FRESH FOOD</span>
+        </div>
+
+    </a>
+
+
+    <nav class="navigation" id="mainNav" aria-label="Main Navigation">
+
+        <a href="#home" class="active">Home</a>
+
+        <a href="#markets">Markets</a>
+
+        <a href="#produce">Produce</a>
+
+        <a href="#farmers">Farmers</a>
+
+        <a href="#about">About</a>
+
+        <a href="#contact">Contact</a>
+
+        <div class="mobile-nav-actions">
+            <button class="mobile-nav-btn" id="mobileBookmarkBtn" type="button">
+                ★ Saved Markets (<span class="bookmark-mobile-count">0</span>)
+            </button>
+            <a href="#markets" class="mobile-nav-explore">
+                Explore Markets →
+            </a>
+        </div>
+
+    </nav>
+
+
+    <div class="nav-right">
+
+        <!-- Search -->
+        <button
+            class="icon-btn"
+            id="navSearchBtn"
+            title="Search"
+            aria-label="Search markets and produce"
+            type="button"
+        >
+            ⌕
+        </button>
+
+        <!-- Bookmarks -->
+        <button
+            class="icon-btn nav-bookmark-btn"
+            id="navBookmarkBtn"
+            title="Saved Markets"
+            aria-label="View saved markets"
+            type="button"
+        >
+            ★
+            <span class="bookmark-badge" id="bookmarkNavBadge">0</span>
+        </button>
+
+        <!-- Dark Mode -->
+        <button
+            class="icon-btn"
+            id="themeToggle"
+            title="Toggle theme"
+            aria-label="Toggle dark mode"
+            type="button"
+        >
+            ☾
+        </button>
+
+
+        <a href="#markets" class="get-started">
+            Explore
+            <span>→</span>
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button
+            class="menu-btn"
+            id="menuBtn"
+            type="button"
+            aria-label="Toggle navigation menu"
+            aria-expanded="false"
+            aria-controls="mainNav"
+        >
+            ☰
+        </button>
+
+    </div>
+
+</header>
+
+
+<!-- =====================================================
+     MAIN
+===================================================== -->
+
+<main>
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section class="hero" id="home">
+
+    <div class="hero-background"></div>
+
+    <div class="hero-overlay"></div>
+
+
+    <div class="hero-content">
+
+        <div class="hero-badge">
+            <span></span>
+            FRESH • LOCAL • COMMUNITY
+        </div>
+
+
+        <h1>
+            Find fresh food
+            <span>near you.</span>
+        </h1>
+
+
+        <p class="description">
+            Discover local farmers markets, fresh seasonal produce,
+            and the people who grow your food.
+        </p>
+
+
+        <!-- SEARCH & FIND MARKET AREA -->
+
+        <div class="search-results-box">
+
+            <form class="search-box" id="searchForm" role="search">
+
+                <!-- Search Input Group -->
+                <div class="search-input-group">
+                    <div class="search-icon">
+                        ⌕
+                    </div>
+
+                    <input
+                        id="location-search"
+                        type="text"
+                        placeholder="Search markets, produce or farmers..."
+                        autocomplete="off"
+                        aria-label="Search markets, produce or farmers"
+                    >
+                </div>
+
+                <!-- Responsive Filters: Area, Day, Produce -->
+                <div class="search-filters" id="searchFilters">
+                    <div class="filter-select-wrap">
+                        <label for="areaFilter" class="filter-label">Area</label>
+                        <select id="areaFilter" aria-label="Filter by Area">
+                            <option value="">All Areas</option>
+                            <option value="Clifton">Clifton</option>
+                            <option value="DHA">DHA</option>
+                            <option value="Gulshan">Gulshan</option>
+                            <option value="Nazimabad">Nazimabad</option>
+                            <option value="PECHS">PECHS</option>
+                            <option value="Bahadurabad">Bahadurabad</option>
+                            <option value="Malir">Malir</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-select-wrap">
+                        <label for="dayFilter" class="filter-label">Day</label>
+                        <select id="dayFilter" aria-label="Filter by Day">
+                            <option value="">All Days</option>
+                            <option value="Saturday">Saturday</option>
+                            <option value="Sunday">Sunday</option>
+                            <option value="Monday">Monday</option>
+                            <option value="Tuesday">Tuesday</option>
+                            <option value="Wednesday">Wednesday</option>
+                            <option value="Thursday">Thursday</option>
+                            <option value="Friday">Friday</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-select-wrap">
+                        <label for="produceFilter" class="filter-label">Produce</label>
+                        <select id="produceFilter" aria-label="Filter by Produce">
+                            <option value="">All Produce</option>
+                            <option value="Vegetables">Vegetables</option>
+                            <option value="Fruits">Fruits</option>
+                            <option value="Herbs">Herbs</option>
+                            <option value="Organic">Organic</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Search & Reset Actions -->
+                <div class="search-actions">
+                    <button type="submit" class="search-submit-btn" aria-label="Search">
+                        Search
+                        <span>→</span>
+                    </button>
+                    <button type="button" id="clearFiltersBtn" class="clear-filters-btn" title="Reset search and filters">
+                        Reset
+                    </button>
+                </div>
+
+            </form>
+
+
+            <!-- Search Suggestions -->
+
+            <div
+                id="searchSuggestions"
+                class="search-suggestions"
+            ></div>
+
+        </div>
+
+
+        <!-- Search Result -->
+
+        <div
+            id="location-result"
+            class="location-result"
+        ></div>
+
+
+        <!-- QUICK FEATURES -->
+
+        <div class="quick-features">
+
+            <div class="feature">
+
+                <div class="feature-icon">
+                    🥬
+                </div>
+
+                <div class="feature-text">
+                    <strong>Fresh Produce</strong>
+                    <span>Locally grown</span>
+                </div>
+
+            </div>
+
+
+            <div class="feature">
+
+                <div class="feature-icon">
+                    📍
+                </div>
+
+                <div class="feature-text">
+                    <strong>Nearby Markets</strong>
+                    <span>Find local sellers</span>
+                </div>
+
+            </div>
+
+
+            <div class="feature">
+
+                <div class="feature-icon">
+                    👨‍🌾
+                </div>
+
+                <div class="feature-text">
+                    <strong>Local Farmers</strong>
+                    <span>Meet the growers</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="scroll-indicator">
+        <span></span>
+        Scroll to explore
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     MARKETS + PRODUCE
+===================================================== -->
+
+<section class="market-page">
+
+
+<!-- =====================================================
+     MARKETS
+===================================================== -->
+
+<section
+    class="section-block"
+    id="markets"
+>
+
+    <div class="section-heading">
+
+        <div class="heading-left">
+
+            <div class="leaf-icon">
+                🌿
+            </div>
+
+            <div>
+
+                <h2>
+                    Nearby Farmers Markets
+                </h2>
+
+                <p>
+                    Discover fresh local markets around your community.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <label
+            for="markets-toggle"
+            class="view-all"
+        >
+            <span class="view-label">
+                View All →
+            </span>
+
+            <span class="hide-label">
+                Show Less ↑
+            </span>
+        </label>
+
+    </div>
+
+
+    <input
+        type="checkbox"
+        id="markets-toggle"
+        class="toggle-input"
+    >
+
+
+    <div class="market-grid" id="marketGrid">
+        <div class="market-loading" id="marketLoading">Loading fresh markets...</div>
+    </div>
+</section>
+
+
+
+<!-- =====================================================
+     SEASONAL PRODUCE
+===================================================== -->
+
+<section
+    class="section-block produce-section"
+    id="produce"
+>
+
+    <div class="section-heading">
+
+        <div class="heading-left">
+
+            <div class="leaf-icon">
+                🥕
+            </div>
+
+            <div>
+
+                <h2>
+                    Seasonal Produce
+                </h2>
+
+                <p>
+                    Fresh produce that is currently in season.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <label
+            for="produce-toggle"
+            class="view-all"
+        >
+
+            <span class="view-label">
+                View All →
+            </span>
+
+            <span class="hide-label">
+                Show Less ↑
+            </span>
+
+        </label>
+
+    </div>
+
+
+    <input
+        type="checkbox"
+        id="produce-toggle"
+        class="toggle-input"
+    >
+
+
+    <div class="produce-grid" id="produceGrid">
+        <div class="market-loading" id="produceLoading">Loading seasonal produce...</div>
+    </div>
+</section>
+
+</section>
+
+
+
+<!-- =====================================================
+     FARMERS
+===================================================== -->
+
+<section
+    class="farmers-section"
+    id="farmers"
+>
+
+    <div class="section-header">
+
+        <div class="title-row">
+
+            <div class="people-icon">
+                👨‍🌾
+            </div>
+
+            <div class="heading-area">
+
+                <h2>
+                    Meet Local Farmers
+                </h2>
+
+                <p>
+                    Connect with people who grow your food.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <button
+            class="view-all"
+            id="farmerToggle"
+            type="button"
+        >
+
+            <span class="view-all-text">
+                View All →
+            </span>
+
+            <span class="show-less">
+                Show Less ↑
+            </span>
+
+        </button>
+
+    </div>
+
+
+
+    <div class="farmers-container" id="farmersContainer">
+        <div class="market-loading" id="farmersLoading">Loading local farmers...</div>
+    </div>
+</section>
+
+
+
+<!-- =====================================================
+     MAP
+===================================================== -->
+
+<section
+    class="map-section"
+    id="location"
+>
+
+    <div class="map-header">
+
+        <div class="map-title">
+
+            <div class="map-title-icon">
+                📍
+            </div>
+
+            <div>
+
+                <h2>
+                    Find Markets on the Map
+                </h2>
+
+                <p>
+                    Explore farmers markets and their locations.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <button
+            class="location-map-btn"
+            id="myLocationBtn"
+            type="button"
+        >
+            📍 Use My Location
+        </button>
+
+    </div>
+
+
+    <div class="map-wrapper">
+
+        <div class="map-box">
+
+            <iframe
+                id="mapFrame"
+                title="Google Maps displaying Karachi Farmers Markets"
+                src="https://www.google.com/maps?q=vegetable+markets+Karachi&output=embed"
+                allowfullscreen
+                loading="lazy"
+                referrerpolicy="strict-origin-when-cross-origin">
+            </iframe>
+
+        </div>
+
+    </div>
+
+
+    <div
+        class="map-status"
+        id="mapStatus"
+    >
+        Showing market locations in Karachi.
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     ABOUT
+===================================================== -->
+
+<section
+    class="about-section"
+    id="about"
+>
+
+    <h2>
+        About FreshFind
+    </h2>
+
+    <p>
+        FreshFind helps people discover local farmers markets,
+        seasonal produce and local farmers in one simple place.
+        Explore nearby markets, find fresh products and support
+        the people who grow and provide food to the community.
+    </p>
+
+</section>
+
+
+
+<!-- =====================================================
+     FOOD BANNER
+===================================================== -->
+
+<section class="food-banner">
+
+    <div class="banner-content">
+
+        <h1>
+            Fresh food. Local people. Better communities.
+        </h1>
+
+        <p>
+            Discover seasonal produce and connect with
+            local farmers in your area.
+        </p>
+
+        <a
+            href="#markets"
+            class="learn-btn"
+        >
+            Explore Markets
+        </a>
+
+    </div>
+
+</section>
+
+</main>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer
+    class="fresh-footer"
+    id="contact"
+>
+
+    <div class="footer-container">
+
+
+        <!-- BRAND -->
+
+        <div>
+
+            <a
+                href="#home"
+                class="footer-logo"
+            >
+
+                <div class="leaf-logo">
+                    🌿
+                </div>
+
+                <div>
+
+                    <h2>
+                        FreshFind
+                    </h2>
+
+                    <span>
+                        LOCAL MARKETS • FRESH FOOD
+                    </span>
+
+                </div>
+
+            </a>
+
+            <p class="brand-text" id="footerBrandText">
+                Discover local markets, seasonal produce and
+                the farmers who bring fresh food to your community.
+            </p>
+
+
+            <div class="social-icons">
+
+                <a href="#" aria-label="Facebook">
+                    f
+                </a>
+
+                <a href="#" aria-label="Instagram">
+                    ◎
+                </a>
+
+                <a href="#" aria-label="Twitter">
+                    𝕏
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- QUICK LINKS -->
+
+        <div class="footer-column">
+
+            <h3>
+                Quick Links
+            </h3>
+
+            <a href="#home">
+                Home
+            </a>
+
+            <a href="#markets">
+                Markets
+            </a>
+
+            <a href="#produce">
+                Produce
+            </a>
+
+            <a href="#farmers">
+                Farmers
+            </a>
+
+            <a href="#about">
+                About
+            </a>
+
+            <a href="#contact">
+                Contact
+            </a>
+
+        </div>
+
+
+
+        <!-- CONTACT -->
+
+        <div class="footer-column">
+
+            <h3>
+                Contact
+            </h3>
+
+            <a href="mailto:hello@freshfind.com" id="footerEmail">
+                ✉ hello@freshfind.com
+            </a>
+
+            <a href="tel:+923001234567" id="footerPhone">
+                ☎ +92 300 1234567
+            </a>
+
+            <a href="#location" id="footerAddress">
+                📍 Find us on the map
+            </a>
+
+        </div>
+
+
+
+        <!-- NEWSLETTER -->
+
+        <div class="footer-newsletter">
+
+            <h3>
+                Stay Fresh
+            </h3>
+
+            <p>
+                Subscribe for fresh market updates,
+                seasonal produce and local food news.
+            </p>
+
+
+            <form
+                class="newsletter-form"
+                id="newsletterForm"
+            >
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Your email address"
+                    required
+                >
+
+                <button type="submit">
+                    Subscribe
+                </button>
+
+            </form>
+
+
+            <p
+                class="subscribe-message"
+                id="subscribeMessage"
+            ></p>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- FOOTER BOTTOM -->
+
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 FreshFind. All rights reserved.
+        </p>
+
+
+        <div class="footer-policies">
+
+            <a
+                href="javascript:void(0)"
+                onclick="openPolicy('privacy')"
+            >
+                Privacy Policy
+            </a>
+
+            <a
+                href="javascript:void(0)"
+                onclick="openPolicy('terms')"
+            >
+                Terms & Conditions
+            </a>
+
+            <a
+                href="javascript:void(0)"
+                onclick="openPolicy('cookies')"
+            >
+                Cookie Policy
+            </a>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+<!-- =====================================================
+     POLICY MODAL
+===================================================== -->
+
+<div
+    class="policy-modal"
+    id="policyModal"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="policyTitle"
+>
+
+    <div class="policy-box">
+
+        <button
+            class="close-policy"
+            onclick="closePolicy()"
+            type="button"
+            aria-label="Close policy"
+        >
+            ×
+        </button>
+
+
+        <h2 id="policyTitle">
+            Privacy Policy
+        </h2>
+
+
+        <p id="policyText">
+            Your privacy is important to us.
+            FreshFind only uses information necessary
+            to provide and improve the website experience.
+        </p>
+
+    </div>
+
+</div>
+
+
+<!-- =====================================================
+     MARKET DETAIL MODAL
+===================================================== -->
+
+<div
+    class="detail-modal"
+    id="marketDetailModal"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="marketDetailTitle"
+>
+
+    <div class="detail-modal-box">
+
+        <button
+            class="modal-close-btn"
+            id="closeMarketDetail"
+            type="button"
+            aria-label="Close market details"
+        >
+            ×
+        </button>
+
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
+            <a href="#home" onclick="closeMarketDetailModal()">Home</a>
+            <span class="breadcrumb-separator">/</span>
+            <a href="#markets" onclick="closeMarketDetailModal()">Markets</a>
+            <span class="breadcrumb-separator">/</span>
+            <span class="breadcrumb-current" id="marketDetailBreadcrumb">Market Details</span>
+        </nav>
+
+        <div class="market-detail-content">
+
+            <div class="market-detail-image-box">
+                <img id="marketDetailImage" src="" alt="Market picture">
+                <span class="status open" id="marketDetailStatus">Open</span>
+            </div>
+
+            <div class="market-detail-info">
+
+                <div class="market-detail-header">
+                    <h2 id="marketDetailTitle">Market Name</h2>
+                    <p class="market-detail-area" id="marketDetailArea">📍 Clifton, Karachi</p>
+                </div>
+
+                <p class="market-detail-description" id="marketDetailDesc">Market description goes here.</p>
+
+                <div class="market-detail-section">
+                    <h3>📅 Opening Schedule</h3>
+                    <div class="table-responsive">
+                        <table class="schedule-table">
+                            <thead>
+                                <tr>
+                                    <th>Day</th>
+                                    <th>Hours</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody id="marketDetailSchedule">
+                                <!-- Populated dynamically -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="market-detail-section">
+                    <h3>👨‍🌾 Vendor / Farmer</h3>
+                    <p id="marketDetailFarmer" class="market-detail-farmer">Local Farmers</p>
+                </div>
+
+                <div class="market-detail-section">
+                    <h3>🥬 Available Produce & Categories</h3>
+                    <div class="detail-tags" id="marketDetailTags">
+                        <!-- Populated dynamically -->
+                    </div>
+                </div>
+
+                <div class="market-detail-actions">
+                    <button type="button" class="btn-primary detail-map-btn" id="marketDetailMapBtn">
+                        📍 View on Map
+                    </button>
+                    <button type="button" class="btn-secondary detail-bookmark-btn" id="marketDetailBookmarkBtn">
+                        ☆ Bookmark
+                    </button>
+                    <button type="button" class="btn-secondary detail-share-btn" id="marketDetailShareBtn">
+                        🔗 Share
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =====================================================
+     PRODUCE DETAIL MODAL
+===================================================== -->
+
+<div
+    class="detail-modal"
+    id="produceDetailModal"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="produceDetailTitle"
+>
+
+    <div class="detail-modal-box">
+
+        <button
+            class="modal-close-btn"
+            id="closeProduceDetail"
+            type="button"
+            aria-label="Close produce details"
+        >
+            ×
+        </button>
+
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
+            <a href="#home" onclick="closeProduceDetailModal()">Home</a>
+            <span class="breadcrumb-separator">/</span>
+            <a href="#produce" onclick="closeProduceDetailModal()">Produce</a>
+            <span class="breadcrumb-separator">/</span>
+            <span class="breadcrumb-current" id="produceDetailBreadcrumb">Produce Details</span>
+        </nav>
+
+        <div class="produce-detail-content">
+
+            <div class="produce-detail-image-box">
+                <img id="produceDetailImage" src="" alt="Produce picture">
+                <div class="produce-detail-badge" id="produceDetailSeason">Summer</div>
+            </div>
+
+            <div class="produce-detail-info">
+
+                <div class="produce-detail-header">
+                    <span class="produce-detail-icon" id="produceDetailIcon">🥕</span>
+                    <div>
+                        <h2 id="produceDetailTitle">Produce Name</h2>
+                        <span class="produce-detail-category" id="produceDetailCategory">Vegetables</span>
+                    </div>
+                </div>
+
+                <p class="produce-detail-description" id="produceDetailDesc">Fresh and nutritious seasonal produce.</p>
+
+                <div class="produce-detail-section">
+                    <h3>📅 Season & Availability</h3>
+                    <p id="produceDetailSeasonText">Peak season: Summer</p>
+                    <div class="month-chips" id="produceDetailMonths">
+                        <!-- Populated dynamically -->
+                    </div>
+                </div>
+
+                <div class="produce-detail-section">
+                    <h3>🛒 Available at These Markets</h3>
+                    <div class="related-markets-list" id="produceDetailMarkets">
+                        <!-- Populated dynamically -->
+                    </div>
+                </div>
+
+                <div class="produce-detail-actions">
+                    <button type="button" class="btn-primary" id="produceFindMarketsBtn">
+                        Explore All Markets →
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =====================================================
+     BOOKMARK DASHBOARD MODAL
+===================================================== -->
+
+<div
+    class="detail-modal"
+    id="bookmarkModal"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="bookmarkModalTitle"
+>
+
+    <div class="detail-modal-box bookmark-modal-box">
+
+        <button
+            class="modal-close-btn"
+            id="closeBookmarkModal"
+            type="button"
+            aria-label="Close saved markets"
+        >
+            ×
+        </button>
+
+        <div class="bookmark-modal-header">
+            <div class="bookmark-header-title">
+                <span class="bookmark-star-icon">★</span>
+                <div>
+                    <h2 id="bookmarkModalTitle">Your Saved Markets</h2>
+                    <p>Manage your bookmarked markets, produce notes, and shopping list.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="bookmark-dashboard-layout">
+
+            <!-- Left: Saved Markets List -->
+            <div class="bookmark-section saved-markets-section">
+                <h3>📌 Saved Markets (<span id="bookmarkSavedCount">0</span>)</h3>
+                <div class="saved-markets-grid" id="savedMarketsList">
+                    <p class="no-bookmarks-msg">You have not bookmarked any markets yet. Click the ☆ on any market card to save it here!</p>
+                </div>
+            </div>
+
+            <!-- Right: Notes, Export, Share -->
+            <div class="bookmark-sidebar">
+
+                <div class="bookmark-section">
+                    <h3>📝 Market Shopping Notes</h3>
+                    <textarea
+                        id="bookmarkNotes"
+                        placeholder="Write your shopping checklist or market notes here (e.g. 2kg organic tomatoes from Clifton market)..."
+                        aria-label="Market Shopping Notes"
+                    ></textarea>
+                    <span class="notes-autosave-msg" id="notesAutoSave">✓ Notes saved automatically</span>
+                </div>
+
+                <div class="bookmark-section">
+                    <h3>⚡ Quick Actions</h3>
+                    <div class="bookmark-actions-group">
+                        <button type="button" class="btn-secondary" id="exportBookmarksBtn">
+                            📥 Export Saved
+                        </button>
+                        <button type="button" class="btn-secondary" id="shareBookmarksBtn">
+                            🔗 Share Link
+                        </button>
+                        <button type="button" class="btn-secondary btn-danger-soft" id="clearAllBookmarksBtn">
+                            🗑 Clear All
+                        </button>
+                    </div>
+                    <p class="bookmark-action-feedback" id="bookmarkFeedback"></p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =====================================================
+     FRESHFIND JAVASCRIPT
+===================================================== -->
+
+<script>
+/* =====================================================
+   GLOBAL FRESHFIND APPLICATION STATE & DATA LAYER
+===================================================== */
+window.appData = {
+    markets: [],
+    produce: [],
+    farmers: [],
+    seasonal: [],
+    chatbot: [],
+    faqs: [],
+    site: null
+};
+
+window.marketLocations = [];
+
+/* =====================================================
+   REUSABLE JSON LOADER FUNCTION
+===================================================== */
+async function loadJSON(path) {
+    try {
+        const response = await fetch(path);
+        if (!response.ok) {
+            throw new Error(`Failed to load ${path}: status ${response.status}`);
+        }
+        return await response.json();
+    } catch (error) {
+        console.error("loadJSON error:", error);
+        return null;
+    }
+}
+
+/* =====================================================
+   BOOKMARKS MANAGEMENT (Client-side localStorage)
+===================================================== */
+function getBookmarks() {
+    try {
+        const saved = localStorage.getItem("freshfind_bookmarks");
+        return saved ? JSON.parse(saved) : [];
+    } catch (e) {
+        return [];
+    }
+}
+
+function saveBookmarks(bookmarks) {
+    try {
+        localStorage.setItem("freshfind_bookmarks", JSON.stringify(bookmarks));
+    } catch (e) {
+        console.error("Failed to save bookmarks:", e);
+    }
+}
+
+window.toggleBookmark = function (marketId, event) {
+    if (event) {
+        event.stopPropagation();
+    }
+    let bookmarks = getBookmarks();
+    const index = bookmarks.indexOf(marketId);
+    if (index > -1) {
+        bookmarks.splice(index, 1);
+    } else {
+        bookmarks.push(marketId);
+    }
+    saveBookmarks(bookmarks);
+    updateBookmarkUI();
+    renderSavedMarketsList();
+};
+
+function updateBookmarkUI() {
+    const bookmarks = getBookmarks();
+    const count = bookmarks.length;
+
+    // Update badges
+    const navBadge = document.getElementById("bookmarkNavBadge");
+    if (navBadge) {
+        navBadge.textContent = count;
+        navBadge.style.display = count > 0 ? "flex" : "none";
+    }
+
+    const mobileCount = document.querySelector(".bookmark-mobile-count");
+    if (mobileCount) {
+        mobileCount.textContent = count;
+    }
+
+    const savedCount = document.getElementById("bookmarkSavedCount");
+    if (savedCount) {
+        savedCount.textContent = count;
+    }
+
+    // Update all bookmark buttons on cards
+    document.querySelectorAll(".bookmark-btn").forEach(function (btn) {
+        const id = btn.getAttribute("data-market-id");
+        if (bookmarks.includes(id)) {
+            btn.classList.add("active");
+            btn.innerHTML = "★";
+            btn.title = "Bookmarked (Click to remove)";
+            btn.setAttribute("aria-label", "Remove from bookmarks");
+        } else {
+            btn.classList.remove("active");
+            btn.innerHTML = "☆";
+            btn.title = "Bookmark this market";
+            btn.setAttribute("aria-label", "Bookmark this market");
+        }
+    });
+
+    // Update modal bookmark button if open
+    const modalBtn = document.getElementById("marketDetailBookmarkBtn");
+    if (modalBtn && window.currentDetailMarketId) {
+        if (bookmarks.includes(window.currentDetailMarketId)) {
+            modalBtn.innerHTML = "★ Bookmarked";
+            modalBtn.classList.add("active");
+        } else {
+            modalBtn.innerHTML = "☆ Bookmark";
+            modalBtn.classList.remove("active");
+        }
+    }
+}
+
+/* =====================================================
+   MODAL CONTROLS: MARKET DETAIL, PRODUCE DETAIL, BOOKMARKS
+===================================================== */
+window.currentDetailMarketId = null;
+
+function openMarketDetailModal(marketIndex) {
+    const market = window.appData.markets[marketIndex];
+    if (!market) return;
+
+    window.currentDetailMarketId = market.id;
+    const modal = document.getElementById("marketDetailModal");
+    if (!modal) return;
+
+    document.getElementById("marketDetailBreadcrumb").textContent = market.name;
+    document.getElementById("marketDetailTitle").textContent = market.name;
+    document.getElementById("marketDetailArea").textContent = "📍 " + (market.address ? market.address + ", " : "") + market.area + ", " + (market.city || "Karachi");
+    document.getElementById("marketDetailDesc").textContent = market.description || "Fresh community market.";
+    document.getElementById("marketDetailFarmer").textContent = market.farmerName || "Local Farmers";
+
+    const img = document.getElementById("marketDetailImage");
+    if (img) {
+        img.src = market.image || "./images/01_Clifton.png";
+        img.alt = market.name;
+    }
+
+    const statusBadge = document.getElementById("marketDetailStatus");
+    if (statusBadge) {
+        statusBadge.textContent = market.status === "open" ? "Open" : "Closed";
+        statusBadge.className = "status " + (market.status === "open" ? "open" : "closed");
+    }
+
+    // Schedule table
+    const schedBody = document.getElementById("marketDetailSchedule");
+    if (schedBody) {
+        if (market.schedule && market.schedule.length > 0) {
+            schedBody.innerHTML = market.schedule.map(function (s) {
+                return `
+                    <tr>
+                        <td><strong>${escapeHTML(s.day)}</strong></td>
+                        <td>${escapeHTML(s.open)} – ${escapeHTML(s.close)}</td>
+                        <td><span class="status-indicator open">Active</span></td>
+                    </tr>
+                `;
+            }).join("");
+        } else {
+            schedBody.innerHTML = `
+                <tr>
+                    <td><strong>Daily</strong></td>
+                    <td>08:00 – 18:00</td>
+                    <td><span class="status-indicator open">Active</span></td>
+                </tr>
+            `;
+        }
+    }
+
+    // Tags / produce
+    const tagsDiv = document.getElementById("marketDetailTags");
+    if (tagsDiv) {
+        const allTags = [...(market.tags || [])];
+        if (Array.isArray(market.produceIds) && window.appData.produce.length > 0) {
+            market.produceIds.forEach(function (pid) {
+                const prod = window.appData.produce.find(p => p.id === pid);
+                if (prod && !allTags.includes(prod.name)) {
+                    allTags.push(prod.name);
+                }
+            });
+        }
+        tagsDiv.innerHTML = allTags.map(function (t) {
+            return `<span>${escapeHTML(t)}</span>`;
+        }).join("");
+    }
+
+    // View on map action
+    const mapBtn = document.getElementById("marketDetailMapBtn");
+    if (mapBtn) {
+        mapBtn.onclick = function () {
+            closeMarketDetailModal();
+            focusMarket(marketIndex);
+        };
+    }
+
+    // Bookmark action
+    const bkmkBtn = document.getElementById("marketDetailBookmarkBtn");
+    if (bkmkBtn) {
+        const bookmarks = getBookmarks();
+        if (bookmarks.includes(market.id)) {
+            bkmkBtn.innerHTML = "★ Bookmarked";
+            bkmkBtn.classList.add("active");
+        } else {
+            bkmkBtn.innerHTML = "☆ Bookmark";
+            bkmkBtn.classList.remove("active");
+        }
+        bkmkBtn.onclick = function () {
+            toggleBookmark(market.id);
+        };
+    }
+
+    // Share action
+    const shareBtn = document.getElementById("marketDetailShareBtn");
+    if (shareBtn) {
+        shareBtn.onclick = function () {
+            const url = window.location.origin + window.location.pathname + "?id=" + encodeURIComponent(market.id);
+            if (navigator.clipboard) {
+                navigator.clipboard.writeText(url).then(function () {
+                    shareBtn.textContent = "✓ Copied!";
+                    setTimeout(() => { shareBtn.textContent = "🔗 Share"; }, 2000);
+                });
+            } else {
+                prompt("Copy market link:", url);
+            }
+        };
+    }
+
+    modal.classList.add("show");
+    document.body.classList.add("modal-open");
+}
+
+function closeMarketDetailModal() {
+    const modal = document.getElementById("marketDetailModal");
+    if (modal) modal.classList.remove("show");
+    document.body.classList.remove("modal-open");
+}
+
+function openProduceDetailModal(produceIndex) {
+    const item = window.appData.produce[produceIndex];
+    if (!item) return;
+
+    const modal = document.getElementById("produceDetailModal");
+    if (!modal) return;
+
+    document.getElementById("produceDetailBreadcrumb").textContent = item.name;
+    document.getElementById("produceDetailTitle").textContent = item.name;
+    document.getElementById("produceDetailCategory").textContent = item.category || "Produce";
+    document.getElementById("produceDetailDesc").textContent = item.description || "Fresh and seasonal.";
+    document.getElementById("produceDetailIcon").textContent = item.icon || "🥕";
+    document.getElementById("produceDetailSeason").textContent = item.season || "Fresh";
+    document.getElementById("produceDetailSeasonText").textContent = "Peak season: " + (item.season || "Year-round");
+
+    const img = document.getElementById("produceDetailImage");
+    if (img) {
+        img.src = item.image;
+        img.alt = item.name;
+    }
+
+    // Available months
+    const monthsDiv = document.getElementById("produceDetailMonths");
+    if (monthsDiv) {
+        if (Array.isArray(item.availableMonths) && item.availableMonths.length > 0) {
+            monthsDiv.innerHTML = item.availableMonths.map(function (m) {
+                return `<span class="month-chip">${escapeHTML(m)}</span>`;
+            }).join("");
+        } else {
+            monthsDiv.innerHTML = `<span class="month-chip">Year-round</span>`;
+        }
+    }
+
+    // Related markets list
+    const marketsDiv = document.getElementById("produceDetailMarkets");
+    if (marketsDiv) {
+        if (Array.isArray(item.marketIds) && item.marketIds.length > 0 && window.appData.markets.length > 0) {
+            const related = window.appData.markets.filter(m => item.marketIds.includes(m.id));
+            if (related.length > 0) {
+                marketsDiv.innerHTML = related.map(function (m) {
+                    const mIndex = window.appData.markets.indexOf(m);
+                    return `
+                        <button type="button" class="related-market-pill" onclick="closeProduceDetailModal(); openMarketDetailModal(${mIndex});">
+                            📍 <strong>${escapeHTML(m.name)}</strong> (${escapeHTML(m.area)})
+                        </button>
+                    `;
+                }).join("");
+            } else {
+                marketsDiv.innerHTML = `<p class="text-muted">Available at most local farmers markets.</p>`;
+            }
+        } else {
+            marketsDiv.innerHTML = `<p class="text-muted">Available at most local farmers markets.</p>`;
+        }
+    }
+
+    const findBtn = document.getElementById("produceFindMarketsBtn");
+    if (findBtn) {
+        findBtn.onclick = function () {
+            closeProduceDetailModal();
+            const input = document.getElementById("location-search");
+            if (input) {
+                input.value = item.name;
+                performSearch(item.name);
+            }
+        };
+    }
+
+    modal.classList.add("show");
+    document.body.classList.add("modal-open");
+}
+
+function closeProduceDetailModal() {
+    const modal = document.getElementById("produceDetailModal");
+    if (modal) modal.classList.remove("show");
+    document.body.classList.remove("modal-open");
+}
+
+function openBookmarkModal() {
+    const modal = document.getElementById("bookmarkModal");
+    if (!modal) return;
+    renderSavedMarketsList();
+
+    // Load saved notes
+    const notesArea = document.getElementById("bookmarkNotes");
+    if (notesArea) {
+        try {
+            notesArea.value = localStorage.getItem("freshfind_notes") || "";
+        } catch (e) {}
+    }
+
+    modal.classList.add("show");
+    document.body.classList.add("modal-open");
+}
+
+function closeBookmarkModal() {
+    const modal = document.getElementById("bookmarkModal");
+    if (modal) modal.classList.remove("show");
+    document.body.classList.remove("modal-open");
+}
+
+function renderSavedMarketsList() {
+    const container = document.getElementById("savedMarketsList");
+    if (!container) return;
+
+    const bookmarks = getBookmarks();
+    if (bookmarks.length === 0) {
+        container.innerHTML = `<p class="no-bookmarks-msg">You have not bookmarked any markets yet. Click the ☆ on any market card to save it here!</p>`;
+        return;
+    }
+
+    const savedMarkets = window.appData.markets.filter(m => bookmarks.includes(m.id));
+    if (savedMarkets.length === 0) {
+        container.innerHTML = `<p class="no-bookmarks-msg">No saved markets found.</p>`;
+        return;
+    }
+
+    container.innerHTML = savedMarkets.map(function (market) {
+        const index = window.appData.markets.indexOf(market);
+        return `
+            <div class="saved-market-mini-card">
+                <img src="${escapeHTML(market.image)}" alt="${escapeHTML(market.name)}">
+                <div class="saved-market-info">
+                    <h4>${escapeHTML(market.name)}</h4>
+                    <p>📍 ${escapeHTML(market.area)} • ${escapeHTML(market.farmerName || "Local Farmers")}</p>
+                    <div class="saved-market-btns">
+                        <button type="button" class="btn-mini btn-primary" onclick="closeBookmarkModal(); openMarketDetailModal(${index});">
+                            View Details
+                        </button>
+                        <button type="button" class="btn-mini btn-outline" onclick="closeBookmarkModal(); focusMarket(${index});">
+                            📍 Map
+                        </button>
+                        <button type="button" class="btn-mini btn-danger" onclick="toggleBookmark('${escapeHTML(market.id)}');">
+                            Remove
+                        </button>
+                    </div>
+                </div>
+            </div>
+        `;
+    }).join("");
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    /* =====================================================
+       NAVIGATION & SMOOTH MOBILE MENU
+    ===================================================== */
+    const navLinks = document.querySelectorAll(".navigation a");
+    const navigation = document.querySelector(".navigation");
+    const menuBtn = document.getElementById("menuBtn");
+
+    navLinks.forEach(function (link) {
+        link.addEventListener("click", function () {
+            navLinks.forEach(function (item) {
+                item.classList.remove("active");
+            });
+            link.classList.add("active");
+            if (navigation) {
+                navigation.classList.remove("mobile-open");
+                if (menuBtn) {
+                    menuBtn.setAttribute("aria-expanded", "false");
+                    menuBtn.innerHTML = "☰";
+                }
+            }
+        });
+    });
+
+    if (menuBtn && navigation) {
+        menuBtn.addEventListener("click", function (event) {
+            event.stopPropagation();
+            const isOpen = navigation.classList.toggle("mobile-open");
+            menuBtn.setAttribute("aria-expanded", isOpen ? "true" : "false");
+            menuBtn.innerHTML = isOpen ? "✕" : "☰";
+        });
+    }
+
+    // Close mobile menu if clicked outside
+    document.addEventListener("click", function (event) {
+        if (navigation && navigation.classList.contains("mobile-open")) {
+            if (!navigation.contains(event.target) && !menuBtn.contains(event.target)) {
+                navigation.classList.remove("mobile-open");
+                if (menuBtn) {
+                    menuBtn.setAttribute("aria-expanded", "false");
+                    menuBtn.innerHTML = "☰";
+                }
+            }
+        }
+    });
+
+    /* =====================================================
+       SEARCH ICON
+    ===================================================== */
+    const navSearchBtn = document.getElementById("navSearchBtn");
+    const searchInput = document.getElementById("location-search");
+    if (navSearchBtn && searchInput) {
+        navSearchBtn.addEventListener("click", function () {
+            document.getElementById("home").scrollIntoView({ behavior: "smooth" });
+            setTimeout(function () {
+                searchInput.focus();
+            }, 500);
+        });
+    }
+
+    /* =====================================================
+       DARK MODE
+    ===================================================== */
+    const themeToggle = document.getElementById("themeToggle");
+    if (themeToggle) {
+        themeToggle.addEventListener("click", function () {
+            document.body.classList.toggle("dark-mode");
+            if (document.body.classList.contains("dark-mode")) {
+                themeToggle.textContent = "☀";
+                themeToggle.title = "Switch to light mode";
+            } else {
+                themeToggle.textContent = "☾";
+                themeToggle.title = "Switch to dark mode";
+            }
+        });
+    }
+
+    /* =====================================================
+       BOOKMARKS MODAL TRIGGERS
+    ===================================================== */
+    const navBookmarkBtn = document.getElementById("navBookmarkBtn");
+    if (navBookmarkBtn) {
+        navBookmarkBtn.addEventListener("click", openBookmarkModal);
+    }
+
+    const mobileBookmarkBtn = document.getElementById("mobileBookmarkBtn");
+    if (mobileBookmarkBtn) {
+        mobileBookmarkBtn.addEventListener("click", function () {
+            if (navigation) navigation.classList.remove("mobile-open");
+            if (menuBtn) {
+                menuBtn.setAttribute("aria-expanded", "false");
+                menuBtn.innerHTML = "☰";
+            }
+            openBookmarkModal();
+        });
+    }
+
+    const closeBookmarkBtn = document.getElementById("closeBookmarkModal");
+    if (closeBookmarkBtn) {
+        closeBookmarkBtn.addEventListener("click", closeBookmarkModal);
+    }
+
+    const bookmarkNotes = document.getElementById("bookmarkNotes");
+    const notesAutoSave = document.getElementById("notesAutoSave");
+    if (bookmarkNotes) {
+        bookmarkNotes.addEventListener("input", function () {
+            try {
+                localStorage.setItem("freshfind_notes", bookmarkNotes.value);
+                if (notesAutoSave) {
+                    notesAutoSave.style.opacity = "1";
+                    setTimeout(() => { notesAutoSave.style.opacity = "0.7"; }, 1500);
+                }
+            } catch (e) {}
+        });
+    }
+
+    // Export bookmarks
+    const exportBtn = document.getElementById("exportBookmarksBtn");
+    const bookmarkFeedback = document.getElementById("bookmarkFeedback");
+    if (exportBtn) {
+        exportBtn.addEventListener("click", function () {
+            const bookmarks = getBookmarks();
+            const savedMarkets = window.appData.markets.filter(m => bookmarks.includes(m.id));
+            const notes = localStorage.getItem("freshfind_notes") || "";
+            const exportData = {
+                title: "FreshFind Bookmarked Markets",
+                exportedAt: new Date().toISOString(),
+                savedMarkets: savedMarkets.map(m => ({
+                    name: m.name,
+                    area: m.area,
+                    address: m.address,
+                    schedule: m.schedule
+                })),
+                shoppingNotes: notes
+            };
+            const blob = new Blob([JSON.stringify(exportData, null, 2)], { type: "application/json" });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement("a");
+            a.href = url;
+            a.download = "freshfind-saved-markets.json";
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+            if (bookmarkFeedback) {
+                bookmarkFeedback.textContent = "✓ Exported saved markets as JSON!";
+                setTimeout(() => { bookmarkFeedback.textContent = ""; }, 3000);
+            }
+        });
+    }
+
+    // Share bookmarks link
+    const shareBtn = document.getElementById("shareBookmarksBtn");
+    if (shareBtn) {
+        shareBtn.addEventListener("click", function () {
+            const bookmarks = getBookmarks();
+            const url = window.location.origin + window.location.pathname + (bookmarks.length > 0 ? "?saved=" + bookmarks.join(",") : "");
+            if (navigator.clipboard) {
+                navigator.clipboard.writeText(url).then(function () {
+                    if (bookmarkFeedback) {
+                        bookmarkFeedback.textContent = "✓ Link copied to clipboard!";
+                        setTimeout(() => { bookmarkFeedback.textContent = ""; }, 3000);
+                    }
+                });
+            } else {
+                prompt("Copy your bookmarks link:", url);
+            }
+        });
+    }
+
+    // Clear all bookmarks
+    const clearAllBtn = document.getElementById("clearAllBookmarksBtn");
+    if (clearAllBtn) {
+        clearAllBtn.addEventListener("click", function () {
+            if (confirm("Are you sure you want to remove all bookmarked markets?")) {
+                saveBookmarks([]);
+                updateBookmarkUI();
+                renderSavedMarketsList();
+                if (bookmarkFeedback) {
+                    bookmarkFeedback.textContent = "✓ All bookmarks cleared.";
+                    setTimeout(() => { bookmarkFeedback.textContent = ""; }, 3000);
+                }
+            }
+        });
+    }
+
+    // Close detail modals
+    const closeMarketDetail = document.getElementById("closeMarketDetail");
+    if (closeMarketDetail) {
+        closeMarketDetail.addEventListener("click", closeMarketDetailModal);
+    }
+
+    const closeProduceDetail = document.getElementById("closeProduceDetail");
+    if (closeProduceDetail) {
+        closeProduceDetail.addEventListener("click", closeProduceDetailModal);
+    }
+
+    // Modal backdrop click handlers
+    ["marketDetailModal", "produceDetailModal", "bookmarkModal", "policyModal"].forEach(function (id) {
+        const m = document.getElementById(id);
+        if (m) {
+            m.addEventListener("click", function (e) {
+                if (e.target === this) {
+                    m.classList.remove("show");
+                    document.body.classList.remove("modal-open");
+                }
+            });
+        }
+    });
+
+    /* =====================================================
+       FARMER VIEW ALL TOGGLE
+    ===================================================== */
+    const farmerToggle = document.getElementById("farmerToggle");
+    const farmersSection = document.querySelector(".farmers-section");
+    if (farmerToggle && farmersSection) {
+        farmerToggle.addEventListener("click", function () {
+            farmersSection.classList.toggle("show-all");
+        });
+    }
+
+    /* =====================================================
+       GOOGLE MAP & DISTANCE LOGIC
+    ===================================================== */
+    const mapFrame = document.getElementById("mapFrame");
+    const mapStatus = document.getElementById("mapStatus");
+
+    function showLocationOnMap(location) {
+        const cleanLocation = String(location || "").trim();
+        if (!cleanLocation) return;
+
+        mapFrame.src = "https://www.google.com/maps?q=" + encodeURIComponent(cleanLocation) + "&output=embed";
+        mapStatus.textContent = "Showing map for: " + cleanLocation;
+        document.getElementById("location").scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+        });
+    }
+
+    function calculateDistance(lat1, lng1, lat2, lng2) {
+        const earthRadius = 6371;
+        const dLat = (lat2 - lat1) * Math.PI / 180;
+        const dLng = (lng2 - lng1) * Math.PI / 180;
+        const a =
+            Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+            Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) *
+            Math.sin(dLng / 2) * Math.sin(dLng / 2);
+        const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+        return earthRadius * c;
+    }
+
+    window.focusMarket = function (index) {
+        const market = window.marketLocations[index];
+        if (!market) return;
+
+        showLocationOnMap(market.name + ", " + market.location + ", Karachi");
+        mapStatus.textContent = "Showing: " + market.name + " — " + market.location;
+    };
+
+    /* =====================================================
+       USE MY LOCATION
+    ===================================================== */
+    const myLocationBtn = document.getElementById("myLocationBtn");
+    const locationResult = document.getElementById("location-result");
+
+    if (myLocationBtn) {
+        myLocationBtn.addEventListener("click", function () {
+            if (!navigator.geolocation) {
+                alert("Geolocation is not supported by your browser.");
+                return;
+            }
+
+            myLocationBtn.textContent = "📍 Finding Location...";
+
+            navigator.geolocation.getCurrentPosition(
+                function (position) {
+                    const lat = position.coords.latitude;
+                    const lng = position.coords.longitude;
+
+                    mapFrame.src = "https://www.google.com/maps?q=" + encodeURIComponent(lat + "," + lng) + "&z=14&output=embed";
+
+                    let nearestMarket = null;
+                    let nearestDistance = Infinity;
+
+                    window.marketLocations.forEach(function (market, index) {
+                        const distance = calculateDistance(lat, lng, market.lat, market.lng);
+                        if (distance < nearestDistance) {
+                            nearestDistance = distance;
+                            nearestMarket = { ...market, index: index };
+                        }
+                    });
+
+                    if (nearestMarket) {
+                        locationResult.innerHTML =
+                            `📍 <strong>Nearest market suggestion:</strong>
+                            <strong>${escapeHTML(nearestMarket.name)}</strong> —
+                            ${escapeHTML(nearestMarket.location)}
+                            (${nearestDistance.toFixed(1)} km away).
+                            <button type="button" class="details-btn"
+                                onclick="openMarketDetailModal(${nearestMarket.index})">
+                                View Market Details
+                            </button>`;
+                        locationResult.classList.add("show");
+                        mapStatus.textContent = "Your current location is shown. Nearest market: " + nearestMarket.name + " (" + nearestDistance.toFixed(1) + " km away).";
+                    } else {
+                        mapStatus.textContent = "Your current location is shown on the map.";
+                    }
+
+                    myLocationBtn.textContent = "📍 My Location Found";
+                    document.getElementById("location").scrollIntoView({ behavior: "smooth", block: "start" });
+                },
+                function () {
+                    alert("Unable to get your location. Please allow location permission in your browser.");
+                    myLocationBtn.textContent = "📍 Use My Location";
+                },
+                { enableHighAccuracy: true, timeout: 10000, maximumAge: 60000 }
+            );
+        });
+    }
+
+    /* =====================================================
+       SEARCH & FILTERS SYSTEM (Area, Day, Produce)
+    ===================================================== */
+    const searchForm = document.getElementById("searchForm");
+    const suggestions = document.getElementById("searchSuggestions");
+    const areaFilter = document.getElementById("areaFilter");
+    const dayFilter = document.getElementById("dayFilter");
+    const produceFilter = document.getElementById("produceFilter");
+    const clearFiltersBtn = document.getElementById("clearFiltersBtn");
+    let allSearchCards = [];
+
+    function getCardType(card) {
+        if (card.classList.contains("market-card")) return "Market";
+        if (card.classList.contains("produce-card")) return "Produce";
+        if (card.classList.contains("farmer-card")) return "Farmer";
+        return "Result";
+    }
+
+    function getSearchText(card) {
+        return (card.innerText + " " + (card.dataset.search || "")).toLowerCase();
+    }
+
+    function clearSearchResults() {
+        allSearchCards.forEach(function (card) {
+            card.classList.remove("search-hidden");
+            card.classList.remove("search-highlight");
+            card.classList.remove("search-force-show");
+        });
+        if (locationResult) locationResult.classList.remove("show");
+        if (suggestions) {
+            suggestions.classList.remove("show");
+            suggestions.innerHTML = "";
+        }
+    }
+
+    function applyCombinedFilter() {
+        const query = (searchInput ? searchInput.value : "").trim().toLowerCase();
+        const selectedArea = (areaFilter ? areaFilter.value : "").toLowerCase();
+        const selectedDay = (dayFilter ? dayFilter.value : "").toLowerCase();
+        const selectedProduce = (produceFilter ? produceFilter.value : "").toLowerCase();
+
+        const hasFilter = query || selectedArea || selectedDay || selectedProduce;
+
+        if (!hasFilter) {
+            clearSearchResults();
+            return;
+        }
+
+        let matches = [];
+        allSearchCards.forEach(function (card) {
+            const text = getSearchText(card);
+            let matchesQuery = !query || text.includes(query);
+            let matchesArea = !selectedArea || text.includes(selectedArea);
+            let matchesDay = !selectedDay || text.includes(selectedDay);
+            let matchesProduce = !selectedProduce || text.includes(selectedProduce);
+
+            // Special queries like "markets", "produce", "farmers"
+            if (query === "market" || query === "markets") {
+                if (card.classList.contains("market-card")) matchesQuery = true;
+            } else if (query === "produce" || query === "seasonal") {
+                if (card.classList.contains("produce-card")) matchesQuery = true;
+            } else if (query === "farmer" || query === "farmers") {
+                if (card.classList.contains("farmer-card")) matchesQuery = true;
+            }
+
+            if (matchesQuery && matchesArea && matchesDay && matchesProduce) {
+                matches.push(card);
+                card.classList.remove("search-hidden");
+                card.classList.add("search-highlight");
+                card.classList.add("search-force-show");
+            } else {
+                card.classList.add("search-hidden");
+                card.classList.remove("search-highlight");
+                card.classList.remove("search-force-show");
+            }
+        });
+
+        if (locationResult) {
+            if (matches.length === 0) {
+                locationResult.innerHTML = "No results found matching your criteria. Try adjusting your filters.";
+                locationResult.classList.add("show");
+            } else {
+                locationResult.innerHTML = "Found <strong>" + matches.length + "</strong> result" + (matches.length > 1 ? "s" : "") + " matching your criteria.";
+                locationResult.classList.add("show");
+            }
+        }
+
+        const first = matches[0];
+        if (first) {
+            setTimeout(function () {
+                first.scrollIntoView({ behavior: "smooth", block: "center" });
+            }, 150);
+
+            if (first.classList.contains("market-card")) {
+                const index = Number(first.dataset.marketIndex);
+                setTimeout(function () {
+                    focusMarket(index);
+                }, 600);
+            }
+        }
+    }
+
+    if (areaFilter) areaFilter.addEventListener("change", applyCombinedFilter);
+    if (dayFilter) dayFilter.addEventListener("change", applyCombinedFilter);
+    if (produceFilter) produceFilter.addEventListener("change", applyCombinedFilter);
+
+    if (clearFiltersBtn) {
+        clearFiltersBtn.addEventListener("click", function () {
+            if (searchInput) searchInput.value = "";
+            if (areaFilter) areaFilter.value = "";
+            if (dayFilter) dayFilter.value = "";
+            if (produceFilter) produceFilter.value = "";
+            clearSearchResults();
+        });
+    }
+
+    if (searchInput) {
+        searchInput.addEventListener("input", function () {
+            const query = searchInput.value.trim().toLowerCase();
+            suggestions.innerHTML = "";
+
+            if (!query) {
+                suggestions.classList.remove("show");
+                applyCombinedFilter();
+                return;
+            }
+
+            const matches = [];
+            allSearchCards.forEach(function (card) {
+                const text = getSearchText(card);
+                if (text.includes(query)) {
+                    matches.push(card);
+                }
+            });
+
+            matches.slice(0, 7).forEach(function (card) {
+                const title = card.querySelector("h3");
+                const button = document.createElement("button");
+                button.type = "button";
+                button.className = "search-suggestion";
+                button.innerHTML = `
+                    <strong>${title ? title.textContent : "Search Result"}</strong>
+                    <span>${getCardType(card)}</span>
+                `;
+
+                button.addEventListener("click", function () {
+                    searchInput.value = title ? title.textContent : query;
+                    applyCombinedFilter();
+                    suggestions.classList.remove("show");
+                });
+
+                suggestions.appendChild(button);
+            });
+
+            if (matches.length > 0) {
+                suggestions.classList.add("show");
+            } else {
+                suggestions.classList.remove("show");
+            }
+        });
+    }
+
+    function performSearch(query) {
+        if (searchInput) searchInput.value = query;
+        applyCombinedFilter();
+        if (query) showLocationOnMap(query);
+    }
+
+    if (searchForm) {
+        searchForm.addEventListener("submit", function (event) {
+            event.preventDefault();
+            applyCombinedFilter();
+            if (suggestions) suggestions.classList.remove("show");
+        });
+    }
+
+    document.addEventListener("click", function (event) {
+        if (!event.target.closest(".search-results-box") && suggestions) {
+            suggestions.classList.remove("show");
+        }
+    });
+
+    /* =====================================================
+       NEWSLETTER
+    ===================================================== */
+    const newsletterForm = document.getElementById("newsletterForm");
+    const subscribeMessage = document.getElementById("subscribeMessage");
+
+    if (newsletterForm) {
+        newsletterForm.addEventListener("submit", function (event) {
+            event.preventDefault();
+            const emailInput = document.getElementById("email");
+            if (!emailInput || !emailInput.value) return;
+            if (subscribeMessage) {
+                subscribeMessage.textContent = "✓ Thanks! You are subscribed.";
+            }
+            newsletterForm.reset();
+        });
+    }
+
+    /* =====================================================
+       POLICY MODAL
+    ===================================================== */
+    window.openPolicy = function (type) {
+        const modal = document.getElementById("policyModal");
+        const title = document.getElementById("policyTitle");
+        const text = document.getElementById("policyText");
+        if (!modal || !title || !text) return;
+
+        if (type === "privacy") {
+            title.textContent = "Privacy Policy";
+            text.textContent = "FreshFind respects your privacy. Information provided through the website is used only to improve your experience and provide requested services.";
+        } else if (type === "terms") {
+            title.textContent = "Terms & Conditions";
+            text.textContent = "By using FreshFind, you agree to use the website responsibly and understand that market information may change over time.";
+        } else if (type === "cookies") {
+            title.textContent = "Cookie Policy";
+            text.textContent = "FreshFind may use basic browser storage and cookies to improve website functionality and remember preferences.";
+        }
+        modal.classList.add("show");
+        document.body.classList.add("modal-open");
+    };
+
+    window.closePolicy = function () {
+        const modal = document.getElementById("policyModal");
+        if (modal) modal.classList.remove("show");
+        document.body.classList.remove("modal-open");
+    };
+
+    document.addEventListener("keydown", function (event) {
+        if (event.key === "Escape") {
+            closePolicy();
+            closeMarketDetailModal();
+            closeProduceDetailModal();
+            closeBookmarkModal();
+            if (navigation) {
+                navigation.classList.remove("mobile-open");
+                if (menuBtn) {
+                    menuBtn.setAttribute("aria-expanded", "false");
+                    menuBtn.innerHTML = "☰";
+                }
+            }
+            if (suggestions) suggestions.classList.remove("show");
+        }
+    });
+
+    /* =====================================================
+       DYNAMIC DATA RENDERING & INITIALIZATION
+    ===================================================== */
+    async function initFreshFind() {
+        const marketGrid = document.getElementById("marketGrid");
+        const produceGrid = document.getElementById("produceGrid");
+        const farmersContainer = document.getElementById("farmersContainer");
+
+        // 1. Fetch JSON files concurrently
+        const [marketsData, produceData, teamData, siteData, chatbotData, seasonalData, faqsData] = await Promise.all([
+            loadJSON("./data/markets.json"),
+            loadJSON("./data/produce.json"),
+            loadJSON("./data/team.json"),
+            loadJSON("./data/site.json"),
+            loadJSON("./data/chatbot.json"),
+            loadJSON("./data/seasonal.json"),
+            loadJSON("./data/faqs.json")
+        ]);
+
+        window.appData.markets = marketsData && marketsData.markets ? marketsData.markets : [];
+        window.appData.produce = produceData && produceData.produce ? produceData.produce : [];
+        window.appData.farmers = teamData && teamData.team ? teamData.team : [];
+        window.appData.site = siteData && siteData.site ? siteData.site : null;
+        window.appData.chatbot = chatbotData && chatbotData.chatbot ? chatbotData.chatbot : [];
+        window.appData.chatbotConfig = chatbotData || null;
+        window.appData.seasonal = seasonalData && seasonalData.seasonalRecommendations ? seasonalData.seasonalRecommendations : [];
+        window.appData.faqs = faqsData && faqsData.faqs ? faqsData.faqs : [];
+
+        // 2. Render Markets
+        if (marketGrid) {
+            if (window.appData.markets.length === 0) {
+                marketGrid.innerHTML = '<div class="market-error">Unable to load markets right now. Please try again.</div>';
+            } else {
+                const bookmarks = getBookmarks();
+                marketGrid.innerHTML = window.appData.markets.map(function (market, index) {
+                    const isExtra = index >= 4;
+                    const isBookmarked = bookmarks.includes(market.id);
+                    const scheduleText = market.schedule && market.schedule.length > 0
+                        ? market.schedule.map(function (s) {
+                            return s.day + " • " + s.open + " – " + s.close;
+                        }).join(" | ")
+                        : "Open daily";
+
+                    const tagsHtml = Array.isArray(market.tags)
+                        ? market.tags.map(function (tag) {
+                            return "<span>" + escapeHTML(tag) + "</span>";
+                        }).join("")
+                        : "";
+
+                    const searchKeywords = [
+                        market.name,
+                        market.area,
+                        market.farmerName,
+                        ...(market.tags || [])
+                    ].filter(Boolean).join(" ");
+
+                    return `
+                    <!-- MARKET ${index + 1} -->
+                    <article
+                        class="market-card${isExtra ? " extra-market" : ""}"
+                        data-market-index="${index}"
+                        data-market-id="${escapeHTML(market.id)}"
+                        data-search="${escapeHTML(searchKeywords)}"
+                    >
+                        <div class="market-image">
+                            <img src="${escapeHTML(market.image)}" alt="${escapeHTML(market.name)}" loading="lazy">
+                            <span class="status ${market.status === "open" ? "open" : "closed"}">
+                                ${market.status === "open" ? "Open" : "Closed"}
+                            </span>
+                            <button
+                                class="bookmark-btn${isBookmarked ? " active" : ""}"
+                                type="button"
+                                data-market-id="${escapeHTML(market.id)}"
+                                title="${isBookmarked ? "Bookmarked (Click to remove)" : "Bookmark this market"}"
+                                aria-label="${isBookmarked ? "Remove bookmark" : "Bookmark market"}"
+                                onclick="toggleBookmark('${escapeHTML(market.id)}', event)"
+                            >
+                                ${isBookmarked ? "★" : "☆"}
+                            </button>
+                        </div>
+                        <div class="card-body">
+                            <h3>${escapeHTML(market.name)}</h3>
+                            <p class="info">📍 ${escapeHTML(market.area)}</p>
+                            <p class="info">🕐 ${escapeHTML(scheduleText)}</p>
+                            <div class="farmer-info">
+                                <span>👨‍🌾</span>
+                                ${escapeHTML(market.farmerName || "Local Farmers")}
+                            </div>
+                            <div class="tags">
+                                ${tagsHtml}
+                            </div>
+                            <button
+                                class="details-btn"
+                                type="button"
+                                data-market-index="${index}"
+                                aria-label="View details for ${escapeHTML(market.name)}"
+                            >
+                                View Details
+                            </button>
+                        </div>
+                    </article>
+                    `;
+                }).join("");
+            }
+        }
+
+        // 3. Render Produce
+        if (produceGrid) {
+            if (window.appData.produce.length === 0) {
+                produceGrid.innerHTML = '<div class="market-error">Unable to load seasonal produce right now. Please try again.</div>';
+            } else {
+                produceGrid.innerHTML = window.appData.produce.map(function (item, index) {
+                    const isExtra = index >= 5;
+                    const searchKeywords = [
+                        item.name,
+                        item.category,
+                        item.season,
+                        item.description
+                    ].filter(Boolean).join(" ");
+
+                    return `
+                    <!-- PRODUCE ${index + 1} -->
+                    <article
+                        class="produce-card${isExtra ? " extra-produce" : ""}"
+                        data-produce-index="${index}"
+                        data-search="${escapeHTML(searchKeywords)}"
+                        tabindex="0"
+                        role="button"
+                        aria-label="View details for ${escapeHTML(item.name)}"
+                    >
+                        <img src="${escapeHTML(item.image)}" alt="${escapeHTML(item.name)}" loading="lazy">
+                        <div class="produce-info">
+                            <div class="produce-icon">${item.icon || "🥕"}</div>
+                            <div>
+                                <h3>${escapeHTML(item.name)}</h3>
+                                <p>${escapeHTML(item.description)}</p>
+                            </div>
+                        </div>
+                    </article>
+                    `;
+                }).join("");
+            }
+        }
+
+        // 4. Render Farmers
+        if (farmersContainer) {
+            if (window.appData.farmers.length === 0) {
+                farmersContainer.innerHTML = '<div class="market-error">Unable to load farmers right now. Please try again.</div>';
+            } else {
+                farmersContainer.innerHTML = window.appData.farmers.map(function (farmer, index) {
+                    const isExtra = index >= 4;
+                    const searchKeywords = [
+                        farmer.name,
+                        farmer.farm,
+                        farmer.role,
+                        ...(farmer.tags || [])
+                    ].filter(Boolean).join(" ");
+
+                    const tagsHtml = Array.isArray(farmer.tags)
+                        ? farmer.tags.map(function (tag) {
+                            return "<span>" + escapeHTML(tag) + "</span>";
+                        }).join("")
+                        : "";
+
+                    return `
+                    <!-- Farmer ${index + 1} -->
+                    <article
+                        class="farmer-card${isExtra ? " extra-farmer" : ""}"
+                        data-search="${escapeHTML(searchKeywords)}"
+                    >
+                        <img src="${escapeHTML(farmer.image)}" alt="${escapeHTML(farmer.name)}" loading="lazy">
+                        <div class="farmer-info">
+                            <h3>${escapeHTML(farmer.name)}</h3>
+                            <p>${escapeHTML(farmer.farm || farmer.role || "")}</p>
+                            <div class="tags">
+                                ${tagsHtml}
+                            </div>
+                        </div>
+                    </article>
+                    `;
+                }).join("");
+            }
+        }
+
+        // 5. Build dynamic market locations for Google Maps and distance calculation
+        window.marketLocations = window.appData.markets.map(function (market) {
+            return {
+                name: market.name,
+                location: market.area,
+                lat: market.coordinates ? market.coordinates.latitude : 24.8607,
+                lng: market.coordinates ? market.coordinates.longitude : 67.0011
+            };
+        });
+
+        // 6. Update Site Information from site.json
+        if (window.appData.site) {
+            const footerEmail = document.getElementById("footerEmail");
+            if (footerEmail && window.appData.site.email) {
+                footerEmail.href = "mailto:" + window.appData.site.email;
+                footerEmail.textContent = "✉ " + window.appData.site.email;
+            }
+            const footerPhone = document.getElementById("footerPhone");
+            if (footerPhone && window.appData.site.phone) {
+                footerPhone.href = "tel:" + window.appData.site.phone.replace(/[^0-9+]/g, "");
+                footerPhone.textContent = "☎ " + window.appData.site.phone;
+            }
+            const footerAddress = document.getElementById("footerAddress");
+            if (footerAddress && window.appData.site.address) {
+                footerAddress.textContent = "📍 " + window.appData.site.address;
+            }
+            const footerBrandText = document.getElementById("footerBrandText");
+            if (footerBrandText && window.appData.site.description) {
+                footerBrandText.textContent = window.appData.site.description;
+            }
+        }
+
+        // 7. Refresh search collection and wire details buttons & produce card clicks
+        allSearchCards = Array.from(document.querySelectorAll(".market-card, .produce-card, .farmer-card"));
+
+        document.querySelectorAll(".details-btn").forEach(function (button) {
+            button.addEventListener("click", function (e) {
+                e.stopPropagation();
+                const index = Number(button.dataset.marketIndex);
+                openMarketDetailModal(index);
+            });
+        });
+
+        document.querySelectorAll(".produce-card").forEach(function (card) {
+            card.addEventListener("click", function () {
+                const index = Number(card.dataset.produceIndex);
+                openProduceDetailModal(index);
+            });
+            card.addEventListener("keydown", function (e) {
+                if (e.key === "Enter" || e.key === " ") {
+                    e.preventDefault();
+                    const index = Number(card.dataset.produceIndex);
+                    openProduceDetailModal(index);
+                }
+            });
+        });
+
+        updateBookmarkUI();
+
+        // 8. Check for URL query parameter (e.g. ?id=market001 or ?market=0 or ?saved=...)
+        try {
+            const urlParams = new URLSearchParams(window.location.search);
+            const marketId = urlParams.get("id");
+            const marketIndex = urlParams.get("market");
+            const savedParam = urlParams.get("saved");
+
+            if (savedParam) {
+                const ids = savedParam.split(",").filter(Boolean);
+                if (ids.length > 0) {
+                    saveBookmarks(ids);
+                    updateBookmarkUI();
+                    openBookmarkModal();
+                }
+            } else if (marketId) {
+                const foundIndex = window.appData.markets.findIndex(function (m) {
+                    return m.id === marketId;
+                });
+                if (foundIndex > -1) {
+                    setTimeout(function () {
+                        openMarketDetailModal(foundIndex);
+                    }, 500);
+                }
+            } else if (marketIndex !== null && !isNaN(marketIndex)) {
+                setTimeout(function () {
+                    openMarketDetailModal(Number(marketIndex));
+                }, 500);
+            }
+        } catch (e) {
+            console.error("URL parameter error:", e);
+        }
+    }
+
+    initFreshFind();
+
+});
+
+/* =====================================================
+   HELPER: SAFE HTML ESCAPE
+===================================================== */
+function escapeHTML(text) {
+    const div = document.createElement("div");
+    div.textContent = text || "";
+    return div.innerHTML;
+}
+</script>
+
+<!-- =====================================================
+     FRESHFIND AI CHATBOT
+===================================================== -->
+
+<div class="chatbot-wrapper">
+
+    <!-- Floating Button -->
+    <button class="chatbot-toggle" id="chatbotToggle" aria-label="Open FreshFind AI Assistant">
+        💬
+    </button>
+
+    <!-- Chatbot Window -->
+    <div class="chatbot-box" id="chatbotBox" role="dialog" aria-modal="true" aria-label="FreshFind AI Chatbot">
+
+        <!-- Header -->
+        <div class="chatbot-header">
+
+            <div class="chatbot-title">
+                <div class="chatbot-avatar">🌱</div>
+
+                <div>
+                    <h3>FreshFind AI</h3>
+                    <span>
+                        <i></i> Online
+                    </span>
+                </div>
+            </div>
+
+            <div class="chatbot-actions">
+                <button id="clearChat" title="Clear chat" aria-label="Clear chat">↻</button>
+                <button id="closeChat" title="Close" aria-label="Close chat">×</button>
+            </div>
+
+        </div>
+
+
+        <!-- Chat Messages -->
+        <div class="chatbot-messages" id="chatMessages">
+
+            <!-- Welcome Message / Loading State -->
+            <div class="bot-message" id="chatbotWelcomeMessage">
+                <div class="message-avatar">🌱</div>
+
+                <div class="message-content">
+                    <p id="chatbotStatusText">
+                        FreshFind AI is getting ready...
+                    </p>
+                    <span class="message-time">Just now</span>
+                </div>
+            </div>
+
+            <!-- Built-in Questions Container (populated dynamically from chatbot.json) -->
+            <div class="quick-question-title" id="quickQuestionTitle" style="display:none;">
+                You can ask me:
+            </div>
+
+            <div class="quick-questions" id="quickQuestionsContainer"></div>
+
+        </div>
+
+
+        <!-- Typing Indicator -->
+        <div class="chatbot-typing" id="chatTyping">
+
+            <div class="typing-avatar">🌱</div>
+
+            <div class="typing-dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+        </div>
+
+
+        <!-- Input Area -->
+        <div class="chatbot-input-area">
+
+            <input
+                type="text"
+                id="chatInput"
+                placeholder="Ask FreshFind AI..."
+                autocomplete="off"
+                aria-label="Ask FreshFind AI"
+            >
+
+            <button id="sendChat" aria-label="Send message">
+                ➤
+            </button>
+
+        </div>
+
+        <div class="chatbot-footer">
+            FreshFind • Local Markets. Fresh Food.
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =====================================================
+     CHATBOT JAVASCRIPT
+===================================================== -->
+
+<script>
+/**
+ * Fetch chatbot knowledge base from data/chatbot.json
+ */
+async function loadChatbotData() {
+    const response = await fetch('./data/chatbot.json');
+    if (!response.ok) {
+        throw new Error('Unable to load chatbot data');
+    }
+    return await response.json();
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const chatbotToggle = document.getElementById("chatbotToggle");
+    const chatbotBox = document.getElementById("chatbotBox");
+    const closeChat = document.getElementById("closeChat");
+    const clearChat = document.getElementById("clearChat");
+    const chatInput = document.getElementById("chatInput");
+    const sendChat = document.getElementById("sendChat");
+    const chatMessages = document.getElementById("chatMessages");
+    const chatTyping = document.getElementById("chatTyping");
+
+    // Chatbot configuration & session context
+    let chatbotConfig = null;
+    let conversationContext = {
+        previousUserMessage: "",
+        lastCategory: null,
+        lastMatchedId: null
+    };
+
+    // Stop words to ignore during keyword matching
+    const STOP_WORDS = new Set([
+        "a", "about", "an", "and", "are", "as", "at", "be", "by", "can",
+        "could", "did", "do", "does", "for", "from", "get", "had", "has",
+        "have", "how", "i", "if", "in", "is", "it", "its", "me", "my",
+        "of", "on", "or", "our", "so", "some", "tell", "that", "the",
+        "their", "them", "then", "there", "these", "they", "this", "to",
+        "us", "was", "we", "were", "what", "when", "where", "which", "who",
+        "will", "with", "would", "you", "your"
+    ]);
+
+    // Initialize Chatbot data
+    async function initChatbot() {
+        try {
+            chatbotConfig = await loadChatbotData();
+            window.appData = window.appData || {};
+            window.appData.chatbot = chatbotConfig.chatbot || [];
+            window.appData.chatbotConfig = chatbotConfig;
+
+            renderWelcomeState();
+        } catch (err) {
+            console.error("Failed to load chatbot data:", err);
+            const statusEl = document.getElementById("chatbotStatusText");
+            if (statusEl) {
+                statusEl.textContent = (chatbotConfig && chatbotConfig.settings && chatbotConfig.settings.errorMessage)
+                    || "Unable to load chatbot data right now. Please check your connection and refresh.";
+            }
+        }
+    }
+
+    initChatbot();
+
+    // Toggle Chatbot Window
+    if (chatbotToggle && chatbotBox) {
+        chatbotToggle.addEventListener("click", function () {
+            chatbotBox.classList.toggle("active");
+            if (chatbotBox.classList.contains("active") && chatInput) {
+                setTimeout(() => {
+                    chatInput.focus();
+                }, 200);
+            }
+        });
+    }
+
+    // Close Chatbot Window
+    if (closeChat && chatbotBox) {
+        closeChat.addEventListener("click", function () {
+            chatbotBox.classList.remove("active");
+        });
+    }
+
+    // Clear Chat
+    if (clearChat && chatMessages) {
+        clearChat.addEventListener("click", function () {
+            conversationContext = {
+                previousUserMessage: "",
+                lastCategory: null,
+                lastMatchedId: null
+            };
+            renderWelcomeState();
+        });
+    }
+
+    // Send Message
+    function sendMessage() {
+        if (!chatInput) return;
+        const message = chatInput.value.trim();
+        if (message === "") return;
+
+        addUserMessage(message);
+        chatInput.value = "";
+        showTyping();
+
+        setTimeout(function () {
+            hideTyping();
+            const responseHtml = getBotResponse(message);
+            addBotMessage(responseHtml);
+        }, 500);
+    }
+
+    if (sendChat) {
+        sendChat.addEventListener("click", function () {
+            sendMessage();
+        });
+    }
+
+    if (chatInput) {
+        chatInput.addEventListener("keydown", function (event) {
+            if (event.key === "Enter") {
+                event.preventDefault();
+                sendMessage();
+            }
+        });
+    }
+
+    // Append User Message to UI
+    function addUserMessage(message) {
+        const messageDiv = document.createElement("div");
+        messageDiv.className = "user-message";
+        messageDiv.innerHTML = `
+            <div class="message-content">
+                <p>${escapeHTML(message)}</p>
+                <span class="message-time">Just now</span>
+            </div>
+        `;
+        chatMessages.appendChild(messageDiv);
+        scrollChat();
+    }
+
+    // Append Bot Message to UI
+    function addBotMessage(messageHtml) {
+        const messageDiv = document.createElement("div");
+        messageDiv.className = "bot-message";
+        messageDiv.innerHTML = `
+            <div class="message-avatar">🌱</div>
+            <div class="message-content">
+                ${messageHtml}
+                <span class="message-time">Just now</span>
+            </div>
+        `;
+        chatMessages.appendChild(messageDiv);
+        scrollChat();
+    }
+
+    function showTyping() {
+        if (chatTyping) chatTyping.classList.add("active");
+        scrollChat();
+    }
+
+    function hideTyping() {
+        if (chatTyping) chatTyping.classList.remove("active");
+    }
+
+    function scrollChat() {
+        if (chatMessages) chatMessages.scrollTop = chatMessages.scrollHeight;
+    }
+
+    // Text Normalization
+    function normalizeText(text) {
+        if (!text) return "";
+        return text
+            .toLowerCase()
+            .replace(/[^\w\s]/g, " ")
+            .replace(/\s+/g, " ")
+            .trim();
+    }
+
+    // Word Stemming / Singularization for Typo & Variation Handling
+    function stemWord(word) {
+        if (!word || word.length <= 3) return word;
+        if (word.endsWith("ies") && word.length > 4) return word.slice(0, -3) + "y";
+        if (word.endsWith("ses") || word.endsWith("xes") || word.endsWith("ches") || word.endsWith("shes")) {
+            return word.slice(0, -2);
+        }
+        if (word.endsWith("s") && !word.endsWith("ss") && !word.endsWith("us") && !word.endsWith("is")) {
+            return word.slice(0, -1);
+        }
+        return word;
+    }
+
+    // Levenshtein Distance for Typo Tolerance
+    function levenshteinDistance(a, b) {
+        if (a === b) return 0;
+        if (!a.length) return b.length;
+        if (!b.length) return a.length;
+        const matrix = [];
+        for (let i = 0; i <= b.length; i++) matrix[i] = [i];
+        for (let j = 0; j <= a.length; j++) matrix[0][j] = j;
+        for (let i = 1; i <= b.length; i++) {
+            for (let j = 1; j <= a.length; j++) {
+                if (b.charAt(i - 1) === a.charAt(j - 1)) {
+                    matrix[i][j] = matrix[i - 1][j - 1];
+                } else {
+                    matrix[i][j] = Math.min(
+                        matrix[i - 1][j - 1] + 1,
+                        matrix[i][j - 1] + 1,
+                        matrix[i - 1][j] + 1
+                    );
+                }
+            }
+        }
+        return matrix[b.length][a.length];
+    }
+
+    function isWordCloseMatch(word1, word2) {
+        if (word1 === word2) return true;
+        if (stemWord(word1) === stemWord(word2)) return true;
+        const maxLen = Math.max(word1.length, word2.length);
+        if (maxLen >= 7) return levenshteinDistance(word1, word2) <= 2;
+        if (maxLen >= 4) return levenshteinDistance(word1, word2) <= 1;
+        return false;
+    }
+
+    // Match Scoring Function
+    function calculateMatchScore(item, userRaw) {
+        const userNorm = normalizeText(userRaw);
+        if (!userNorm) return 0;
+
+        const userWords = userNorm.split(" ").filter(Boolean);
+        const contentWords = userWords.filter(w => !STOP_WORDS.has(w));
+
+        let score = 0;
+
+        const questionNorm = normalizeText(item.question || "");
+        const variations = Array.isArray(item.variations) ? item.variations.map(normalizeText) : [];
+        const keywords = Array.isArray(item.keywords) ? item.keywords.map(normalizeText) : [];
+
+        // 1. Exact variation match: +100 points
+        let variationMatched = false;
+        for (const v of variations) {
+            if (v && userNorm === v) {
+                score += 100;
+                variationMatched = true;
+                break;
+            }
+        }
+
+        // 2. Main question match: +80 points
+        if (!variationMatched && questionNorm && userNorm === questionNorm) {
+            score += 80;
+        }
+
+        // Stemmed sentence match on variations / main question
+        const userStemmed = userWords.map(stemWord).join(" ");
+        if (!variationMatched && score < 80) {
+            for (const v of variations) {
+                const vStemmed = v.split(" ").map(stemWord).join(" ");
+                if (userStemmed === vStemmed) {
+                    score += 90;
+                    variationMatched = true;
+                    break;
+                }
+            }
+            if (!variationMatched && questionNorm) {
+                const qStemmed = questionNorm.split(" ").map(stemWord).join(" ");
+                if (userStemmed === qStemmed) {
+                    score += 75;
+                }
+            }
+        }
+
+        // Substring match on variation or question: +25 to +30 points
+        if (score < 70) {
+            for (const v of variations) {
+                if (v.length >= 8 && (userNorm.includes(v) || v.includes(userNorm))) {
+                    score += 30;
+                    break;
+                }
+            }
+            if (questionNorm.length >= 8 && (userNorm.includes(questionNorm) || questionNorm.includes(userNorm))) {
+                score += 25;
+            }
+        }
+
+        // 3. Keyword matching: +10 points each
+        const matchedKeywords = new Set();
+        for (const kw of keywords) {
+            if (!kw) continue;
+            const kwWords = kw.split(" ").filter(Boolean);
+            if (kwWords.length > 1) {
+                if (userNorm.includes(kw)) {
+                    score += 15;
+                    matchedKeywords.add(kw);
+                } else {
+                    const kwStemmed = kwWords.map(stemWord).join(" ");
+                    if (userStemmed.includes(kwStemmed)) {
+                        score += 12;
+                        matchedKeywords.add(kw);
+                    }
+                }
+            } else {
+                for (const uw of contentWords) {
+                    if (uw === kw || stemWord(uw) === stemWord(kw)) {
+                        score += 10;
+                        matchedKeywords.add(kw);
+                        break;
+                    } else if (isWordCloseMatch(uw, kw)) {
+                        score += 8;
+                        matchedKeywords.add(kw);
+                        break;
+                    }
+                }
+            }
+        }
+
+        // 4. Partial word match: +5 points
+        for (const uw of contentWords) {
+            if (uw.length >= 4) {
+                for (const kw of keywords) {
+                    if (!matchedKeywords.has(kw) && kw.length >= 4) {
+                        if (uw.includes(kw) || kw.includes(uw)) {
+                            score += 5;
+                            matchedKeywords.add(kw);
+                            break;
+                        }
+                    }
+                }
+            }
+        }
+
+        // 5. Context-aware boost (Section 12)
+        if (conversationContext.lastCategory && item.category === conversationContext.lastCategory) {
+            const isFollowUp = userNorm.startsWith("what about") ||
+                               userNorm.startsWith("how about") ||
+                               userNorm.startsWith("where about") ||
+                               userNorm.startsWith("and ") ||
+                               contentWords.length <= 2;
+            if (isFollowUp && (score > 0 || matchedKeywords.size > 0)) {
+                score += 15;
+            }
+        }
+
+        return score;
+    }
+
+    // Format text into HTML paragraphs or bullet points
+    function formatBotAnswerHtml(answerText) {
+        if (!answerText) return "";
+        if (answerText.trim().startsWith("<")) {
+            return answerText;
+        }
+        const lines = answerText.split("\n").map(l => l.trim()).filter(Boolean);
+        let html = "";
+        let inList = false;
+        for (const line of lines) {
+            if (line.startsWith("•") || line.startsWith("-") || line.startsWith("*")) {
+                if (!inList) {
+                    html += "<ul>";
+                    inList = true;
+                }
+                html += `<li>${escapeHTML(line.replace(/^[•\-\*]\s*/, ""))}</li>`;
+            } else {
+                if (inList) {
+                    html += "</ul>";
+                    inList = false;
+                }
+                html += `<p>${escapeHTML(line)}</p>`;
+            }
+        }
+        if (inList) html += "</ul>";
+        return html;
+    }
+
+    // Build related market/produce chips and action buttons
+    function buildRelatedElementsHtml(item) {
+        let chipsHtml = "";
+
+        // Related Markets
+        if (Array.isArray(item.relatedMarketIds) && item.relatedMarketIds.length > 0 && window.appData && Array.isArray(window.appData.markets)) {
+            const marketChips = [];
+            for (const mId of item.relatedMarketIds) {
+                const mIndex = window.appData.markets.findIndex(m => m.id === mId);
+                if (mIndex !== -1) {
+                    const market = window.appData.markets[mIndex];
+                    marketChips.push(`
+                        <button type="button" class="bot-card-chip" onclick="openMarketDetailModal(${mIndex})" title="View details for ${escapeHTML(market.name)}">
+                            🛒 ${escapeHTML(market.name)}
+                        </button>
+                    `);
+                }
+            }
+            if (marketChips.length > 0) {
+                chipsHtml += `<div class="bot-chips-container">${marketChips.join("")}</div>`;
+            }
+        }
+
+        // Related Produce
+        if (Array.isArray(item.relatedProduceIds) && item.relatedProduceIds.length > 0 && window.appData && Array.isArray(window.appData.produce)) {
+            const produceChips = [];
+            for (const pId of item.relatedProduceIds) {
+                const pIndex = window.appData.produce.findIndex(p => p.id === pId);
+                if (pIndex !== -1) {
+                    const prod = window.appData.produce[pIndex];
+                    const icon = prod.icon || "🥕";
+                    produceChips.push(`
+                        <button type="button" class="bot-card-chip" onclick="openProduceDetailModal(${pIndex})" title="View details for ${escapeHTML(prod.name)}">
+                            ${icon} ${escapeHTML(prod.name)}
+                        </button>
+                    `);
+                }
+            }
+            if (produceChips.length > 0) {
+                chipsHtml += `<div class="bot-chips-container">${produceChips.join("")}</div>`;
+            }
+        }
+
+        // Action navigation button
+        if (item.actionBtnText && item.actionSection) {
+            chipsHtml += `
+                <div style="margin-top: 8px;">
+                    <button type="button" class="bot-action-btn" onclick="goToSection('${escapeHTML(item.actionSection)}')">
+                        ${escapeHTML(item.actionBtnText)}
+                    </button>
+                </div>
+            `;
+        }
+
+        return chipsHtml;
+    }
+
+    // Get Bot Response using loaded chatbotConfig
+    function getBotResponse(userMessage) {
+        const knowledgeBase = (chatbotConfig && Array.isArray(chatbotConfig.chatbot))
+            ? chatbotConfig.chatbot
+            : (window.appData && Array.isArray(window.appData.chatbot) ? window.appData.chatbot : []);
+
+        const settings = (chatbotConfig && chatbotConfig.settings) ? chatbotConfig.settings : {};
+        const minScore = typeof settings.minimumMatchScore === "number" ? settings.minimumMatchScore : 15;
+        const fallbackText = settings.fallbackAnswer || "I'm not sure I understood that. Try asking me about farmers markets, produce, seasons, opening hours, bookmarks, or FreshFind.";
+
+        if (!normalizeText(userMessage)) {
+            return formatBotAnswerHtml(fallbackText);
+        }
+
+        let bestMatch = null;
+        let highestScore = 0;
+
+        for (const item of knowledgeBase) {
+            const score = calculateMatchScore(item, userMessage);
+            if (score > highestScore) {
+                highestScore = score;
+                bestMatch = item;
+            }
+        }
+
+        if (bestMatch && highestScore >= minScore) {
+            conversationContext.previousUserMessage = userMessage;
+            conversationContext.lastCategory = bestMatch.category;
+            conversationContext.lastMatchedId = bestMatch.id;
+
+            let responseHtml = formatBotAnswerHtml(bestMatch.answer);
+            responseHtml += buildRelatedElementsHtml(bestMatch);
+            return responseHtml;
+        }
+
+        return formatBotAnswerHtml(fallbackText);
+    }
+
+    // Format display label for quick question buttons
+    function formatQuickQuestionLabel(text) {
+        const lower = text.toLowerCase();
+        if (lower.includes("farmers markets are available")) return "🛒 Farmers markets";
+        if (lower.includes("seasonal produce is available")) return "🥕 Seasonal produce";
+        if (lower.includes("find nearby farmers") || lower.includes("nearby farmers")) return "👨‍🌾 Nearby farmers";
+        if (lower.includes("how does freshfind work") || lower.includes("freshfind works")) return "ℹ️ How FreshFind works";
+        if (lower.includes("summer")) return "☀️ Summer produce";
+        if (lower.includes("location") || lower.includes("near me")) return "📍 Use my location";
+        return escapeHTML(text);
+    }
+
+    // Render Quick Question buttons dynamically from JSON
+    function renderQuickQuestions(containerEl) {
+        if (!containerEl) return;
+        const questions = (chatbotConfig && Array.isArray(chatbotConfig.quickQuestions))
+            ? chatbotConfig.quickQuestions
+            : [];
+
+        if (questions.length === 0) {
+            containerEl.innerHTML = "";
+            return;
+        }
+
+        containerEl.innerHTML = questions.map(function (q) {
+            const text = typeof q === "string" ? q : (q.question || q.label || "");
+            const label = formatQuickQuestionLabel(text);
+            return `<button class="quick-question" data-question="${escapeHTML(text)}">${label}</button>`;
+        }).join("");
+
+        attachQuickQuestionEvents();
+    }
+
+    // Render Initial Welcome State & Dynamic Quick Questions
+    function renderWelcomeState() {
+        if (!chatMessages) return;
+        chatMessages.innerHTML = `
+            <div class="bot-message">
+                <div class="message-avatar">🌱</div>
+                <div class="message-content">
+                    <p>Hi! 👋 I'm <strong>FreshFind AI</strong>.</p>
+                    <p>I can help you find local farmers markets, seasonal produce and nearby farmers.</p>
+                    <span class="message-time">Just now</span>
+                </div>
+            </div>
+            <div class="quick-question-title">You can ask me:</div>
+            <div class="quick-questions" id="quickQuestionsContainer"></div>
+        `;
+
+        const container = document.getElementById("quickQuestionsContainer");
+        renderQuickQuestions(container);
+    }
+
+    // Attach click events to quick-question buttons
+    function attachQuickQuestionEvents() {
+        document.querySelectorAll(".quick-question").forEach(function (button) {
+            button.addEventListener("click", function () {
+                const question = this.getAttribute("data-question");
+                if (chatInput && question) {
+                    chatInput.value = question;
+                    sendMessage();
+                }
+            });
+        });
+    }
+
+});
+
+/* =====================================================
+   NAVIGATION FROM CHATBOT
+===================================================== */
+function goToSection(sectionId) {
+    const section = document.getElementById(sectionId);
+    if (section) {
+        section.scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+        });
+    }
+}
+</script>
+
+</body>
+</html>

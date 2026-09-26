@@ -1,0 +1,449 @@
+{
+  "markets": [
+    {
+      "id": "market001",
+      "name": "Clifton Farmers Market",
+      "slug": "clifton-farmers-market",
+      "area": "Clifton",
+      "address": "Block 4, Clifton Beach Road",
+      "city": "Karachi",
+      "description": "A community farmers market in Clifton offering fresh seasonal produce, vegetables, fruits, and herbs directly from local growers.",
+      "image": "./images/01_Clifton.png",
+      "coordinates": {
+        "latitude": 24.8138,
+        "longitude": 67.03
+      },
+      "schedule": [
+        {
+          "day": "Saturday",
+          "open": "08:00",
+          "close": "14:00"
+        }
+      ],
+      "farmerName": "Local Farmers",
+      "tags": [
+        "Vegetables",
+        "Fruits",
+        "Herbs"
+      ],
+      "produceIds": [
+        "produce001",
+        "produce002",
+        "produce003",
+        "produce004",
+        "produce006",
+        "produce014",
+        "produce015"
+      ],
+      "featured": true,
+      "status": "open"
+    },
+    {
+      "id": "market002",
+      "name": "DHA Phase VIII Market",
+      "slug": "dha-phase-viii-market",
+      "area": "DHA Phase VIII",
+      "address": "Zulfiqar Street, DHA Phase 8",
+      "city": "Karachi",
+      "description": "Coastal market featuring fresh organic fruits, dairy items, and wholesome local farm products.",
+      "image": "./images/02_DHA_Phase_VIII.png",
+      "coordinates": {
+        "latitude": 24.7965,
+        "longitude": 67.0715
+      },
+      "schedule": [
+        {
+          "day": "Sunday",
+          "open": "09:00",
+          "close": "15:00"
+        }
+      ],
+      "farmerName": "Local Farmers",
+      "tags": [
+        "Fruits",
+        "Dairy",
+        "Organic"
+      ],
+      "produceIds": [
+        "produce002",
+        "produce005",
+        "produce007",
+        "produce011",
+        "produce012",
+        "produce016",
+        "produce030"
+      ],
+      "featured": true,
+      "status": "closed"
+    },
+    {
+      "id": "market003",
+      "name": "Gulshan-e-Iqbal Farmers Market",
+      "slug": "gulshan-e-iqbal-farmers-market",
+      "area": "Gulshan-e-Iqbal",
+      "address": "Block 6, University Road",
+      "city": "Karachi",
+      "description": "Central community market providing farm-fresh vegetables, seasonal berries, and wholesome grains.",
+      "image": "./images/03_Gulshan_e_Iqbal.png",
+      "coordinates": {
+        "latitude": 24.9207,
+        "longitude": 67.0928
+      },
+      "schedule": [
+        {
+          "day": "Friday",
+          "open": "07:00",
+          "close": "13:00"
+        }
+      ],
+      "farmerName": "Local Farmers",
+      "tags": [
+        "Vegetables",
+        "Berries",
+        "Grains"
+      ],
+      "produceIds": [
+        "produce001",
+        "produce003",
+        "produce005",
+        "produce008",
+        "produce010",
+        "produce017"
+      ],
+      "featured": true,
+      "status": "open"
+    },
+    {
+      "id": "market004",
+      "name": "North Nazimabad Farmers Market",
+      "slug": "north-nazimabad-farmers-market",
+      "area": "North Nazimabad",
+      "address": "Block H, Shahrah-e-Sher Shah Suri",
+      "city": "Karachi",
+      "description": "Neighborhood farmers hub offering fresh fruits, leafy vegetables, and colorful farm-cut flowers.",
+      "image": "./images/04_North_Nazimabad.png",
+      "coordinates": {
+        "latitude": 24.9512,
+        "longitude": 67.0348
+      },
+      "schedule": [
+        {
+          "day": "Saturday",
+          "open": "08:00",
+          "close": "14:00"
+        }
+      ],
+      "farmerName": "Local Farmers",
+      "tags": [
+        "Fruits",
+        "Vegetables",
+        "Flowers"
+      ],
+      "produceIds": [
+        "produce001",
+        "produce002",
+        "produce004",
+        "produce006",
+        "produce013"
+      ],
+      "featured": false,
+      "status": "closed"
+    },
+    {
+      "id": "market005",
+      "name": "PECHS Organic Market",
+      "slug": "pechs-organic-market",
+      "area": "PECHS",
+      "address": "Block 2, Tariq Road Enclave",
+      "city": "Karachi",
+      "description": "Certified organic growers hub spotlighting culinary herbs, fresh seasonal fruits, and greens.",
+      "image": "./images/05_PECHS.png",
+      "coordinates": {
+        "latitude": 24.8654,
+        "longitude": 67.0758
+      },
+      "schedule": [
+        {
+          "day": "Sunday",
+          "open": "08:00",
+          "close": "14:00"
+        }
+      ],
+      "farmerName": "Organic Farmers",
+      "tags": [
+        "Organic",
+        "Herbs",
+        "Fruits"
+      ],
+      "produceIds": [
+        "produce002",
+        "produce003",
+        "produce005",
+        "produce014",
+        "produce015",
+        "produce020"
+      ],
+      "featured": false,
+      "status": "open"
+    },
+    {
+      "id": "market006",
+      "name": "Bahadurabad Community Market",
+      "slug": "bahadurabad-community-market",
+      "area": "Bahadurabad",
+      "address": "Alamgir Road, Bahadurabad",
+      "city": "Karachi",
+      "description": "Bustling central bazaar featuring daily picked vegetables, fresh farm dairy, and local staples.",
+      "image": "./images/06_Bahadurabad.png",
+      "coordinates": {
+        "latitude": 24.8815,
+        "longitude": 67.0644
+      },
+      "schedule": [
+        {
+          "day": "Saturday",
+          "open": "09:00",
+          "close": "15:00"
+        }
+      ],
+      "farmerName": "Local Farmers",
+      "tags": [
+        "Vegetables",
+        "Dairy",
+        "Local"
+      ],
+      "produceIds": [
+        "produce001",
+        "produce004",
+        "produce008",
+        "produce011",
+        "produce016",
+        "produce029"
+      ],
+      "featured": false,
+      "status": "closed"
+    },
+    {
+      "id": "market007",
+      "name": "Malir Fresh Farm Stand",
+      "slug": "malir-fresh-farm-stand",
+      "area": "Malir",
+      "address": "National Highway, Malir Halt",
+      "city": "Karachi",
+      "description": "Agricultural district open-air stand offering fresh berries, local grains, and morning harvest greens.",
+      "image": "./images/07_Malir.png",
+      "coordinates": {
+        "latitude": 24.8939,
+        "longitude": 67.1942
+      },
+      "schedule": [
+        {
+          "day": "Friday",
+          "open": "07:00",
+          "close": "13:00"
+        }
+      ],
+      "farmerName": "Local Farmers",
+      "tags": [
+        "Berries",
+        "Grains",
+        "Fresh"
+      ],
+      "produceIds": [
+        "produce003",
+        "produce005",
+        "produce007",
+        "produce010",
+        "produce017"
+      ],
+      "featured": false,
+      "status": "open"
+    },
+    {
+      "id": "market008",
+      "name": "Karachi Farmer Market",
+      "slug": "karachi-farmer-market",
+      "area": "Karachi",
+      "address": "Old Queens Road, Karachi",
+      "city": "Karachi",
+      "description": "Long-standing city gathering with farmstead honey, dairy treats, fresh cut flowers, and fruits.",
+      "image": "./images/02_Karachi_Farmers_Market.png",
+      "coordinates": {
+        "latitude": 24.8607,
+        "longitude": 67.0011
+      },
+      "schedule": [
+        {
+          "day": "Sunday",
+          "open": "08:00",
+          "close": "15:00"
+        }
+      ],
+      "farmerName": "Local Farmers",
+      "tags": [
+        "Flowers",
+        "Fruits",
+        "Honey"
+      ],
+      "produceIds": [
+        "produce002",
+        "produce007",
+        "produce013",
+        "produce018",
+        "produce019",
+        "produce030"
+      ],
+      "featured": false,
+      "status": "closed"
+    },
+    {
+      "id": "market009",
+      "name": "Maple Grove Market",
+      "slug": "maple-grove-market",
+      "area": "Gulberg",
+      "address": "Block 12, F.B Area, Gulberg",
+      "city": "Karachi",
+      "description": "Tranquil open-air market dedicated to crisp orchard fruits, berries, and artisanal honey.",
+      "image": "./images/market_maple_grove.jpg",
+      "coordinates": {
+        "latitude": 24.938,
+        "longitude": 67.065
+      },
+      "schedule": [
+        {
+          "day": "Wednesday",
+          "open": "08:30",
+          "close": "14:30"
+        }
+      ],
+      "farmerName": "Maple Grove Farm",
+      "tags": [
+        "Fruits",
+        "Berries",
+        "Honey"
+      ],
+      "produceIds": [
+        "produce002",
+        "produce005",
+        "produce007",
+        "produce018",
+        "produce020",
+        "produce025"
+      ],
+      "featured": false,
+      "status": "open"
+    },
+    {
+      "id": "market010",
+      "name": "Oakridge Fresh Pavilion",
+      "slug": "oakridge-fresh-pavilion",
+      "area": "KDA Scheme 1",
+      "address": "Mirza Adam Khan Road, KDA Scheme 1",
+      "city": "Karachi",
+      "description": "Family-oriented pavilion featuring organic grains, fresh root vegetables, and herbs.",
+      "image": "./images/market_oakridge.jpg",
+      "coordinates": {
+        "latitude": 24.882,
+        "longitude": 67.089
+      },
+      "schedule": [
+        {
+          "day": "Thursday",
+          "open": "09:00",
+          "close": "15:00"
+        }
+      ],
+      "farmerName": "Oakridge Farm",
+      "tags": [
+        "Organic",
+        "Grains",
+        "Vegetables"
+      ],
+      "produceIds": [
+        "produce001",
+        "produce004",
+        "produce009",
+        "produce014",
+        "produce017",
+        "produce026",
+        "produce029"
+      ],
+      "featured": false,
+      "status": "open"
+    },
+    {
+      "id": "market011",
+      "name": "Sunset Valley Seaside Hub",
+      "slug": "sunset-valley-seaside-hub",
+      "area": "Seaview Promenade",
+      "address": "Beach Avenue, Phase 6",
+      "city": "Karachi",
+      "description": "Vibrant coastal hub offering sweet seasonal fruits, farm pastries, and artisan cheese.",
+      "image": "./images/market_sunset_valley.jpg",
+      "coordinates": {
+        "latitude": 24.789,
+        "longitude": 67.054
+      },
+      "schedule": [
+        {
+          "day": "Sunday",
+          "open": "08:00",
+          "close": "14:00"
+        }
+      ],
+      "farmerName": "Local Farmers",
+      "tags": [
+        "Fruits",
+        "Dairy",
+        "Bakery"
+      ],
+      "produceIds": [
+        "produce002",
+        "produce006",
+        "produce011",
+        "produce021",
+        "produce022",
+        "produce027"
+      ],
+      "featured": true,
+      "status": "open"
+    },
+    {
+      "id": "market012",
+      "name": "Riverside Green Fair",
+      "slug": "riverside-green-fair",
+      "area": "Boat Basin",
+      "address": "Khayaban-e-Roomi, Boat Basin",
+      "city": "Karachi",
+      "description": "Community market pairing fresh herbs, pasture eggs, and heirloom vegetables.",
+      "image": "./images/market_riverside.jpg",
+      "coordinates": {
+        "latitude": 24.821,
+        "longitude": 67.028
+      },
+      "schedule": [
+        {
+          "day": "Tuesday",
+          "open": "09:00",
+          "close": "15:00"
+        }
+      ],
+      "farmerName": "Green Valley Farm",
+      "tags": [
+        "Vegetables",
+        "Herbs",
+        "Eggs"
+      ],
+      "produceIds": [
+        "produce001",
+        "produce003",
+        "produce014",
+        "produce023",
+        "produce024",
+        "produce028"
+      ],
+      "featured": false,
+      "status": "open"
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "faqs": [
+    {
+      "id": "faq001",
+      "question": "What is FreshFind?",
+      "answer": "FreshFind helps residents discover local farmers markets and seasonal produce across Karachi.",
+      "category": "General"
+    },
+    {
+      "id": "faq002",
+      "question": "Does FreshFind charge any fee to shoppers?",
+      "answer": "No, FreshFind is a 100% free community resource to help residents discover fresh local food.",
+      "category": "General"
+    },
+    {
+      "id": "faq003",
+      "question": "How do I know if a farmers market is open today?",
+      "answer": "Each market card displays a real-time 'Open' or 'Closed' status badge based on its schedule.",
+      "category": "Markets"
+    },
+    {
+      "id": "faq004",
+      "question": "Where are the markets located?",
+      "answer": "Markets are located across Clifton, DHA Phase VIII, Gulshan-e-Iqbal, North Nazimabad, PECHS, Bahadurabad, and Malir.",
+      "category": "Markets"
+    },
+    {
+      "id": "faq005",
+      "question": "How does the 'Use My Location' map button work?",
+      "answer": "It requests your device's GPS coordinates to display your position and calculate the nearest market distance in kilometers.",
+      "category": "Features"
+    },
+    {
+      "id": "faq006",
+      "question": "What produce categories are available?",
+      "answer": "FreshFind covers Fruits, Vegetables, Herbs, Dairy, Eggs, Honey, Baked Goods, and Other artisanal goods.",
+      "category": "Produce"
+    },
+    {
+      "id": "faq007",
+      "question": "How do I search for markets or produce?",
+      "answer": "Type any keyword into the search bar at the top of the homepage to filter markets, produce, or farmers dynamically.",
+      "category": "Features"
+    },
+    {
+      "id": "faq008",
+      "question": "How does bookmarking work without a backend?",
+      "answer": "FreshFind saves your bookmarked markets securely in your browser's LocalStorage.",
+      "category": "Features"
+    },
+    {
+      "id": "faq009",
+      "question": "Will my bookmarks disappear when I close the browser?",
+      "answer": "No, LocalStorage persists across visits unless you clear your browser cookies and site storage.",
+      "category": "Features"
+    },
+    {
+      "id": "faq010",
+      "question": "What seasonal produce is available in summer?",
+      "answer": "Summer brings juicy tomatoes, sweet corn, blueberries, yellow peaches, and fresh basil.",
+      "category": "Produce"
+    },
+    {
+      "id": "faq011",
+      "question": "What produce is available in winter?",
+      "answer": "Winter highlights include fresh spinach, sweet Valencia oranges, butternut squash, and farmhouse butter.",
+      "category": "Produce"
+    },
+    {
+      "id": "faq012",
+      "question": "Can I bring my pet to outdoor markets?",
+      "answer": "Well-behaved dogs on short leashes are welcomed in outdoor market walkways.",
+      "category": "Community"
+    },
+    {
+      "id": "faq013",
+      "question": "What payment methods do vendors take?",
+      "answer": "Most vendors take cash and debit/credit cards. Many also support mobile bank app transfers.",
+      "category": "Community"
+    },
+    {
+      "id": "faq014",
+      "question": "How can local growers join as market vendors?",
+      "answer": "Reach out via our Contact form or email hello@freshfind.com with your farm and crop details.",
+      "category": "Community"
+    },
+    {
+      "id": "faq015",
+      "question": "How often is the market data updated?",
+      "answer": "Operating hours, seasonal crops, and vendor availability are reviewed bi-weekly.",
+      "category": "General"
+    },
+    {
+      "id": "faq016",
+      "question": "How does the FreshFind chatbot work?",
+      "answer": "The chatbot uses a client-side JSON knowledge base to instantly match keywords and answer common inquiries.",
+      "category": "Features"
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "seasonalRecommendations": [
+    {
+      "id": "season001",
+      "season": "Spring",
+      "title": "Fresh Spring Picks",
+      "description": "Discover sweet field strawberries, crisp leafy greens, tender baby carrots, and rosemary arriving with warmer weather.",
+      "produceIds": [
+        "produce002",
+        "produce003",
+        "produce004",
+        "produce012",
+        "produce015",
+        "produce023"
+      ],
+      "marketIds": [
+        "market001",
+        "market002",
+        "market004",
+        "market005",
+        "market012"
+      ]
+    },
+    {
+      "id": "season002",
+      "season": "Summer",
+      "title": "Vibrant Summer Harvest",
+      "description": "Enjoy sweet tomatoes, blueberries, bell peppers, blackberries, yellow peaches, sweet corn, and fragrant basil.",
+      "produceIds": [
+        "produce001",
+        "produce005",
+        "produce006",
+        "produce007",
+        "produce010",
+        "produce014",
+        "produce020",
+        "produce027"
+      ],
+      "marketIds": [
+        "market001",
+        "market003",
+        "market005",
+        "market007",
+        "market009",
+        "market011"
+      ]
+    },
+    {
+      "id": "season003",
+      "season": "Autumn",
+      "title": "Rich Autumn Bounty",
+      "description": "Savor sweet potatoes, crisp apples, broccoli florets, wildflower honey, and freshly baked country sourdough loaves.",
+      "produceIds": [
+        "produce009",
+        "produce017",
+        "produce018",
+        "produce021",
+        "produce022",
+        "produce025",
+        "produce026"
+      ],
+      "marketIds": [
+        "market003",
+        "market007",
+        "market008",
+        "market010",
+        "market011"
+      ]
+    },
+    {
+      "id": "season004",
+      "season": "Winter",
+      "title": "Winter Comforts",
+      "description": "Nourish your family with fresh spinach, farmhouse butter, butternut squash, and sweet Valencia oranges.",
+      "produceIds": [
+        "produce008",
+        "produce011",
+        "produce029",
+        "produce030"
+      ],
+      "marketIds": [
+        "market002",
+        "market003",
+        "market006",
+        "market008",
+        "market010"
+      ]
+    }
+  ]
+}

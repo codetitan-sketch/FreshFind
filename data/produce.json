@@ -1,0 +1,628 @@
+{
+  "produce": [
+    {
+      "id": "produce001",
+      "name": "Tomatoes",
+      "slug": "tomatoes",
+      "category": "Vegetables",
+      "description": "Fresh and locally grown",
+      "image": "images/produce_tomatoes.jpg",
+      "icon": "🍅",
+      "season": "Summer",
+      "availableMonths": [
+        "June",
+        "July",
+        "August",
+        "September"
+      ],
+      "marketIds": [
+        "market001",
+        "market003",
+        "market004",
+        "market006",
+        "market010",
+        "market012"
+      ]
+    },
+    {
+      "id": "produce002",
+      "name": "Strawberries",
+      "slug": "strawberries",
+      "category": "Fruits",
+      "description": "Sweet seasonal berries",
+      "image": "images/produce_strawberries.jpg",
+      "icon": "🍓",
+      "season": "Spring",
+      "availableMonths": [
+        "April",
+        "May",
+        "June"
+      ],
+      "marketIds": [
+        "market001",
+        "market002",
+        "market004",
+        "market005",
+        "market008",
+        "market009",
+        "market011"
+      ]
+    },
+    {
+      "id": "produce003",
+      "name": "Leafy Greens",
+      "slug": "leafy-greens",
+      "category": "Vegetables",
+      "description": "Crisp and healthy greens",
+      "image": "images/produce_leafy_greens.jpg",
+      "icon": "🥬",
+      "season": "Spring",
+      "availableMonths": [
+        "March",
+        "April",
+        "May",
+        "June"
+      ],
+      "marketIds": [
+        "market001",
+        "market003",
+        "market005",
+        "market007",
+        "market012"
+      ]
+    },
+    {
+      "id": "produce004",
+      "name": "Carrots",
+      "slug": "carrots",
+      "category": "Vegetables",
+      "description": "Naturally sweet and fresh",
+      "image": "images/produce_carrots.jpg",
+      "icon": "🥕",
+      "season": "Spring",
+      "availableMonths": [
+        "March",
+        "April",
+        "May",
+        "June"
+      ],
+      "marketIds": [
+        "market001",
+        "market004",
+        "market006",
+        "market010"
+      ]
+    },
+    {
+      "id": "produce005",
+      "name": "Blueberries",
+      "slug": "blueberries",
+      "category": "Fruits",
+      "description": "Fresh seasonal berries",
+      "image": "images/produce_blueberries.jpg",
+      "icon": "🫐",
+      "season": "Summer",
+      "availableMonths": [
+        "June",
+        "July",
+        "August"
+      ],
+      "marketIds": [
+        "market002",
+        "market003",
+        "market005",
+        "market007",
+        "market009"
+      ]
+    },
+    {
+      "id": "produce006",
+      "name": "Bell Peppers",
+      "slug": "bell-peppers",
+      "category": "Vegetables",
+      "description": "Crisp colorful peppers",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwPo971JNBz47fqifDbXMiTxQcPRkw8eQLBIM3Nar6xw&s=10",
+      "icon": "🫑",
+      "season": "Summer",
+      "availableMonths": [
+        "July",
+        "August",
+        "September"
+      ],
+      "marketIds": [
+        "market001",
+        "market004",
+        "market011"
+      ]
+    },
+    {
+      "id": "produce007",
+      "name": "Raspberries",
+      "slug": "raspberries",
+      "category": "Fruits",
+      "description": "Fresh local berries",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuak26RyGPm9B2GvgpEozOak4mBIRXqzI-R4VOh98nwg&s=10",
+      "icon": "🍓",
+      "season": "Summer",
+      "availableMonths": [
+        "June",
+        "July",
+        "August"
+      ],
+      "marketIds": [
+        "market002",
+        "market007",
+        "market008",
+        "market009"
+      ]
+    },
+    {
+      "id": "produce008",
+      "name": "Spinach",
+      "slug": "spinach",
+      "category": "Vegetables",
+      "description": "Fresh leafy vegetables",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLTLsGGBA2YLJCEMIiqFYpyGK0HKRjuPYtIkTjN60npA&s=10",
+      "icon": "🥬",
+      "season": "Winter",
+      "availableMonths": [
+        "November",
+        "December",
+        "January",
+        "February"
+      ],
+      "marketIds": [
+        "market003",
+        "market006"
+      ]
+    },
+    {
+      "id": "produce009",
+      "name": "Sweet Potatoes",
+      "slug": "sweet-potatoes",
+      "category": "Vegetables",
+      "description": "Naturally rich and fresh",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-9prR97kVPi0ikVl4pcHjHkTroBHSgeM-KDO7NPwEEQ&s=10",
+      "icon": "🍠",
+      "season": "Autumn",
+      "availableMonths": [
+        "September",
+        "October",
+        "November"
+      ],
+      "marketIds": [
+        "market010"
+      ]
+    },
+    {
+      "id": "produce010",
+      "name": "Blackberries",
+      "slug": "blackberries",
+      "category": "Fruits",
+      "description": "Juicy seasonal berries",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0bD5r-o1iB9RRYgiYS9TFR_9rTa-wIC2AIvad0Q9LKA&s=10",
+      "icon": "🫐",
+      "season": "Summer",
+      "availableMonths": [
+        "July",
+        "August",
+        "September"
+      ],
+      "marketIds": [
+        "market003",
+        "market007"
+      ]
+    },
+    {
+      "id": "produce011",
+      "name": "Farmhouse Butter",
+      "slug": "farmhouse-butter",
+      "category": "Dairy",
+      "description": "Rich, golden churned butter with natural sea salt.",
+      "image": "assets/images/produce/farmhouse-butter.jpg",
+      "icon": "🧈",
+      "season": "Winter",
+      "availableMonths": [
+        "October",
+        "November",
+        "December",
+        "January",
+        "February"
+      ],
+      "marketIds": [
+        "market002",
+        "market006",
+        "market011"
+      ]
+    },
+    {
+      "id": "produce012",
+      "name": "Artisan Goat Cheese",
+      "slug": "artisan-goat-cheese",
+      "category": "Dairy",
+      "description": "Creamy, tangy chevre rolled in fine Mediterranean herbs.",
+      "image": "assets/images/produce/goat-cheese.jpg",
+      "icon": "🧀",
+      "season": "Spring",
+      "availableMonths": [
+        "March",
+        "April",
+        "May",
+        "June"
+      ],
+      "marketIds": [
+        "market002"
+      ]
+    },
+    {
+      "id": "produce013",
+      "name": "Fresh Cut Flowers",
+      "slug": "fresh-cut-flowers",
+      "category": "Other",
+      "description": "Vibrant hand-tied bouquets of sun-grown sunflowers and wildflowers.",
+      "image": "assets/images/produce/fresh-flowers.jpg",
+      "icon": "🌻",
+      "season": "Summer",
+      "availableMonths": [
+        "May",
+        "June",
+        "July",
+        "August"
+      ],
+      "marketIds": [
+        "market004",
+        "market008"
+      ]
+    },
+    {
+      "id": "produce014",
+      "name": "Sweet Basil",
+      "slug": "sweet-basil",
+      "category": "Herbs",
+      "description": "Aromatic Genovese sweet basil picked at dawn.",
+      "image": "assets/images/produce/sweet-basil.jpg",
+      "icon": "🌿",
+      "season": "Summer",
+      "availableMonths": [
+        "May",
+        "June",
+        "July",
+        "August",
+        "September"
+      ],
+      "marketIds": [
+        "market001",
+        "market005",
+        "market010",
+        "market012"
+      ]
+    },
+    {
+      "id": "produce015",
+      "name": "Fresh Rosemary",
+      "slug": "fresh-rosemary",
+      "category": "Herbs",
+      "description": "Fragrant evergreen herb sprigs for roasts and infused oils.",
+      "image": "assets/images/produce/rosemary.jpg",
+      "icon": "🌱",
+      "season": "Spring",
+      "availableMonths": [
+        "March",
+        "April",
+        "May",
+        "June"
+      ],
+      "marketIds": [
+        "market001",
+        "market005"
+      ]
+    },
+    {
+      "id": "produce016",
+      "name": "Raw Whole Milk",
+      "slug": "raw-whole-milk",
+      "category": "Dairy",
+      "description": "Fresh unpasteurized whole milk from grass-fed cows.",
+      "image": "assets/images/produce/raw-milk.jpg",
+      "icon": "🥛",
+      "season": "Spring",
+      "availableMonths": [
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November",
+        "December"
+      ],
+      "marketIds": [
+        "market002",
+        "market006"
+      ]
+    },
+    {
+      "id": "produce017",
+      "name": "Organic Whole Grains",
+      "slug": "organic-whole-grains",
+      "category": "Other",
+      "description": "Stone-milled local wheat berries and rolled oats.",
+      "image": "assets/images/produce/organic-grains.jpg",
+      "icon": "🌾",
+      "season": "Autumn",
+      "availableMonths": [
+        "September",
+        "October",
+        "November",
+        "December"
+      ],
+      "marketIds": [
+        "market003",
+        "market007",
+        "market010"
+      ]
+    },
+    {
+      "id": "produce018",
+      "name": "Raw Wildflower Honey",
+      "slug": "raw-wildflower-honey",
+      "category": "Honey",
+      "description": "Pure unfiltered apiary honey with floral notes.",
+      "image": "assets/images/produce/raw-honey.jpg",
+      "icon": "🍯",
+      "season": "Autumn",
+      "availableMonths": [
+        "August",
+        "September",
+        "October",
+        "November"
+      ],
+      "marketIds": [
+        "market008",
+        "market009"
+      ]
+    },
+    {
+      "id": "produce019",
+      "name": "Clover Honeycomb",
+      "slug": "clover-honeycomb",
+      "category": "Honey",
+      "description": "Natural honeycomb squares cut straight from hive frames.",
+      "image": "assets/images/produce/honeycomb.jpg",
+      "icon": "🐝",
+      "season": "Summer",
+      "availableMonths": [
+        "June",
+        "July",
+        "August"
+      ],
+      "marketIds": [
+        "market008"
+      ]
+    },
+    {
+      "id": "produce020",
+      "name": "Yellow Peaches",
+      "slug": "yellow-peaches",
+      "category": "Fruits",
+      "description": "Juicy, sun-ripened freestone peaches from hillside orchards.",
+      "image": "assets/images/produce/yellow-peaches.jpg",
+      "icon": "🍑",
+      "season": "Summer",
+      "availableMonths": [
+        "July",
+        "August",
+        "September"
+      ],
+      "marketIds": [
+        "market005",
+        "market009"
+      ]
+    },
+    {
+      "id": "produce021",
+      "name": "Artisan Country Sourdough",
+      "slug": "artisan-country-sourdough",
+      "category": "Baked Goods",
+      "description": "Slow-fermented wild yeast bread with blistered crunchy crust.",
+      "image": "assets/images/produce/sourdough-bread.jpg",
+      "icon": "🍞",
+      "season": "Autumn",
+      "availableMonths": [
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November",
+        "December"
+      ],
+      "marketIds": [
+        "market011"
+      ]
+    },
+    {
+      "id": "produce022",
+      "name": "Cinnamon Brioche Swirls",
+      "slug": "cinnamon-brioche-swirls",
+      "category": "Baked Goods",
+      "description": "Buttery braided morning buns with cinnamon and brown sugar.",
+      "image": "assets/images/produce/brioche.jpg",
+      "icon": "🥐",
+      "season": "Autumn",
+      "availableMonths": [
+        "September",
+        "October",
+        "November",
+        "December"
+      ],
+      "marketIds": [
+        "market011"
+      ]
+    },
+    {
+      "id": "produce023",
+      "name": "Pasture-Raised Eggs",
+      "slug": "pasture-raised-eggs",
+      "category": "Eggs",
+      "description": "Grade-A brown eggs with rich golden yolks from foraging hens.",
+      "image": "assets/images/produce/pasture-eggs.jpg",
+      "icon": "🥚",
+      "season": "Spring",
+      "availableMonths": [
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October"
+      ],
+      "marketIds": [
+        "market012"
+      ]
+    },
+    {
+      "id": "produce024",
+      "name": "Free-Range Duck Eggs",
+      "slug": "free-range-duck-eggs",
+      "category": "Eggs",
+      "description": "Rich, large duck eggs prized by pastry chefs and home bakers.",
+      "image": "assets/images/produce/duck-eggs.jpg",
+      "icon": "🍳",
+      "season": "Spring",
+      "availableMonths": [
+        "March",
+        "April",
+        "May",
+        "June"
+      ],
+      "marketIds": [
+        "market012"
+      ]
+    },
+    {
+      "id": "produce025",
+      "name": "Crisp Apples",
+      "slug": "crisp-apples",
+      "category": "Fruits",
+      "description": "Crunchy sweet Honeycrisp apples freshly picked in autumn.",
+      "image": "assets/images/produce/apples.jpg",
+      "icon": "🍎",
+      "season": "Autumn",
+      "availableMonths": [
+        "September",
+        "October",
+        "November"
+      ],
+      "marketIds": [
+        "market009"
+      ]
+    },
+    {
+      "id": "produce026",
+      "name": "Fresh Broccoli",
+      "slug": "fresh-broccoli",
+      "category": "Vegetables",
+      "description": "Tightly packed deep green crowns harvested cool at dawn.",
+      "image": "assets/images/produce/broccoli.jpg",
+      "icon": "🥦",
+      "season": "Autumn",
+      "availableMonths": [
+        "September",
+        "October",
+        "November"
+      ],
+      "marketIds": [
+        "market010"
+      ]
+    },
+    {
+      "id": "produce027",
+      "name": "Sweet Corn",
+      "slug": "sweet-corn",
+      "category": "Vegetables",
+      "description": "Tender ears of sweet bicolored corn picked daily.",
+      "image": "assets/images/produce/sweet-corn.jpg",
+      "icon": "🌽",
+      "season": "Summer",
+      "availableMonths": [
+        "July",
+        "August",
+        "September"
+      ],
+      "marketIds": [
+        "market011"
+      ]
+    },
+    {
+      "id": "produce028",
+      "name": "Garden Peppermint",
+      "slug": "garden-peppermint",
+      "category": "Herbs",
+      "description": "Invigorating fresh mint leaves for herbal teas and dressings.",
+      "image": "assets/images/produce/peppermint.jpg",
+      "icon": "🌿",
+      "season": "Summer",
+      "availableMonths": [
+        "May",
+        "June",
+        "July",
+        "August"
+      ],
+      "marketIds": [
+        "market012"
+      ]
+    },
+    {
+      "id": "produce029",
+      "name": "Butternut Squash",
+      "slug": "butternut-squash",
+      "category": "Vegetables",
+      "description": "Naturally cured sweet squash perfect for autumn soups.",
+      "image": "assets/images/produce/squash.jpg",
+      "icon": "🎃",
+      "season": "Winter",
+      "availableMonths": [
+        "October",
+        "November",
+        "December",
+        "January"
+      ],
+      "marketIds": [
+        "market006",
+        "market010"
+      ]
+    },
+    {
+      "id": "produce030",
+      "name": "Valencia Oranges",
+      "slug": "valencia-oranges",
+      "category": "Fruits",
+      "description": "Sun-ripened vitamin C rich sweet winter citrus.",
+      "image": "assets/images/produce/oranges.jpg",
+      "icon": "🍊",
+      "season": "Winter",
+      "availableMonths": [
+        "December",
+        "January",
+        "February",
+        "March"
+      ],
+      "marketIds": [
+        "market002",
+        "market008"
+      ]
+    }
+  ]
+}
